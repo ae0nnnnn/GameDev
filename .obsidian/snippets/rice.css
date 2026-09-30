@@ -1,0 +1,59 @@
+/* --- Character Sheet Styling --- */
+
+/* Main Bio / Stats Section */
+.char-stats {
+    font-family: var(--font-text);
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.char-stats > div {
+    margin-bottom: 0.4rem;
+}
+
+.char-label {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+}
+
+/* Appearance Section Block */
+.char-appearance-block {
+    margin-top: 2rem;
+    font-family: var(--font-text);
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+.char-appearance-list {
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+.char-appearance-list > div {
+    margin-bottom: 0.4rem;
+}
+
+
+/* --- Narrative Asides (Story/Prose Vibe) --- */
+.narrator {
+    font-family: var(--font-text);
+    font-style: italic;
+    opacity: 0.75;
+    color: var(--text-muted)
+}
+
+/* --- Dev Notes / Author Interjections (System/Tech Vibe) --- */
+.char-devnote {
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    color: var(--text-muted);
+    background-color: var(--background-secondary);
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    border: 1px dashed var(--background-modifier-border);
+    margin: 1rem 0;
+}

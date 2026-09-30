@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "name": "Dev Note Expander",
+      "key": "dev_note",
+      "regex": {
+        "pattern": "(?<!`)!dev(?=\\s)",
+        "flags": "g"
+      },
+      "transform": "function transform(occurrence, editor, file) {\n  setTimeout(() => {\n    const cursor = editor.getCursor();\n\n    // Find the line containing [Dev]:\n    for (let line = cursor.line; line >= 0; line--) {\n      const text = editor.getLine(line);\n      const devIndex = text.indexOf(\"[Dev]: \");\n\n      if (devIndex !== -1) {\n        // Put cursor immediately after \"[Dev]: \"\n        editor.setCursor({\n          line: line,\n          ch: devIndex + 7\n        });\n\n        break;\n      }\n    }\n  }, 10);\n\n  return '<div class=\"char-devnote\">\\n[Dev]: \\n\\n</div>';\n}",
+      "ignoreFrontmatter": false,
+      "ignoreTildeBlocks": true,
+      "ignoreBackQuoteBlocks": true,
+      "ignoreTitles": true
+    },
+    {
+      "name": "Narrative Aside Expander",
+      "key": "narrative_aside",
+      "regex": {
+        "pattern": "(?<!`)!nar(?=\\s)",
+        "flags": "g"
+      },
+      "transform": "function transform(occurrence, editor, file) {\n  setTimeout(() => {\n    const cursor = editor.getCursor();\n    const line = editor.getLine(cursor.line);\n\n    const openParen = line.lastIndexOf(\"()\", cursor.ch);\n\n    if (openParen !== -1) {\n      editor.setCursor({\n        line: cursor.line,\n        ch: openParen + 1\n      });\n    }\n  }, 10);\n\n  return '<span class=\"narrator\">()</span>';\n}",
+      "ignoreFrontmatter": false,
+      "ignoreTildeBlocks": true,
+      "ignoreBackQuoteBlocks": true,
+      "ignoreTitles": true
+    }
+  ]
+}

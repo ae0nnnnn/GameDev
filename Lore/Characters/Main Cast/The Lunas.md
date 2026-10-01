@@ -35,7 +35,7 @@ cssclasses:
   <div><span class="char-label">Power Level</span> —  Peak Calamity <span class="narrator">(Second Strongest)</span> </div>
   <div><span class="char-label">Abilities</span> —  Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> —  Innate</div>
-  <div><span class="char-label">Affiliation</span> —  The Duality, S.T.A.B, The Church of the Duality</div>
+  <div><span class="char-label">Affiliation</span> —  The Duality, S.T.A.B, The Church of the Duality </div>
   <div><span class="char-label">Status</span> — </div>
 </div>
 

@@ -111,6 +111,7 @@ connections:
   <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
+	<li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
   </ul>
 

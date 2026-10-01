@@ -13,5 +13,5 @@ Please keep in mind if you are reading this off the GitHub page rather the Vault
 For example :
 <div class="char-devnote">
 [Dev]:  Remember to actually move the docs from google docs here
-
 </div> 
+`!link` -- Used to link notes to other things **However** only used when you are trying to add a link in an **HMTL block**.  Use Wiki 

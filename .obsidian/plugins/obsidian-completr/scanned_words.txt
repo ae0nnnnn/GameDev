@@ -56,6 +56,7 @@ low
 lie
 load
 like
+likely
 status
 style
 span
@@ -137,6 +138,8 @@ my
 making
 med
 mortal
+most
+might
 bottom
 block
 border
@@ -160,6 +163,7 @@ feel
 force
 fate
 fester
+file
 em
 example
 else
@@ -199,8 +203,11 @@ off
 of
 own
 our
+obsidian
+open
 var
 very
+vault
 In
 Iris
 Its
@@ -211,6 +218,7 @@ Game
 GameDev
 GitHub
 Guilt
+GameDesgin
 Name
 Narrator
 NOT
@@ -249,6 +257,8 @@ Please
 PLEASE
 Peak
 Player
+Progression
+Plain
 Mortal
 Music
 Misc
@@ -280,6 +290,7 @@ Lunara
 Lunaris
 Let
 Luna
+Lore
 Type
 Tail
 TODOs
@@ -292,6 +303,7 @@ Flaw
 For
 FOR
 FRAMES
+FProgression
 Hair
 Helpful
 Hints
@@ -307,6 +319,7 @@ CONTROL
 Celestial
 Calamity
 Church
+CSS
 Eye
 EDITING
 Every
@@ -355,6 +368,7 @@ hvy
 hopelessness
 hello
 her
+href
 quality
 VISUAL
 VERSION

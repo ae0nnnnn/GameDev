@@ -50,7 +50,6 @@ connections:
   <div><span class="char-label">Drops</span> — Godly Chest</div>
   <div><span class="char-label">Status</span> — Alive</div>
 </div>
-
 <div class="char-stats" style="margin-top: 2rem;">
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Personality</span>

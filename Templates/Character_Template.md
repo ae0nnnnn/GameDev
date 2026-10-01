@@ -9,7 +9,6 @@ cssclasses:
   - character-sheet
 connections:
 ---
-
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">[InsertCharName]</span>
   <span style="font-size: 1.1em; font-style: italic; opacity: 0.8;">“[Quote that sums up the character]”</span>
@@ -29,10 +28,19 @@ connections:
   <div><span class="char-label">Aliases</span> — </div>
   <div><span class="char-label">Race</span> — </div>
   <div><span class="char-label">Adjacent / Previous Mortal Species</span> — </div>
+  <div><span class="char-label">Age</span> — </div>
+  <div><span class="char-label">Birthday</span> — </div>
+  <div><span class="char-label">Height</span> — </div>
+  <div><span class="char-label">Weight</span> — </div>
+  <div><span class="char-label">Boss Title</span> — </div>
   <div><span class="char-label">Power Level</span> — </div>
+  <div><span class="char-label">Vitality</span> — </div>
+  <div><span class="char-label">Enemy Type</span> — </div>
   <div><span class="char-label">Abilities</span> — </div>
   <div><span class="char-label">Abilities Type</span> — </div>
+  <div><span class="char-label">Battle Theme</span> — </div>
   <div><span class="char-label">Affiliation</span> — </div>
+  <div><span class="char-label">Drops</span> — </div>
   <div><span class="char-label">Status</span> — </div>
 </div>
 
@@ -40,28 +48,27 @@ connections:
 
 <div class="char-stats" style="margin-top: 2rem;">
   <div style="margin-bottom: 1.5rem;">
+    <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Personality</span>
+    <div>[Insert Personality description]</div>
+  </div>
+
+  <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Flaw</span>
     <div>[Insert Flaw]</div>
   </div>
 
   <div style="margin-bottom: 1.5rem;">
-    <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Personality</span>
-    <div>[Insert Personality description]</div>
+    <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
+    <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
+      <div><strong>Eye Colour:</strong> </div>
+      <div><strong>Hair:</strong> </div>
+      <div><strong>Facial Details:</strong> </div>
+      <div><strong>Accessories:</strong>
+        <ul style="margin: 0.2rem 0 0 1.2rem;">
+          <li><em>[Accessory Name]:</em> Stats and gimmicks — </li>
+        </ul>
+      </div>
+      <div><strong>Outfit Preferences/Type:</strong> </div>
+    </div>
   </div>
-</div>
-<div class="char-appearance-block">
-  <span class="char-label" style="display: block; margin-bottom: 0.5rem;">Appearance</span>
-  <div class="char-appearance-list">
-    <div>Hair / Tail Colour — </div>
-    <div>Hair Length — </div>
-    <div>Eye Colour — </div>
-    <div>Iris Design — </div>
-    <div>Outfit Preferences — </div>
-    <div>Outfit — </div>
-    <div>Accessories — </div>
-  </div>
-</div>
-
-<div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
-  <span style="font-size: 1.1em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Raw WikiLinks</span>
 </div>

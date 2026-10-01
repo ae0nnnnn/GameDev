@@ -9,6 +9,6 @@
     "lt-dictionary": "multitext",
     "lt-disabledRules": "multitext",
     "lt-disabledCategories": "multitext",
-    "connections": "multitext"
+    "Affiliation": "multitext"
   }
 }

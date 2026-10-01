@@ -1,10 +1,13 @@
 ---
-name: [InsertCharName]
+name:
+  - InsertCharName
 aliases: []
-race: 
-power_level: 
-status: 
-cssclasses: [character-sheet]
+race:
+power_level:
+status:
+cssclasses:
+  - character-sheet
+connections:
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">

@@ -16,7 +16,7 @@ For example :
 <div class="char-devnote">
 [Dev]:  Remember to actually move the docs from google docs here
 </div> 
-`!link` -- Used to link notes to other things **However** only used when you are trying to add a link in an **HTML block (such as `!nar`  and `!dev`)**.  Use WikiLinks when dealing with plain text.  <span class="narrator">- Although It doesn't create the graph links and please for my sanity form the habit of doing raw wiki links in the property table called connecctions like the connect doc for each one we add via `!link` thx</span> 
+`!link` -- Used to link notes to other things **However** only used when you are trying to add a link in an **HTML block (such as `!nar`  and `!dev`)**.  Use WikiLinks when dealing with plain text.  <span class="narrator">- Although It doesn't create the graph links and please for my sanity form the habit of doing raw wiki links in the property table called connecctions like the connect doc for each one we add via `!link` thx .... Btw to add multiple links at once it easier to turn on source mode then edit the YAML rather than trying to fight the table</span> 
 
 For example 
 <div class="char-devnote">

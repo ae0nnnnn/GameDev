@@ -9,7 +9,8 @@ status: Alive
 cssclasses:
   - character-sheet
 connections:
-  - "[[TO-DOS and Reminders]]"
+  - "[[The Duality]]"
+  - "[[S.T.A.B]]"
 ---
 ---
 

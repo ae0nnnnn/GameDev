@@ -20,6 +20,7 @@ nR
 narrative
 naive
 nose
+nd
 aliases
 align
 accent
@@ -562,6 +563,7 @@ Sinner
 Slitted
 Star
 Stats
+Satella
 Level
 Length
 Link
@@ -620,6 +622,7 @@ FCharacters
 FMain
 FAsmondaios
 Friend
+FSatella
 Hair
 Helpful
 Hints
@@ -701,6 +704,7 @@ Details
 Drop
 Dresses
 Denomination
+Daughter
 Outfit
 ON
 Oz
@@ -827,6 +831,7 @@ Battle
 Btw
 Bonds
 Best
+Biological
 You
 YMz
 YV

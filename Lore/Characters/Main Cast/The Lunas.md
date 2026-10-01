@@ -102,36 +102,22 @@ connections:
 <div class="char-stats" style="margin-top: 2rem;">
   <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Relationship Web</span>
   
-  <div style="display: flex; flex-direction: column; gap: 1rem;">
-    
-    <!-- Category 1: Factions -->
-    <div>
-      <strong>Factions & Organizations</strong>
-      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
-        <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
-    
-      </ul>
-    </div>
+  <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>
+  <ul style="margin: 0.2rem 0 1rem 1.2rem;">
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
+  </ul>
 
-    <!-- Category 2: Family & Close Bonds -->
-    <div>
-      <strong>Family & Close Bonds</strong>
-      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
-        
-        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a>  — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
-      </ul>
-    </div>
+  <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
+  <ul style="margin: 0.2rem 0 1rem 1.2rem;">
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
+  </ul>
 
-    <!-- Category 3: Rivals & Antagonists -->
-    <div>
-      <strong>Rivals & Antagonists</strong>
-      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li>[Character Name] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
-      </ul>
-    </div>
-
-  </div>
+  <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
+  <ul style="margin: 0.2rem 0 0 1.2rem;">
+    <li>[Character Name] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
+  </ul>
 </div>
+
 

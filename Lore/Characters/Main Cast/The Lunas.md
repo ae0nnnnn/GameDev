@@ -18,8 +18,9 @@ cssclasses:
 ---
 
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
-  <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
-  <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
+  <div style="margin-bottom: 0.8rem;">“The chains around my neck, the shackles I bear,  yet I do not complain for it's my own doing and it's my price to pay…”</div>
+  
+  <div style="margin-bottom: 0.5rem;"> “You feel it as well don't you? The crippling force weighing us down, chaining us to our own damnation,the shared fate destined to us.” <span class="narrator">  - Lunara to the Player when speaking to them after aborting the Wrath Route and starting the Guilt Route.</span> </div>
  <div >“[Quote 1]”</div>
 	
 </div>

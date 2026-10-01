@@ -12,7 +12,7 @@ cssclasses:
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">The Lunas</span>
-  <span style="font-size: 1.1em; font-style: italic; opacity: 0.8;">“[Quote that sums up the character]”</span>
+  <span style="font-size: 1.1em; font-style: italic; opacity: 0.8;">“Every Beautiful Rose Has Its Thorns”</span>
 </div>
 
 ---
@@ -20,6 +20,7 @@ cssclasses:
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
   <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
   <div>“[Quote 2]”</div>
+<div>“[Quote 2]”</div>
 </div>
 
 ---

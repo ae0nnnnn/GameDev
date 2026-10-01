@@ -35,7 +35,7 @@ cssclasses:
   <div><span class="char-label">Power Level</span> —  Peak Calamity <span class="narrator">(Second Strongest)</span> </div>
   <div><span class="char-label">Abilities</span> —  Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> —  Innate</div>
-  <div><span class="char-label">Affiliation</span> —  The Duality, S.T.A.B, The Church of the Duality </div>
+  <div><span class="char-label">Affiliation</span> —  <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a> , <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> , The Church of the Duality </div>
   <div><span class="char-label">Status</span> — </div>
 </div>
 
@@ -68,3 +68,5 @@ cssclasses:
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 1.1em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Raw WikiLinks</span>
 </div>
+[[S.T.A.B]]
+[[The Duality]]

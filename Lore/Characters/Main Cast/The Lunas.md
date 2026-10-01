@@ -9,6 +9,8 @@ status: Alive
 cssclasses:
   - character-sheet
 connections:
+  - "[[TO-DOS and Reminders]]"
+---
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">

@@ -32,13 +32,13 @@ connections:
   <div><span class="char-label">Birthday</span> — </div>
   <div><span class="char-label">Height</span> — </div>
   <div><span class="char-label">Weight</span> — </div>
-  <div><span class="char-label">Boss Title</span> — </div>
+  <div><span class="char-label">Boss Title</span> — Phase 1:  | Phase 2: </div>
   <div><span class="char-label">Power Level</span> — </div>
   <div><span class="char-label">Vitality</span> — </div>
   <div><span class="char-label">Enemy Type</span> — </div>
   <div><span class="char-label">Abilities</span> — </div>
   <div><span class="char-label">Abilities Type</span> — </div>
-  <div><span class="char-label">Battle Theme</span> — </div>
+  <div><span class="char-label">Battle Theme</span> — Phase 1:  | Phase 2: </div>
   <div><span class="char-label">Affiliation</span> — </div>
   <div><span class="char-label">Drops</span> — </div>
   <div><span class="char-label">Status</span> — </div>
@@ -72,3 +72,4 @@ connections:
     </div>
   </div>
 </div>
+

@@ -13,6 +13,7 @@ connections:
   - "[[S.T.A.B]]"
   - "[[The Church of The Duality]]"
   - "[[Asmondaios]]"
+  - "[[Satella]]"
 ---
 ---
 
@@ -117,9 +118,9 @@ connections:
     <div>
       <strong>Family & Close Bonds</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;"> 2nd </span></li>
+        <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
         
-        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a>  — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
+        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a>  — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
       </ul>
     </div>
 

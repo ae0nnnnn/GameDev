@@ -19,8 +19,9 @@ cssclasses:
 
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
   <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
-  <div>“[Quote 2]”</div>
-<div>“[Quote 2]”</div>
+  <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
+ <div >“[Quote 1]”</div>
+	
 </div>
 
 ---

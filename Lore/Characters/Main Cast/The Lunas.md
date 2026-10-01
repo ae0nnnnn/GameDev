@@ -96,3 +96,34 @@ connections:
   </div>
 </div>
 
+<div class="char-stats" style="margin-top: 2rem;">
+  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Relationship Web</span>
+  
+  <div style="display: flex; flex-direction: column; gap: 1rem;">
+    
+    <!-- Category 1: Factions -->
+    <div>
+      <strong>Factions & Organizations</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <li>[Faction Name] — <span style="opacity: 0.8;">[Standing / Role / Membership Details]</span></li>
+      </ul>
+    </div>
+
+    <!-- Category 2: Family & Close Bonds -->
+    <div>
+      <strong>Family & Close Bonds</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <li>[Character Name] — <span style="opacity: 0.8;">[Relationship / Dynamic Description]</span></li>
+      </ul>
+    </div>
+
+    <!-- Category 3: Rivals & Antagonists -->
+    <div>
+      <strong>Rivals & Antagonists</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
+        <li>[Character Name] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
+      </ul>
+    </div>
+
+  </div>
+</div>

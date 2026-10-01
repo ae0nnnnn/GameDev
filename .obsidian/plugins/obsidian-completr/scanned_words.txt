@@ -475,6 +475,9 @@ Aggressive
 Asmondaios
 Ahoge
 Amethyst
+Allies
+Alliances
+Antagonists
 Race
 Remember
 REMEMBER
@@ -492,6 +495,8 @@ Rrsq
 Reveries
 Red
 Regal
+Relationship
+Rivals
 Previous
 Power
 Personality
@@ -514,6 +519,7 @@ Phase
 Purplish
 Potentia
 Purple
+Primary
 Mortal
 Music
 Misc
@@ -604,6 +610,8 @@ Fyf
 February
 Facial
 Freckles
+Factions
+Family
 Hair
 Helpful
 Hints
@@ -644,6 +652,8 @@ CJ
 CH
 CJa
 Chest
+Category
+Close
 Eye
 EDITING
 Every
@@ -659,6 +669,7 @@ Eons
 Enemy
 End
 Ensue
+Enemies
 Design
 DO
 DOING
@@ -712,6 +723,7 @@ WR
 WcP
 Weight
 When
+Web
 use
 until
 up
@@ -800,6 +812,7 @@ Birthday
 Boss
 Battle
 Btw
+Bonds
 You
 YMz
 YV

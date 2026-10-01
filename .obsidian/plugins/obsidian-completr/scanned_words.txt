@@ -29,6 +29,8 @@ already
 around
 after
 aborting
+add
+an
 race
 rem
 reminders
@@ -45,6 +47,7 @@ parry
 price
 pay
 play
+plain
 level
 left
 letter
@@ -57,6 +60,7 @@ lie
 load
 like
 likely
+link
 status
 style
 span
@@ -110,6 +114,7 @@ destined
 despair
 deep
 dialogue
+dealing
 text
 top
 the
@@ -128,6 +133,7 @@ them
 there
 trying
 tree
+things
 margin
 meet
 move
@@ -140,6 +146,7 @@ med
 mortal
 most
 might
+main
 bottom
 block
 border
@@ -205,6 +212,8 @@ own
 our
 obsidian
 open
+other
+only
 var
 very
 vault
@@ -214,6 +223,7 @@ Its
 Issues
 IS
 Innate
+It
 Game
 GameDev
 GitHub
@@ -299,11 +309,13 @@ THE
 THEM
 The
 Thorns
+This
 Flaw
 For
 FOR
 FRAMES
 FProgression
+FTO
 Hair
 Helpful
 Hints
@@ -312,6 +324,8 @@ HTML
 HAVE
 Has
 Hemolysis
+However
+HMTL
 Colour
 Contains
 CODE
@@ -332,6 +346,7 @@ Dialogue
 Death
 Divine
 Duality
+DOS
 Outfit
 ON
 game
@@ -344,14 +359,17 @@ WHEN
 WIND
 Wrath
 Well
+WikiLinks
 use
 until
 up
 us
+used
 Used
 USE
 UI
 UP
+Use
 you
 yet
 your

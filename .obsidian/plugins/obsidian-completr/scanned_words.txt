@@ -521,6 +521,7 @@ Purplish
 Potentia
 Purple
 Primary
+Partner
 Mortal
 Music
 Misc
@@ -614,6 +615,11 @@ Freckles
 Factions
 Family
 Figure
+Figurehead
+FCharacters
+FMain
+FAsmondaios
+Friend
 Hair
 Helpful
 Hints
@@ -657,6 +663,7 @@ CJa
 Chest
 Category
 Close
+Cast
 Eye
 EDITING
 Every
@@ -819,6 +826,7 @@ Boss
 Battle
 Btw
 Bonds
+Best
 You
 YMz
 YV

@@ -12,6 +12,7 @@ connections:
   - "[[The Duality]]"
   - "[[S.T.A.B]]"
   - "[[The Church of The Duality]]"
+  - "[[Asmondaios]]"
 ---
 ---
 
@@ -47,7 +48,7 @@ connections:
   <div><span class="char-label">Abilities</span> — Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> — Innate</div>
   <div><span class="char-label">Battle Theme</span> — Phase 1: Moonlit Sonata | Phase 2: A Sinner’s Delight ~ Let The Reveries Ensue!</div>
-  <div><span class="char-label">Affiliation</span> — <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>, The Church of the Duality</div>
+  <div><span class="char-label">Affiliation</span> — <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> </div>
   <div><span class="char-label">Drops</span> — Godly Chest</div>
   <div><span class="char-label">Status</span> — Alive</div>
 </div>
@@ -106,8 +107,9 @@ connections:
     <div>
       <strong>Factions & Organizations</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>  — <span style="opacity: 0.8;"> Ally</span></li>
-         <li> <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span> Ordinance Denomination Figure Head </span> </li>
+        <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
+        <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
+    
       </ul>
     </div>
 
@@ -115,7 +117,9 @@ connections:
     <div>
       <strong>Family & Close Bonds</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li>[Character Name] — <span style="opacity: 0.8;">[Relationship / Dynamic Description]</span></li>
+        <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;"> 2nd </span></li>
+        
+        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a>  — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
       </ul>
     </div>
 
@@ -129,3 +133,4 @@ connections:
 
   </div>
 </div>
+

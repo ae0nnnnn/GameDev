@@ -478,6 +478,7 @@ Amethyst
 Allies
 Alliances
 Antagonists
+Ally
 Race
 Remember
 REMEMBER
@@ -612,6 +613,7 @@ Facial
 Freckles
 Factions
 Family
+Figure
 Hair
 Helpful
 Hints
@@ -636,6 +638,7 @@ HWi
 Hm
 Hv
 Height
+Head
 Colour
 Contains
 CODE
@@ -690,9 +693,12 @@ Drops
 Details
 Drop
 Dresses
+Denomination
 Outfit
 ON
 Oz
+Organizations
+Ordinance
 game
 google
 going

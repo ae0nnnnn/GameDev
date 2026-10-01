@@ -11,6 +11,7 @@ cssclasses:
 connections:
   - "[[The Duality]]"
   - "[[S.T.A.B]]"
+  - "[[The Church of The Duality]]"
 ---
 ---
 
@@ -105,7 +106,8 @@ connections:
     <div>
       <strong>Factions & Organizations</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li>[Faction Name] — <span style="opacity: 0.8;">[Standing / Role / Membership Details]</span></li>
+        <li> <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>  — <span style="opacity: 0.8;"> Ally</span></li>
+         <li> <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span> Ordinance Denomination Figure Head </span> </li>
       </ul>
     </div>
 

@@ -78,16 +78,15 @@ connections:
   
   <div style="display: flex; flex-direction: column; gap: 1rem;">
     
-    <!-- Category 1: Allies / Factions -->
+    <!-- Category 1: Factions -->
     <div>
-      <strong>Primary Alliances & Factions</strong>
+      <strong>Factions & Organizations</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
-        <li>[Character Name] — <span style="opacity: 0.8;">[Relationship / Dynamic Description]</span></li>
-        <li>[Faction Name] — <span style="opacity: 0.8;">[Standing / Role]</span></li>
+        <li>[Faction Name] — <span style="opacity: 0.8;">[Standing / Role / Membership Details]</span></li>
       </ul>
     </div>
 
-    <!-- Category 2: Family / Close Bonds -->
+    <!-- Category 2: Family & Close Bonds -->
     <div>
       <strong>Family & Close Bonds</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
@@ -95,7 +94,7 @@ connections:
       </ul>
     </div>
 
-    <!-- Category 3: Rivals / Enemies -->
+    <!-- Category 3: Rivals & Antagonists -->
     <div>
       <strong>Rivals & Antagonists</strong>
       <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.4rem;">
@@ -105,4 +104,5 @@ connections:
 
   </div>
 </div>
+
 

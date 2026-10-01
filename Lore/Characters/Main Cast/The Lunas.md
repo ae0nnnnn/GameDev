@@ -40,7 +40,7 @@ connections:
   <div><span class="char-label">Abilities</span> —  Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> —  Innate</div>
   <div><span class="char-label">Affiliation</span> —  <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a> , <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> , The Church of the Duality </div>
-  <div><span class="char-label">Status</span> — </div>
+  <div><span class="char-label">Status</span> — Alive </div>
 </div>
 
 ---
@@ -48,7 +48,7 @@ connections:
 <div class="char-stats" style="margin-top: 2rem;">
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Flaw</span>
-    <div>[Insert Flaw]</div>
+    <div>L</div>
   </div>
 
   <div style="margin-bottom: 1.5rem;">

@@ -8,7 +8,7 @@ power_level: Peak Calamity
 status: Alive
 cssclasses:
   - character-sheet
-connections: "[[S.T.A.B]],  [[The Duality]]"
+connections:
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">

@@ -29,14 +29,13 @@ cssclasses:
 ---
 
 <div class="char-stats">
-  <div><span class="char-label">In Game Name</span> — </div>
-  <div><span class="char-label">Aliases</span> — </div>
-  <div><span class="char-label">Race</span> — </div>
-  <div><span class="char-label">Adjacent / Previous Mortal Species</span> — </div>
-  <div><span class="char-label">Power Level</span> — </div>
-  <div><span class="char-label">Abilities</span> — </div>
-  <div><span class="char-label">Abilities Type</span> — </div>
-  <div><span class="char-label">Affiliation</span> — </div>
+  <div><span class="char-label">In Game Name</span> — Lunara </div>
+  <div><span class="char-label">Aliases</span> — Luna, Lunara, Lunaris, The Angel of Death, The Divine Arbiter</div>
+  <div><span class="char-label">Race</span> —  Celestial (Arch-Draculain)</div>
+  <div><span class="char-label">Power Level</span> —  Peak Calamity <span class="narrator">(Second Strongest)</span> </div>
+  <div><span class="char-label">Abilities</span> —  Space Manipulation, Soul Manipulation, Hemolysis</div>
+  <div><span class="char-label">Abilities Type</span> —  Innate</div>
+  <div><span class="char-label">Affiliation</span> —  The Duality, S.T.A.B, The Church of the Duality</div>
   <div><span class="char-label">Status</span> — </div>
 </div>
 

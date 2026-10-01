@@ -25,6 +25,19 @@
       "ignoreTildeBlocks": true,
       "ignoreBackQuoteBlocks": true,
       "ignoreTitles": true
+    },
+    {
+      "name": "HTML Link Picker",
+      "key": "html_link",
+      "regex": {
+        "pattern": "(?<!`)!link(?=\\s)",
+        "flags": "g"
+      },
+      "transform": "function transform(occurrence, editor, file) {\n  var uid = 'LINKPICK_' + Date.now().toString(36) + Math.floor(Math.random() * 1296).toString(36);\n  var placeholder = '<a href=\"obsidian://open?vault=PENDING&file=' + uid + '\">Picking…</a>';\n  try {\n    var orig = '';\n    try { orig = occurrence.original || ((occurrence.match && occurrence.match[0]) || ''); } catch (e0) {}\n    if (orig && orig.indexOf('!link') === -1) return placeholder;\n  } catch (e00) {}\n  setTimeout(function () {\n    try {\n      var g = (typeof window !== 'undefined' && window) || globalThis;\n      var appRef = (g && g.app) || null;\n      if (!appRef) return;\n      var vaultName = 'Lore';\n      try { vaultName = appRef.vault.getName(); } catch (e) {}\n      var mdFiles = [];\n      try { mdFiles = appRef.vault.getMarkdownFiles(); } catch (e2) {}\n      if (!mdFiles || mdFiles.length === 0) return;\n      var Obs = null;\n      try { Obs = require('obsidian'); } catch (e3) {}\n      if (!Obs) { try { Obs = g.require('obsidian'); } catch (e4) {} }\n      if (!Obs) { Obs = g.obsidian || null; }\n      var replaceUid = function (finalTag) {\n        try {\n          var val = editor.getValue();\n          var idx = val.indexOf(uid);\n          if (idx === -1) return false;\n          var start = val.lastIndexOf('<a ', idx);\n          var closeTag = '</a>';\n          var endIdx = val.indexOf(closeTag, idx);\n          if (start === -1 || endIdx === -1) return false;\n          endIdx += closeTag.length;\n          var from = editor.offsetToPos(start);\n          var to = editor.offsetToPos(endIdx);\n          editor.replaceRange(finalTag, from, to);\n          try { editor.setCursor(editor.offsetToPos(start + finalTag.length)); } catch (e5) {}\n          return true;\n        } catch (e6) { return false; }\n      };\n      var buildTag = function (chosen) {\n        var rel = chosen.path.replace(/\\.md$/i, '');\n        var encFile = encodeURIComponent(rel);\n        var encVault = encodeURIComponent(vaultName);\n        return '<a href=\"obsidian://open?vault=' + encVault + '&file=' + encFile + '\">' + chosen.basename + '</a>';\n      };\n      if (!Obs || !Obs.FuzzySuggestModal) {\n        var names = mdFiles.map(function (f) { return f.path; }).join('\\n');\n        var answer = prompt('Link note path (copy one):\\n' + names);\n        if (!answer) return;\n        for (var i = 0; i < mdFiles.length; i++) {\n          if (mdFiles[i].path === answer || mdFiles[i].basename === answer) { replaceUid(buildTag(mdFiles[i])); break; }\n        }\n        return;\n      }\n      var picker = new Obs.FuzzySuggestModal(appRef);\n      picker.getItems = function () { return mdFiles; };\n      picker.getItemText = function (f) { return f.path; };\n      picker.onChooseItem = function (f) { replaceUid(buildTag(f)); };\n      picker.open();\n    } catch (err) {}\n  }, 10);\n  return placeholder;\n}",
+      "ignoreFrontmatter": false,
+      "ignoreTildeBlocks": true,
+      "ignoreBackQuoteBlocks": true,
+      "ignoreTitles": true
     }
   ]
 }

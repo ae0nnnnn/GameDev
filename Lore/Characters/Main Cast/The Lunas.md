@@ -128,9 +128,9 @@ connections:
 
 
 
-
-
-
+``
+#E87FD7
+``
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">
   <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>

@@ -74,7 +74,7 @@ connections:
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
     <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
-      <div><strong>Eye Colour:</strong> Purplish pink around (#e87fd7) — Lunara (Normal) <br> Red — Lunaris (Slitted pupils)</div>
+      <div><strong>Eye Colour:</strong> Purplish pink around (!hex e87fd7) — Lunara (Normal) <br> Red — Lunaris (Slitted pupils)</div>
       <div><strong>Hair:</strong> Purplish black with lighter purple highlights and a singular white group of strands (dyed white to match Asmondaios)
         <ul style="margin: 0.2rem 0 0 1.2rem;">
           <li><em>Lunara:</em> Messy bun with an Ahoge</li>
@@ -150,6 +150,7 @@ She also loves to torture her enemies before killing them. <span class="narrator
 That's too on the nose so I swapped it out with some of Asmondaios’ entropy (though some elements are still present like her love for efficiency)</span> 
 
 However, when it comes to doing her actual job <span class="narrator">(Read Further Down)</span> she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high <span class="narrator"> -Also according to her, it’s also really fun to do - don't take my word for it, I am just the narrator.</span> 
+
 
 
 

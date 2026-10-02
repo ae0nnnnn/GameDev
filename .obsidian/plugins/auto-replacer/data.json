@@ -43,10 +43,10 @@
       "name": "Hex Chip Expander",
       "key": "hex_chip",
       "regex": {
-        "pattern": "(?<!`)!hex\\s+#([0-9a-fA-F]{6})(?=\\s)",
+        "pattern": "(?<!`)!hex\\s+#?([0-9a-fA-F]{6})(?=\\s|$)",
         "flags": "g"
       },
-      "transform": "function transform(occurrence, editor, file) {\n  var raw = '';\n  try { raw = occurrence.original || ((occurrence.match && occurrence.match[0]) || ''); } catch (e0) {}\n  var m = null;\n  try { m = /!hex\\s+#([0-9a-fA-F]{6})/.exec(raw); } catch (e1) {}\n  // Settings-UI validation calls with mock data: leave text untouched.\n  if (!m) return raw;\n  var hex = '#' + m[1].toUpperCase();\n  var cursorTag = 'HEXCUR_' + Date.now().toString(36);\n  var out = '<span class=\"hexchip\" style=\"--hex:' + hex + '\"></span>' + hex + ' ' + cursorTag;\n  setTimeout(function () {\n    try {\n      var val = editor.getValue();\n      var idx = val.indexOf(cursorTag);\n      if (idx === -1) return;\n      var from = editor.offsetToPos(idx);\n      var to = editor.offsetToPos(idx + cursorTag.length);\n      editor.replaceRange('', from, to);\n      try { editor.setCursor(editor.offsetToPos(idx)); } catch (e2) {}\n    } catch (err) {}\n  }, 10);\n  return out;\n}\n",
+      "transform": "function transform(occurrence, editor, file) {\n  var raw = '';\n  try { raw = occurrence.original || ((occurrence.match && occurrence.match[0]) || ''); } catch (e0) {}\n  var m = null;\n  try { m = /!hex\\s+#?([0-9a-fA-F]{6})/.exec(raw); } catch (e1) {}\n  // Settings-UI validation calls with mock data: leave text untouched.\n  if (!m) return raw;\n  var hex = '#' + m[1].toUpperCase();\n  var cursorTag = 'HEXCUR_' + Date.now().toString(36);\n  var out = '<span class=\"hexchip\" style=\"--hex:' + hex + '\"></span>' + hex + ' ' + cursorTag;\n  setTimeout(function () {\n    try {\n      var val = editor.getValue();\n      var idx = val.indexOf(cursorTag);\n      if (idx === -1) return;\n      var from = editor.offsetToPos(idx);\n      var to = editor.offsetToPos(idx + cursorTag.length);\n      editor.replaceRange('', from, to);\n      try { editor.setCursor(editor.offsetToPos(idx)); } catch (e2) {}\n    } catch (err) {}\n  }, 10);\n  return out;\n}\n",
       "ignoreFrontmatter": false,
       "ignoreTildeBlocks": true,
       "ignoreBackQuoteBlocks": true,

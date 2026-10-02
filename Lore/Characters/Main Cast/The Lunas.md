@@ -140,7 +140,10 @@ Their motto in life is “It's better to die trying than to not try at all”
 General Niall calls Lunaris the cruel one and calls Lunara the sensible one, Asmondaios calls the both of them Luna as he has spent so long with them, they are the same person to him both sadistic or kind; Zenovia, Satella and Fafnir call the both of them mum.
 
 
+  
+Lunaris actively toys with the space-time continuum during her free time and has committed several atrocities ranging from mild nuisances to timeline ending disasters just because she is bored. The innocent are not spared from this which only increases her sin count. <span class="narrator">(Her excuse is that they are just collateral damage)</span> 
 
+She also loves to torture her enemies before killing them. <span class="narrator">(She sometimes goes as far as to undo the damage she has done just to inflict them again)</span> , however she does prefer mental torment to physical torture
 
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">

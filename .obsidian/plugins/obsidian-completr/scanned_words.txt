@@ -952,6 +952,7 @@ him
 he
 has
 high
+hex
 quality
 qB
 qEl

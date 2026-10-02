@@ -1,0 +1,41 @@
+/* Hex chips: square swatches for color codes.
+   - Squares Color Preview's round dots wherever IT renders.
+   - Squares the backtick pill around hex codes.
+   - .hexchip self-paints a square inside raw-HTML blocks (Live Preview
+     rendered widgets), where no plugin post-processor can reach.
+   Usage (inside divs etc.):
+     <span class="hexchip" style="--hex:#e87fd7"></span>#e87fd7
+   Tip: type `!hex e87fd7 ` (trailing space) and the auto-replacer
+   expands it to the span above automatically. */
+
+/* 1. Square the plugin's dots (editor + reading view). */
+.cp-inline-dot {
+  border-radius: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+/* 2. Square the backtick pill, but only when it wraps a hex code
+   (modern Chromium supports :has; elsewhere the pill just keeps
+   its default rounding — harmless fallback). */
+code:has(> .cp-inline-hex) {
+  border-radius: 4px;
+}
+
+/* 3. Self-painted chip for raw-HTML zones. */
+.hexchip {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--hex, transparent);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+
+/* 4. The plugin also decorates the hex text inside a chip in Reading
+   view — hide its dot there so you don't get a doubled swatch. */
+.hexchip .cp-inline-dot {
+  display: none;
+}

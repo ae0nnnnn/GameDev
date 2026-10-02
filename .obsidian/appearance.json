@@ -1,7 +1,8 @@
 {
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "rice"
+    "rice",
+    "hexchips"
   ],
   "cssTheme": "Composer"
 }

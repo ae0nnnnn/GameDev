@@ -12,7 +12,14 @@
     "pt": "pt-BR",
     "ca": "ca-ES"
   },
-  "dictionary": [],
+  "dictionary": [
+    "Asmondaios",
+    "Grillby",
+    "Lunara",
+    "Lunaris",
+    "Satella",
+    "Zenovia"
+  ],
   "syncDictionary": false,
   "remoteDictionary": [],
   "pickyMode": false,

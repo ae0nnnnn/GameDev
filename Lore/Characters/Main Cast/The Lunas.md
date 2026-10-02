@@ -127,10 +127,21 @@ connections:
 
 
 
+They are mostly Asmondaios’ partners but at other times Lunara loves to have conversations with people and Lunaris is probably off experimenting with her soul collection.
 
-``
-#E87FD7
-``
+Together they are the embodiment of the Ordinance side of the Balance.
+
+They love to visit Grillby’s at the Crucible with him.
+
+Lunara tries to stop the player before the final boss.
+
+Their motto in life is “It's better to die trying than to not try at all”
+
+General Niall calls Lunaris the cruel one and calls Lunara the sensible one, Asmondaios calls the both of them Luna as he has spent so long with them, they are the same person to him both sadistic or kind; Zenovia, Satella and Fafnir call the both of them mum.
+
+
+
+
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">
   <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>

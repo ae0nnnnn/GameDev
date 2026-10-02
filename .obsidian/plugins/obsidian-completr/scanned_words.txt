@@ -228,6 +228,7 @@ count
 collateral
 control
 comes
+colour
 div
 display
 dev
@@ -636,6 +637,7 @@ Potentia
 Purple
 Primary
 Partner
+Pill
 Mortal
 Music
 Misc
@@ -748,6 +750,7 @@ FFafnir
 Fafnir
 FAsdeath
 Further
+FD
 Hair
 Helpful
 Hints
@@ -775,6 +778,7 @@ Height
 Head
 Half
 Her
+Hex
 Colour
 Contains
 CODE
@@ -835,6 +839,7 @@ Dresses
 Denomination
 Daughter
 Down
+Display
 Outfit
 ON
 Oz
@@ -953,6 +958,7 @@ he
 has
 high
 hex
+hexchip
 quality
 qB
 qEl
@@ -1014,6 +1020,7 @@ xPc
 xs
 xQ
 xzf
+xxxxxx
 QA
 Qx
 Qc

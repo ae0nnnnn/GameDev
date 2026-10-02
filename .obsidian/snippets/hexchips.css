@@ -4,7 +4,7 @@
    - .hexchip self-paints a square inside raw-HTML blocks (Live Preview
      rendered widgets), where no plugin post-processor can reach.
    Usage (inside divs etc.):
-     <span class="hexchip" style="--hex:#e87fd7"></span>#e87fd7
+     <span class="hexchip" style="--hex:#e87fd7">#e87fd7</span>
    Tip: type `!hex e87fd7 ` (trailing space) and the auto-replacer
    expands it to the span above automatically. */
 
@@ -22,16 +22,25 @@ code:has(> .cp-inline-hex) {
   border-radius: 4px;
 }
 
-/* 3. Self-painted chip for raw-HTML zones. */
+/* 3. Self-painted chip for raw-HTML zones. The hex text lives INSIDE
+   the span so the plugin's Reading-view wrapper (if it fires) lands
+   as a descendant, where rule 4 can suppress its doubled dot. */
 .hexchip {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  vertical-align: -1px;
+  margin-right: 2px;
+}
+
+.hexchip::before {
+  content: "";
   width: 12px;
   height: 12px;
   border-radius: 3px;
   background: var(--hex, transparent);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  vertical-align: -1px;
-  margin-right: 4px;
+  flex-shrink: 0;
 }
 
 /* 4. The plugin also decorates the hex text inside a chip in Reading

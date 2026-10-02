@@ -23,3 +23,7 @@ For example
 [Dev]:  This is the main page for game dev -- <a href="obsidian://open?vault=Lore&file=GameDesgin%2FTO-DOS%20and%20Reminders">TO-DOS and Reminders</a> 
 
 </div> 
+
+`!hex xxxxxx` -- Used to Display a Hex Pill with the colour xxxxxx
+
+For example : Lunara's eye colour is <span class="hexchip" style="--hex:#E87FD7"></span>#E87FD7  

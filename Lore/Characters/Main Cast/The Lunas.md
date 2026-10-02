@@ -74,7 +74,7 @@ connections:
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
     <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
-      <div><strong>Eye Colour:</strong> Purplish pink around (<span class="hexchip" style="--hex:#E87FD7"></span>#E87FD7  ) — Lunara (Normal) <br> Red — Lunaris (Slitted pupils)</div>
+      <div><strong>Eye Colour:</strong> Purplish pink around (<span class="hexchip" style="--hex:#E87FD7">#E87FD7</span>) — Lunara (Normal) <br> Red — Lunaris (Slitted pupils)</div>
       <div><strong>Hair:</strong> Purplish black with lighter purple highlights and a singular white group of strands (dyed white to match Asmondaios)
         <ul style="margin: 0.2rem 0 0 1.2rem;">
           <li><em>Lunara:</em> Messy bun with an Ahoge</li>

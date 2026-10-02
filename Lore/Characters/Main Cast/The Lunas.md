@@ -149,7 +149,7 @@ She also loves to torture her enemies before killing them. <span class="narrator
 <span class="narrator">Yes yes I know isn't she meant to the embodiment of order, control and all that jazz  
 That's too on the nose so I swapped it out with some of Asmondaios’ entropy (though some elements are still present like her love for efficiency)</span> 
 
-However when it comes to doing her actual job [Read further down] she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high - (also according to her it’s also really fun to do - don't take my word for it I am just the narrator.)
+However, when it comes to doing her actual job <span class="narrator">(Read Further Down)</span> she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high <span class="narrator"> -Also according to her, it’s also really fun to do - don't take my word for it, I am just the narrator.</span> 
 
 
 

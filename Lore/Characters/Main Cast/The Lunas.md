@@ -14,6 +14,7 @@ connections:
   - "[[The Church of The Duality]]"
   - "[[Asmondaios]]"
   - "[[Satella]]"
+  -  "[[Asdeath]]"
 ---
 ---
 
@@ -114,6 +115,8 @@ connections:
 	<li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
+    <li>!  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
+		
   </ul>
 
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>

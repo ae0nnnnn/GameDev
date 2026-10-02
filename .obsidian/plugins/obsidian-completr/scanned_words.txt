@@ -565,6 +565,7 @@ Slitted
 Star
 Stats
 Satella
+Son
 Level
 Length
 Link
@@ -625,6 +626,8 @@ FAsmondaios
 Friend
 FSatella
 FZenovia
+FFafnir
+Fafnir
 Hair
 Helpful
 Hints
@@ -713,6 +716,7 @@ Oz
 Organizations
 Ordinance
 Oldest
+Only
 game
 google
 going

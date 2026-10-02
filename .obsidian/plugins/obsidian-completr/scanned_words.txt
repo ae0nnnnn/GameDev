@@ -480,6 +480,7 @@ Allies
 Alliances
 Antagonists
 Ally
+Adopted
 Race
 Remember
 REMEMBER
@@ -623,6 +624,7 @@ FMain
 FAsmondaios
 Friend
 FSatella
+FZenovia
 Hair
 Helpful
 Hints
@@ -710,6 +712,7 @@ ON
 Oz
 Organizations
 Ordinance
+Oldest
 game
 google
 going
@@ -861,6 +864,7 @@ ZZ
 ZY
 ZA
 Zk
+Zenovia
 xPc
 xs
 xQ

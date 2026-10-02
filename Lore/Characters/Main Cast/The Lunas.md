@@ -111,11 +111,11 @@ connections:
 
   <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend and Partner</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend, Partner and Entropic Half their Duality</span></li>
 	<li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
-    <li>!  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin </span></li>
 		
   </ul>
 
@@ -123,6 +123,17 @@ connections:
   <ul style="margin: 0.2rem 0 0 1.2rem;">
     <li>[Character Name] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
   </ul>
+</div>
+
+
+
+
+
+
+
+
+<div style="margin-top: 3rem; margin-bottom: 1.5rem;">
+  <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>
 </div>
 
 

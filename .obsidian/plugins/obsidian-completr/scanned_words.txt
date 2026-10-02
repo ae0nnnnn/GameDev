@@ -239,6 +239,7 @@ tiny
 themed
 turn
 than
+their
 margin
 meet
 move
@@ -481,6 +482,7 @@ Alliances
 Antagonists
 Ally
 Adopted
+Asdeath
 Race
 Remember
 REMEMBER
@@ -628,6 +630,7 @@ FSatella
 FZenovia
 FFafnir
 Fafnir
+FAsdeath
 Hair
 Helpful
 Hints
@@ -653,6 +656,7 @@ Hm
 Hv
 Height
 Head
+Half
 Colour
 Contains
 CODE
@@ -688,6 +692,7 @@ Enemy
 End
 Ensue
 Enemies
+Entropic
 Design
 DO
 DOING
@@ -848,6 +853,7 @@ KJ
 Kw
 Kh
 Kind
+Kin
 zj
 zOZ
 za

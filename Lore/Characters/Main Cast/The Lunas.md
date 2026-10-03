@@ -81,7 +81,7 @@ connections:
           <li><em>Lunaris:</em> Long and flowing also with an Ahoge</li>
         </ul>
       </div>
-      <div><strong>Facial Details:</strong> Freckles on the bridge of her nose, arms, and chest (expand into tiny stars if either feels like it), (Eye Drop)^99 Tattoo under left eye (single one with the exponent), Star Potentia marking</div>
+      <div><strong>Facial Details:</strong> Freckles on the bridge of her nose, arms, and chest (expand into tiny stars if either feels like it), (Tear Drop)^99 Tattoo under left eye (single one with the exponent), Star Potentia marking</div>
       <div><strong>Accessories:</strong>
         <ul style="margin: 0.2rem 0 0 1.2rem;">
           <li><em>Star-themed hairpins:</em> Stats and gimmicks — None</li>

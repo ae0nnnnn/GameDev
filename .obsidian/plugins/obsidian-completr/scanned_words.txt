@@ -469,6 +469,8 @@ stone
 speeds
 seconds
 short
+stamina
+scaling
 cssclasses
 class
 char
@@ -577,6 +579,8 @@ cJa
 carry
 chart
 changinh
+changing
+crit
 div
 display
 dev
@@ -1509,6 +1513,8 @@ Abp
 AxN
 Auto
 AP
+Agility
+AGL
 Race
 Remember
 REMEMBER
@@ -1620,6 +1626,7 @@ Pe
 PrT
 Parry
 ParryAnimLength
+Proficiency
 Mortal
 Music
 Misc
@@ -1666,6 +1673,7 @@ Modification
 MAX
 Med
 Medium
+Moves
 Species
 Status
 Stuff
@@ -1736,6 +1744,12 @@ Stance
 Still
 Swap
 Swing
+Strength
+STR
+Spirit
+SPT
+Spells
+Speed
 Level
 Length
 Link
@@ -1790,6 +1804,7 @@ Le
 LN
 Levels
 Light
+Levelling
 Type
 Tail
 TODOs
@@ -2019,6 +2034,7 @@ CB
 CRP
 CYF
 CL
+Character
 Eye
 EDITING
 Every
@@ -2072,6 +2088,7 @@ EP
 EOwG
 Ef
 END
+Endurance
 Design
 DO
 DOING
@@ -2130,6 +2147,8 @@ DUO
 Dl
 Data
 DMG
+Dexterity
+DEX
 Outfit
 ON
 Oz
@@ -2257,6 +2276,7 @@ WX
 WU
 WT
 Weapon
+WPN
 use
 until
 up

@@ -1,5 +1,6 @@
 # TODOs and Reminders
 
+## Reminders
 Stuff such as Music and Art is not going to be done until I have learnt how to do it or would be done at at intentionally low quality if i have to do it to move on with something else.
 
 **REMEMBER DO NOT DO ANY SCRIPT EDITING ON ROBLOX STUDIO
@@ -18,6 +19,10 @@ GitHub Link - https://github.com/ae0nnnnn/My-NEA-Game-Hobby
 I need to go round and add SFX where it's missing as its one on the things that is making the game feel off to me – if I can't make any sounds – just go to 
 [freesound.org](http://freesounds.org)
 
+Use Mixamo and Pinterest for reference work (Animations)  
+Use Cmdr for admin commands and server announcements 1
+Use ZonePlus 3.2 for POIs when making maps → though it would be ages from now
+
   
 Also found something that i am going to store here  
   
@@ -26,7 +31,7 @@ Also found something that i am going to store here
 2. If you use tech 1 on a glass object with transparency to 1 and reflectance to 0 anything that is in or viewed through that object gets the colours inverted → this allows to create smooth divisions across one mesh
 
 
-
+## To-dos
 Æon :
 
 Animate Judgment 
@@ -60,7 +65,7 @@ Also, I should also create a warning module that display a warning text when you
   
 Start making the other movesets
 
-## Stuff that I should do now!!!
+### Stuff that I should do now!!!
 
 Shrink the size of the DrakeFang’s because it's massive. → actually now that I think about it, it's actually not that large 
 
@@ -69,19 +74,32 @@ Add the trail VFX for weapon swings also improve the weapon VFX for literally ev
 Nerf all weapon damage into the ground because why on earth can I four-shot someone? Especially hvy
 
   
-## Stuff that I can do really quickly and can do in my own time.
+### Stuff that I can do really quickly and can do in my own time.
 
 Make a blinking highlight for stuff such as counters (Use the existing highlight logic as a base) - also use a billboard GUI for this as well on top the character model’s head - I have finished the highlight blocking 
 
 Also add resting which increases your health regen - all anims are done all is left is to implement it
 
-Make a cooldown manager module based on this (I already use tables rather than task.wait, however I want to localize everything so I don't to dig through the entire codebase) - [https://www.youtube.com/watch?v=_6F6vRt_9sM](https://www.youtube.com/watch?v=_6F6vRt_9sM)
+Make a cooldown manager module based on this (I already use tables rather than `task.wait`, however I want to localize everything, so I don't to dig through the entire codebase) - [https://www.youtube.com/watch?v=_6F6vRt_9sM](https://www.youtube.com/watch?v=_6F6vRt_9sM)
 
 Add got hit effects that are bound by the animation → use Liam’s vid on this unless I decide to just add the hit effect directly to the weapon dictionary rather than having to redo all the swing anims every time I want to adjust the VFX.
 
 Also create the Weapons Object Class as this is going to be the place where a store every weapon's info and where I can finally start hooking their skills such as weapon arts.
 
-Setting a system that keys the slots settings and global settings - I would option to edit global settings and perslot settings. - I have added the fields to template
+Setting a system that keys the slots settings and global settings - I would option to edit global settings and per slot settings. - I have added the fields to template
+
+Speaking of dialogue system I could divide each NPC’s dialogue tree into smaller trees – not necessary I could actually just use conditions nodes the lock paths and responses based on the condition
+
+And use the script node on the root tree to select each variant of each branch when the option is picked – This would be able to handle NPCs with dialogue trees that change based on certain conditions.
+
+I need to add some for characters to the current font maps  
+This is the paste : ``0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!Æ;%:?*()_+-=.,/|"'@#$^&{}[]~`\<> -「」``
+
+Add A bit about in game routes the player can take (such as Wrath, Benevolence) 
+<span class="narrator"> – might actually scrap tho</span> 
+
+
+
 
 
 

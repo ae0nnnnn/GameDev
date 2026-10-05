@@ -156,6 +156,8 @@ adobe
 aec
 acf
 ar
+aren
+aside
 race
 rem
 reminders
@@ -302,6 +304,7 @@ pi
 pJ
 profile
 photoshop
+palace
 level
 left
 letter
@@ -928,6 +931,7 @@ bT
 brq
 below
 begin
+bossfight
 font
 for
 from
@@ -1001,6 +1005,7 @@ flickers
 fps
 fee
 fn
+first
 em
 example
 else
@@ -1224,6 +1229,7 @@ iTXtXML
 id
 iid
 instanceID
+interaction
 opacity
 or
 on
@@ -1393,6 +1399,7 @@ IDATX
 ImageReadyq
 InstanceID
 IDATh
+Interaction
 Game
 GameDev
 GitHub
@@ -1578,6 +1585,8 @@ AD
 AH
 An
 Ad
+After
+Any
 Race
 Remember
 REMEMBER
@@ -2075,6 +2084,7 @@ Hypr
 Heavy
 Hitbox
 HU
+Howdy
 Colour
 Contains
 CODE
@@ -2344,6 +2354,8 @@ gV
 guessing
 gA
 gC
+guts
+guilt
 Willam
 WE
 WHEN

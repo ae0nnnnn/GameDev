@@ -30,7 +30,7 @@
 /* Reading view: full night-sky gradient + forced light text so the
    note stays readable regardless of base light/dark theme. */
 .markdown-preview-view.char-lunas {
-  background: linear-gradient(180deg, #0d0618 0%, #1c0b33 45%, #3b1a5e 100%);
+  background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 45%, var(--sky-3) 100%);
   --text-normal: #efe6f7;
   --text-muted: #c9b8d9;
   --text-faint: #a68fc2;
@@ -556,7 +556,7 @@
 /* ---------- editor (Live Preview + Source): dimmed static sky ---------- */
 
 .markdown-source-view.char-lunas {
-  background: linear-gradient(180deg, #0a0514 0%, #140826 60%, #1e0f38 100%);
+  background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 60%, var(--sky-3) 100%);
 }
 
 .markdown-source-view.char-lunas::before,
@@ -646,6 +646,17 @@ body.nc-char-lunas ::-webkit-scrollbar-thumb {
   background-color: rgba(232, 127, 215, 0.35);
 }
 
+
+/* Sidebar/leaf wash: guarantees purple even where Composer paints its
+   own grey behind transparent splits. Translucent so depth survives. */
+
+body.nc-char-lunas .workspace-split.mod-left-split,
+body.nc-char-lunas .workspace-split.mod-right-split,
+body.nc-char-lunas .workspace-leaf-content[data-type="file-explorer"],
+body.nc-char-lunas .workspace-leaf-content[data-type="search"] {
+  background-color: rgba(20, 8, 38, 0.82);
+}
+
 body.nc-char-lunas ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(232, 127, 215, 0.55);
 }
@@ -657,7 +668,7 @@ body.nc-char-lunas ::-webkit-scrollbar-thumb:hover {
 body.nc-char-lunas,
 body.nc-char-lunas .app-container,
 body.nc-char-lunas .horizontal-main-container {
-  background: linear-gradient(180deg, #0d0618 0%, #140826 55%, #1c0b33 100%);
+  background: linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 55%, var(--sky-3) 100%);
   --tab-background: #140826;
   --divider-color: #3b1a5e;
 }
@@ -670,7 +681,7 @@ body.nc-char-lunas .horizontal-main-container {
 
 body.nc-char-lunas {
   background-image:
-    linear-gradient(180deg, #0d0618 0%, #140826 55%, #1c0b33 100%),
+    linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 55%, var(--sky-3) 100%),
     radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
     radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
     radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
@@ -686,4 +697,48 @@ body.nc-char-lunas {
   background-position: center, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 12% 30%, 85% 15%, 60% 70%, 30% 88%;
   background-repeat: no-repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+}
+
+/* ============================================================
+   Theme tween: crossfade the whole app when the active note's
+   theme changes (Lunas <-> anything else).
+   Plain gradients can't transition, but REGISTERED custom
+   properties can — so the sky colors below are @property
+   <color>s, and everything that uses them glides ~0.8s instead
+   of snapping. Chromium 85+ / FF 128+ / Safari 16.4+.
+   file-theme swaps body.nc-* classes; the transitions do the rest.
+   (Reduced-motion users: add `and (prefers-reduced-motion: no-preference)`
+   gating here if the app ever needs a still mode — currently the
+   existing reduced-motion block covers the sky animations.)
+   ============================================================ */
+
+@property --sky-1 { syntax: '<color>'; inherits: true; initial-value: #171717; }
+@property --sky-2 { syntax: '<color>'; inherits: true; initial-value: #1e1e1e; }
+@property --sky-3 { syntax: '<color>'; inherits: true; initial-value: #262626; }
+
+body {
+  transition: --sky-1 0.8s ease, --sky-2 0.8s ease, --sky-3 0.8s ease;
+}
+
+body.nc-char-lunas,
+body.nc-char-lunas .app-container,
+body.nc-char-lunas .horizontal-main-container {
+  --sky-1: #0d0618;
+  --sky-2: #140826;
+  --sky-3: #1c0b33;
+}
+
+/* Solid chrome surfaces glide on the class swap. Scoped narrowly to
+   app chrome (never note content) so typing never feels laggy. */
+
+body .workspace-ribbon,
+body .workspace-tab-header-container,
+body .workspace-tab-header,
+body .workspace-split.mod-left-split,
+body .workspace-split.mod-right-split,
+body .status-bar,
+body .titlebar,
+body .nav-files-container,
+body .workspace-leaf-content {
+  transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
 }

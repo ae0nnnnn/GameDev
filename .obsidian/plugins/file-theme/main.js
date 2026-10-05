@@ -43,6 +43,11 @@ class FileThemeMirror extends Plugin {
             lines.push('element 60px from bottom: ' + (low ? low.tagName + '.' + String(low.className).split(' ').join('.') : 'none'));
           }
           lines.push('obsidian version: ' + (window.obsidianVersion || 'unknown'));
+          let regProp = 'unknown';
+          try {
+            regProp = (window.CSS && window.CSS.registerProperty) ? 'yes' : 'no';
+          } catch (e) {}
+          lines.push('CSS.registerProperty (tween support): ' + regProp);
         } catch (e) {
           lines.push('ERROR: ' + e);
         }

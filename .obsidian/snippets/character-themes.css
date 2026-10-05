@@ -82,8 +82,9 @@
   background-image:
     /* halo */
     radial-gradient(circle 95px at 118px 118px, rgba(232, 127, 215, 0.30), transparent 70%),
-    /* disc */
-    radial-gradient(circle 64px at 118px 118px, #f6ecf9 0%, #dec4e8 52%, #a983b8 100%),
+    /* disc — NOTE: must end in transparent, or the last opaque
+       stop fills the whole layer infinitely and mauves out the sky */
+    radial-gradient(circle 64px at 118px 118px, #f6ecf9 0%, #dec4e8 52%, #b49ac6 85%, transparent 100%),
     /* craters */
     radial-gradient(circle 11px at 98px 100px, rgba(120, 80, 140, 0.35), transparent 70%),
     radial-gradient(circle 8px at 136px 128px, rgba(120, 80, 140, 0.30), transparent 70%),

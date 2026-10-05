@@ -150,6 +150,7 @@ aoiPt
 aC
 aSgvi
 adjustin
+applies
 race
 rem
 reminders
@@ -354,6 +355,7 @@ lkp
 lff
 lY
 ltKd
+lunas
 status
 style
 span
@@ -744,6 +746,7 @@ took
 tweak
 themselves
 tier
+themes
 margin
 meet
 move
@@ -1750,6 +1753,7 @@ Spirit
 SPT
 Spells
 Speed
+Same
 Level
 Length
 Link

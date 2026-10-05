@@ -2,7 +2,8 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "rice",
-    "hexchips"
+    "hexchips",
+    "character-themes"
   ],
   "cssTheme": "Composer"
 }

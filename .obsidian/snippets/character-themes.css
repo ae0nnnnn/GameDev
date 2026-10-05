@@ -1,0 +1,191 @@
+/* ============================================================
+   Character themes — pilot: Lunas (.char-lunas)
+   Per-note theme via frontmatter: cssclasses: [char-lunas].
+   Future characters: copy the Lunas section, rename the class,
+   swap the palette. One file, one section per character.
+
+   Paint order, back to front (all decor pointer-events: none):
+     gradient (container bg)
+     → stars      (container::before, twinkle)
+     → moon       (sizer::before, slow bob, top-left)
+     → clouds     (sizer::after, slow drift, cross IN FRONT of moon)
+     → shooters   (container::after, staggered dashes)
+     → note content (children lifted to z-index 1)
+   Only opacity / background-position / transform animate, so it
+   stays on the compositor. Moon + clouds + shooters are
+   Reading-view only (no .markdown-preview-sizer in the editor);
+   the editor gets a dimmed static sky instead.
+   ============================================================ */
+
+/* ---------- containers ---------- */
+
+.markdown-preview-view.char-lunas,
+.markdown-source-view.char-lunas {
+  position: relative;
+}
+
+/* Reading view: full night-sky gradient + forced light text so the
+   note stays readable regardless of base light/dark theme. */
+.markdown-preview-view.char-lunas {
+  background: linear-gradient(180deg, #0d0618 0%, #1c0b33 45%, #3b1a5e 100%);
+  --text-normal: #efe6f7;
+  --text-muted: #c9b8d9;
+  --text-faint: #a68fc2;
+  --interactive-accent: #e87fd7;
+  --interactive-accent-hover: #f2a5e2;
+}
+
+/* Lift content above all sky layers. */
+.markdown-preview-view.char-lunas .markdown-preview-sizer {
+  position: relative;
+}
+
+.markdown-preview-view.char-lunas .markdown-preview-sizer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- stars (twinkle) ---------- */
+
+.markdown-preview-view.char-lunas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: repeat;
+  background-image:
+    radial-gradient(1px 1px at 22px 34px, #ffffff, transparent),
+    radial-gradient(1px 1px at 120px 90px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 200px 160px, #ffffff, transparent),
+    radial-gradient(1px 1px at 70px 210px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 160px 40px, #ffffff, transparent);
+  background-size: 260px 260px;
+  opacity: 0.8;
+  animation: lunas-twinkle 3.8s ease-in-out infinite alternate;
+}
+
+@keyframes lunas-twinkle {
+  from { opacity: 0.45; }
+  to   { opacity: 0.9; }
+}
+
+/* ---------- moon, top-left ---------- */
+
+.markdown-preview-view.char-lunas .markdown-preview-sizer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-image:
+    /* halo */
+    radial-gradient(circle 95px at 118px 118px, rgba(232, 127, 215, 0.30), transparent 70%),
+    /* disc */
+    radial-gradient(circle 64px at 118px 118px, #f6ecf9 0%, #dec4e8 52%, #a983b8 100%),
+    /* craters */
+    radial-gradient(circle 11px at 98px 100px, rgba(120, 80, 140, 0.35), transparent 70%),
+    radial-gradient(circle 8px at 136px 128px, rgba(120, 80, 140, 0.30), transparent 70%),
+    radial-gradient(circle 6px at 112px 142px, rgba(120, 80, 140, 0.28), transparent 70%);
+  animation: lunas-moon-bob 16s ease-in-out infinite alternate;
+}
+
+@keyframes lunas-moon-bob {
+  from { transform: translateY(-6px); }
+  to   { transform: translateY(8px); }
+}
+
+/* ---------- clouds, slow drift across moon and sky ---------- */
+
+.markdown-preview-view.char-lunas .markdown-preview-sizer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-image:
+    radial-gradient(ellipse 240px 64px at center, rgba(198, 168, 228, 0.20), transparent 70%),
+    radial-gradient(ellipse 320px 80px at center, rgba(170, 140, 210, 0.16), transparent 70%),
+    radial-gradient(ellipse 180px 52px at center, rgba(220, 195, 240, 0.18), transparent 70%);
+  background-size: 520px 170px, 680px 210px, 400px 140px;
+  background-position: 108% 10%, 112% 34%, 106% 58%;
+  animation: lunas-clouds 110s linear infinite;
+}
+
+@keyframes lunas-clouds {
+  from { background-position: 108% 10%, 112% 34%, 106% 58%; }
+  to   { background-position: -28% 13%, -34% 32%, -24% 61%; }
+}
+
+/* ---------- shooting stars: 3 streaks, staggered dashes ----------
+   Each streak dashes during its own keyframe window and parks
+   offscreen otherwise, so one animation drives all three. */
+
+.markdown-preview-view.char-lunas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-image:
+    linear-gradient(115deg, #ffffff 0%, rgba(232, 127, 215, 0.85) 35%, transparent 100%),
+    linear-gradient(115deg, #ffffff 0%, rgba(200, 170, 255, 0.85) 35%, transparent 100%),
+    linear-gradient(115deg, #fff6fb 0%, rgba(232, 127, 215, 0.70) 40%, transparent 100%);
+  background-size: 190px 2px, 150px 2px, 220px 2px;
+  background-position: 115% -8%, 115% -8%, 115% -8%;
+  animation: lunas-shoot 13s linear infinite;
+}
+
+@keyframes lunas-shoot {
+  0%    { background-position: 112% 4%, 115% -8%, 115% -8%; }
+  4%    { background-position: 74% 13%, 115% -8%, 115% -8%; }
+  4.1%  { background-position: 115% -8%, 115% -8%, 115% -8%; }
+  32%   { background-position: 115% -8%, 115% -8%, 115% -8%; }
+  36%   { background-position: 115% -8%, 78% 20%, 115% -8%; }
+  36.1% { background-position: 115% -8%, 115% -8%, 115% -8%; }
+  68%   { background-position: 115% -8%, 115% -8%, 115% -8%; }
+  72.5% { background-position: 115% -8%, 115% -8%, 70% 9%; }
+  72.6% { background-position: 115% -8%, 115% -8%, 115% -8%; }
+  100%  { background-position: 115% -8%, 115% -8%, 115% -8%; }
+}
+
+/* ---------- readability: translucent panels behind stat blocks ---------- */
+
+.markdown-preview-view.char-lunas .char-stats {
+  background: rgba(10, 5, 20, 0.55);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+}
+
+/* ---------- editor (Live Preview + Source): dimmed static sky ---------- */
+
+.markdown-source-view.char-lunas {
+  background: linear-gradient(180deg, #0a0514 0%, #140826 60%, #1e0f38 100%);
+}
+
+.markdown-source-view.char-lunas::before,
+.markdown-source-view.char-lunas::after {
+  animation: none;
+  opacity: 0.3;
+}
+
+.markdown-source-view.char-lunas .cm-editor {
+  background-color: transparent;
+}
+
+/* ---------- reduced motion: freeze everything to a still night ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .markdown-preview-view.char-lunas::before,
+  .markdown-preview-view.char-lunas::after,
+  .markdown-preview-view.char-lunas .markdown-preview-sizer::before,
+  .markdown-preview-view.char-lunas .markdown-preview-sizer::after {
+    animation: none;
+  }
+  .markdown-preview-view.char-lunas::after {
+    opacity: 0;
+  }
+}

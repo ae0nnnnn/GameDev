@@ -8,6 +8,7 @@ power_level: Peak Calamity
 status: Alive
 cssclasses:
   - character-sheet
+  - char-lunas
 connections:
   - "[[The Duality]]"
   - "[[S.T.A.B]]"
@@ -15,7 +16,6 @@ connections:
   - "[[Asmondaios]]"
   - "[[Satella]]"
   -  "[[Asdeath]]"
----
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">

@@ -4,7 +4,9 @@ connections: "[[TO-DOS and Reminders]]"
 # GameDev
 Contains all the lore and game dev notes that we need.
 
-Please keep in mind if you are reading this off the GitHub page rather the Vault all the formatting would most likely not load and therefore might  be raw CSS/HTML or Plain text
+Please keep in mind if you are reading this off the GitHub page rather the vault all the formatting would most likely not load and therefore might be raw CSS/HTML or Plain text.
+
+Same thing applies to custom themes per char as well
 
 ## Helpful Hints
 

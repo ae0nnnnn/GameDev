@@ -49,11 +49,7 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.65);
 }
 
-/* ---------- stars: dot tile + 4 frame-animated sparkles ----------
-   7-dot tile for density; 4 twinkle spots (A/B/C/D) cycling the
-   strip frames dot→large→dot on offset loops. All frames share one
-   centered canvas so swaps never wobble sideways. Positions and
-   sizes stay constant — only images change per stop. */
+/* ---------- stars ---------- */
 
 .markdown-preview-view.char-lunas::before {
   content: "";
@@ -61,21 +57,30 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-image:
     radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
     radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
     radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
     radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
     radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-    radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
     radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+    radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+    radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+    radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
-  background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, auto auto, auto auto, auto auto, auto auto;
-  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 90%;
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
+  background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, auto auto, auto auto, auto auto, auto auto, auto auto, auto auto, auto auto, auto auto;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 90%, 52% 26%, 84% 50%, 38% 74%, 62% 93%;
   opacity: 0.85;
   animation: lunas-twinkle 3.8s ease-in-out infinite alternate,
              lunas-sparkle 1.4s linear infinite;
@@ -85,7 +90,7 @@
   from { opacity: 0.5; }
   to   { opacity: 0.95; }
 }
-/* Frame-animated sparkles, offset loops. 100% repeats 0%. */
+/* 8 twinklers on offset loops. 100% repeats 0%. */
 
 @keyframes lunas-sparkle {
   0% {
@@ -95,12 +100,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
   }
   14.29% {
     background-image:
@@ -109,12 +123,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg==");
   }
   28.57% {
     background-image:
@@ -123,12 +146,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg==");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
   }
   42.86% {
     background-image:
@@ -137,12 +169,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
   }
   57.14% {
     background-image:
@@ -151,12 +192,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
   }
   71.43% {
     background-image:
@@ -165,11 +215,20 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
   }
   85.71% {
@@ -179,12 +238,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
   }
   100% {
     background-image:
@@ -193,12 +261,21 @@
       radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
       radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
       radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
       radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
   }
 }
 
@@ -243,23 +320,23 @@
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIkAAAASCAYAAABvhf1JAAADDUlEQVRoge2aPZKDMAyFHztbuqbNTO6QA3ByDsAdPOPWNb232CgRQpINSSY/k1ctxpKN9SHZZDsAGMcR99IwDHfzRUopFfr7cDh0dx/gK1ebF9wC6tFwWPKgkfbUl9q/wLXppRZJBi+lVHLO6Pv+0ifnDACLNhnsFrgs26/WeqkF0oLLISFASBwU4D/gWwCRaslKWp+UUvlk2H6ePQFLHIgYo9kn53y5bwFC/SRkUpY9b08pFXntOv0AvQz9fLFzzpjnGQAQQlj87anve8QYcTweL20aGDIDcVnZSCtz0s6d3BvrJR6MB0XLGgQKh0Tbp3DJEqUBRGPxNikr+2iwfCooD3sorU63pGYKCmUPAKvMoAWIZx9uw/1RmwRRyzx9328ChPSJoDzkgWowyDeaJAPEA+v5iTEihOCWGw4QcM1OXmmqjW8BK/Xu4PzyC2+XrgXe2unza77wPFDaAstrmQ2oj8wE1l6F+oUQFnsb8uMFWLuvlUIOkgWN99K8A0CXCY7jWID/wFhlQgarJgsQEr39mniAaz64yJ+1t7FKlbTX5qKJ+2xZHyuLWnoFiLppmso8zxiGYfE1UqqlPtfquQyytVjydKPZ8ntyPtLeC7x3YtLG5Psa7puu5Vz4WNwHZZ3aqQloB8WK3a2g7TKepmn3twG+8FqAtKOvJ+lDg0PbawBY7Gda5muVP2rjJzAPEG1Olg1/jpaPfdaJ7RZQNhlqv9uEEAoAzPOs+qL7Utq3jxYohG+1XQPR8k1vNbB+m7V2LYBycywBleBbLwCfi1yflvJulUUCZg8oKaVyMyR7FUIoraBo9z0b+V3Fg8/KRK3SxtBKnDyi10TlH7hmbq9cc0C4LXDdb1pjWAeWlFKJMbZnknsCQjqD4s2hnPsBWANiLbpXxs7qWAbU/PE57Sqt5PN0Oq0OB446oO0XdQmOBMMSzUH21/YzMUYMw9A9FZJ7ijLTOYt01AbUS6EEyBnGC7JqxwO+ZQ0f8a8XNVkA/erd308EAg94JUtV7yvSMozrYxzHpwR8j6xs9Ad9VoUGqEW5vAAAAABJRU5ErkJggg=="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAAA2CAYAAADOKtsPAAAHGUlEQVR4nO1dS46kMAw1o1lmzRap7pAD1Mn7ANwBiS1r9symU+MydmLnw6e6n1SaLgoCJC/PL05gOvggzPOs2W0DgK72uYdhqF3kbfH37AtoDEqgLbGdojr5fgI+qtKIUklEwegM+2VhGIbXdf0UNbsdqbgGYsKehihWVKmrn0Cs25JKQAsyYVSrr08m1yeRKkqoaZrg8XjUvpxfkjH4eFJN0/T2vQGxAH5D4xtuRyoAvYc6iFAB1Yl1V4N/Z1Ilwx2Hx+PxCoVhnyuHxYA7Ees2pLKkCyRCSWioYFXr9y7E+nP2BWhgzT8559RlNw6JrUejl8SlSTXPs3bqZQfnXJJcmFBWdTOgCrHuolIAB0/TWIynQKZkAy3LAn3fw7Is0f2wp6Jo4LXwdWeFRFwfVyfYYZ6KkoRWjCJVkJxSkYi0ruvrb+fc23eMxuadoqjur0ysS4Q/Ze4pqVJ930d/T4VDTrnCtobhMQu5tuAIHEYq3LPO6GWPx+NFOq2Rp4TC/4ZPAT7WxB8S/rCXor6qxVweDYOBTJrwmAPqzwyhs7j+Y6sgzkqeNidVgUwX9+RAohSpAP4TK+a5LDASq9jIp3AksS7hqQg2qBQaqMfC3/HfKUJZ8l4ZoPda7f4xStIzVhwa/hQ43GcsywLrurLEodstClZx9NisjVqpV3OlahnXl2V5feg2LSRCAbwr10mEAmjY0ULbBBWrpWTVewFnypVQVZ6FMADpNAMtL0ayFLEOWgXR5MENjFIByFYqjtn4+xUIlTrGQigMjjwHJEux19rI51IonjIAUKcHYlBNv+RCUqtQJjbq9BiOeABlJMJlppTUgMusiDArFUecwnjctKfFGk2TDO37/u0DwBNKS3q639Uy9TVwVkrBLN3WHo1JICFMPgPwKsUhplApYpWorQKXCYlmyawwQqiSJQdIeyCOHFw5FUNQFNI9AFxz7XxuCDxaqZKrDGpOpWgJ1FJBuLRHAL6nRmHwFMVqSSq1FHO5Jgrak2tMpbSGlawVJqkvgVak4qYeWEijq9h+LQjVojFjYbWW8iogpSKaocXKT+mCkzfCeaRURcZ8lRTqaLpAY+prQ5pnjHmrwmvkOrrouUpSCqe+9YUSBpOjxFvFfJM0qSxdX0lDNh7t7ZDxFDZLrNMy6gRmWZ2myRwCpP3x9lpGPBxD/6X7WLZjSPeSCsPLsojeyzl3OJE51EgpmOKzVBkpxAhozR1p1Sd2rLQQUDqOIud+6AwABa1H5X1ya/+7phl1PIOtIZSmQmMjOfp3+GjLSl1LCaFS27UqUTrQyJ3wFsCJQpGRVymVRZ1iPoTG/JIRV8o7SA2sIdU0TUn11DwGJkHT+DG10ioVgH6VhrBfB2D3WDtSzfOcWrZiZrG0fjv38XSNIY01uIZYtbxJagFgjgpL9RYbBXOdXZnhZ5c7x4j2Fv7woi0GWfkNaQK1pUoBxNUgluUOOCLFYCEUNueUPOF7KscX84EU6Hxb+P6NDQC2eZ5FLryUKhXirA1A80E1nlgBsA2bU2qjDQ3c0hgtuGOt4Q93wBSBYteZGhlb24g+RfR8PrtxHLc/4zhu4zhu33LGpgZyZt9pPgi/20DzngOKnCmMVCVpSCcNIqzIWZYcK8d6jHRciSJTQgEAeO87lVEfx3EnddzQOnaBmsejNNCsZer7XmW28f4UVt8iIYcE3D1a1IpeI/Z1MbXKJXwgVIApTxXIlcPuVqSKmU0LAfA9xRQxmOvS3JoEzkvR86fOpxm50nNoHk+jv1MyBeQuJy427Bg5sVwql5aVQyxLmNU0cgolRJLOafFVWNVjx6/rKhIJI2vubxiGLodYHEo9Bs4XcWWVmGwNYikDLVqskOCuSxPmuXvx3pvEp2hl4DiOmyUUxlSF8wEUnC/g8i+p8EXP45xTq1Qst6QZmVlRMuKk14RzT9M07UTBOWcmEIcqT2CEF7tqZvUtw3QplKXOoSEGLj/2ArTUsS2Rq66obrvv7xtJZsIwDPD19fUiliasaVGtoGDivfdd7O3BOZlqrudxxjqQo9ZLNiS0Lh+fxwCxLWknbP2yjmorP/u+7/q+xzfWAbnR3KmPWOUuy/L6PZDrgg3epPzvUNWFkOW93+0TCDUMw+vTGjXDHwt8E1y+K4K3OSdJrRBRu3VdswYPlvBnQQgpOMxojtHUU8z7jOMY9tGetioOfZom9CyyWdqG/93lS9Z13Slfji+o8WgUd1687fl8dpprU+zTee+7lJn23p9GKICKnir2tjyK0JMsCJVEez0esdByc5XLgmCGvfcq4yupFt0fqdVr+5lEsSBr5WetuCyRy3u/+w1XqNR4XHkcsQIR8O8p8+2c24VXXM5dGvwIVHlCuZX5y/EGErFQ+OTueefdMGE0+CXVf9zm/6bRQhNasRJiMnyHHHOd/BLqHf8A9YYkzzC+JgwAAAAASUVORK5CYII="),
     url("data:image/png;base64,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"),
-    url("data:image/png;base64,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");
-  background-size: 502px 80px, 312px 68px, 274px 36px, 298px 108px, 304px 116px, 172px 98px;
-  background-position: 100% 8%, 106% 17%, 182% 64%, 93% 13%, 190% 58%, 194% 70%;
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAxCAYAAABAp14VAAAGRElEQVR4nM1cTa6rPAw1VYcZM63EHrKArpwFsAckpoyZ8w2uDte4dmIHet93pKvX0pCYE8d/Ca+jf4hxHHciovf73UXum6ZpJyLq+56IiNZ1PX7LOYf6+hb+iRDLsuz4PM8zEfnJBalEv8QCIJiTi8mLjHEH/pxYTuq6rrRt20cbjQBNS2vEXpnAq3j8xSAA1x6iH5JSSsf3lBKllE5aKdtrn7VrcqxhGGgYBrPvu/EkIpqm6esD5ZxpGIaP633fq7Zymqa9xV72fR8ir/bsOeeoCET0RxrrFU5qISco59xx4qN9yX7RdytxNTy/0it9CjyO4z7Ps6q1NUj7WkKEfKyKnPPtq/YrGgtSl2XZl2XZYe+4PfWildR1XVWSeT/ccd6tubcRm3M+/ojOHpnIT2rf92qkUIOlqdZ1jDGO4zHxd5LbEV1zXlwYkPl6vToZVgEezSP6CY9SSu72NRPA++Ft+SQiFCvxgeflbbQJuaSxcsnjutRWPJSXJKKf8CjSPtIWZHJS+YoqaS4IrWn3ZVMgSbQ0J/LgJZQ0k4du1n34d9u2I24GqSIK+SBPu2bhkinIOX9kUncRKCEJLY3jmVyYGiIybTo3DSDUW9+4rLGv16sjaiN1nucj1SxBIyoSVhGdyVvXlVJKtG1b0VFKpzZN047JkJmdxKU4ls9kFJzQUnxbIxC/931fjADQP8b1RinjOO6yLSalhOcVMwC8Xq9umqbdo7VSQyOen8MqwGjttP5BNi8E1UxDBE0aq8WqnqWpkVoD10Q4HFxrMT18ZUiZOcGSbIma7M02ViM18qAgqOTFZfaEh5EenkjXMhm7clIxydp9/Bo+a7KWij2mxnpsZ5TQYRhcgX/EMVmaJfu3zEFkDJDrke+DWJlJyU5QymvRUk8EEIHULJD7rZAPkGVOVik7QrCTKbAyKS4oL7l5gOUcIbVWxAZaKmX8Xm9kUFphnAvO2YeN9aSjVt6twVNUsapQ/G+e51M/kOEKuRF4KmVceZ5EsUJ0iwng4LMv+7K+W85EgodQV2SMQlMcNS2TWisRKVjzsKgUa5Y0XxMc4yMO5Y6R31NLPLwOTOtH9sHT3AfRr03lZb+7HI00IUgjZYrpuR/gpBL5syik0KVQS0NJiaw+Hlo8ynPi6EBecM2KlhOJ6rY9paTGrUCUVBlT18b/cF7wctIY3wXpjSG4JBdaHd0n02qtV58DjlObDEsBT8TyCAD78FFYe00aoprK5dGiFE1eLY3mNdgo0B8fX+vrKXPuOwvSWl/Rcl8JWv94SI1kSQAcXgkebdfOPzyI2h+Wa6d3M0+LizUt5yTIuq1Vx5VLVqszYGyu5dokWKtVu64lTM1FmFrxmRNYqv5HJtVbGEdbaRNLRR+pzVHbPk3TzovfJ2KjqecVRGyxB5bciA5qVTTNMdXIlfeklI6dhYNYHmh7UNM6aSIioQoX2nIypVAKkGVGDdBijzOT3FhcLcuyX9qaQQ5vCSW3QeR3XpHCdw6v55bbLi0o1TRKyiazypQSzfNMnTS8tTqptx5J9Etcy1aHLAGCNOshNVKlw+IoRS1S3kj6TvTz3A+ECtywQ0guLF/SLYcjJKLCeuNqS8s1U6RFNYjha/1Z2LaN3u939yA6F68xQGlZeTXWYx8ttBTQMR4SACtbktGB5gfQR+RIFB/r5Lxkp1KYFmhBufZZu6cUHgGw8XIcrdQo99EsU4BVeSVZOjKG0ksTcmBNeEDTUi853vZSDgmPXNa5LY6ItgIoHYYTBK3Iof0eFQ7L1tvealeSSytZemyotmOsbTmpcazWkYWal4+SZMWkUTtvyVUjz1r2Gg+lFQvHRVQ5sCEjgJZMqeV4vCSU91E6RqShFu5FFABOHmYTzm2e549DcqqN5YPyChCEtDTgSmjlDe61sUvEeY8N8b2yErxv8pgvqklhvPGc9ULcNE27pRkeUmvHJmun/0qQ+2UWoFQecrUDGyd11zqOgBOiJRd3kCrbtJLsWY3eLPLjYC3At2g4SkuGG28N1svFJWFbX9H0kqsVu0uhmVem04lui9ycczeO4y5P6tWItGCdpLn7ze0aue/3u9Pa3E4sUfnwBnZ0r5AqoZ17+jbkcfcSuS2kEhnvIHzrNcj/Ozjhrf+XAvAfVDmIVWvh/y4AAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAAAmCAYAAAA/bE50AAAEB0lEQVRoge1Zu27rMAyli46eswbwP+QD/OX+EwNeNWvPHVomNM2XZNnJbXuAAG4tURQPX5I7eCMsy3LH5+v12r1Sl7PxFpulBHD8FkI+Xq3AH77wcm+zogHxG6LiJRuMGN/CTyTm1A3tJYBDI+R/LPqHKskN0poICk/+uxNyiHJHGrwWf0S8GSghWgp7RWprvkgtCfM8wzAM6jsAUN+fgaMJeftzBJLAn38aPlsIKY0C7uGlBo5ESEoJAAAul0uRbA1Hp6tdAmvTEBop5/z4n2TUCEF8Hsqm8vkYKw2WoCUhp6cmaqi+7x+/Vsg5P35SxLVMby2bkmpGo0rwjVtGl9KIZbioV2syWhb/vdFxeETQzXISIvl7GIZdBjurwC/LckfnxOeSiDk8IgBkY1DjRgqrZ9BWNeYoeBFzeER4JAB8EWCRQOtKyToSWtekVgi3rxgB0TujCAEaaIRESNAwDAPM87wxPO3WNFgtcs0Bc1mWuxUVodS0p03VWkhrjgbLgJ58qWXW5lrFnb8rIYM7MSXGJKJFe0YVjxzAPEQMqcmOEllS4FudR9TU1KpHRi+yFJbSBwWtH/gcMS6doxEdjQY6vvbuy5Ltflg5A6igREZJJ+UZhhpQco6azsxbx/qbYkXENE13acG9t5+R+VQ5JISejr05CGl89N6pRbsr7UNam6/1AfA8gFDG6C+iQEQxKo+DyudXFBpKdUopQUqp6MpDc8pITYukTcRH6zREja1tMkJG1Mh48i45gfd9v9FBSnNSlwTwJMGTUYLVgc4SFPEAOsYz9hn3P1yn6HqWDvzKxrsL8w6rAADjOHaf8zx3ACBGBS+eKaWq+/2aL2+8mGpjrf9bnRh/p3m/1CXRzg3J4OtbtQrXp6mrm6YJnzdkRC/puNd53xnoHOnAp5GAOqEeljfSjWqE0P3gmqXOFv22IkVmzhnGcewAGn2h4306NZY3h3uGlXfRoLgWn0vhkYByqB50zeh5AfdZmilut9uqY6U1wjxlawuhstJ77FLwp8lEI6AB+Ma1izqvK4lc7nG9pGg74iqdZCIA2EYEknEHsL1KUo7mTsnwUj+PHsm9EqEZswUJXJYmc08DoaSkjdN3nBmCVc3AdPNd3DdjSu5qrIMOxR5P9Igo6fEBYmRohzlh7YcNx3EEAJsIgDUZUupqegYpIFN0Bo6SaOr7viPv3X1VXhJubIhEeMXauyZXW19rjLZpY0OWHlS+mFolUB28dxIxQeOHv4C26JosMlCRzghVbX7JZ1w+1nQQiwRtfCRKhHnhFMgv/UrXWi0K8PSeb+U37znIGC8N1kKNxhI4RKyIZxGvTsK0hAJWaEGGpkDNJ8sWiHRQmtPknPnfK4fZ0xRQIv4BfWwKk3twqz4AAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAiCAYAAADbLB6TAAAD5ElEQVRogc1aPc7DMAglVUfPXi35Dr3/AXKHSF0zZ+83tOQjBDDkr31S1MaxwX7GgJ10z+cTfhSvz2/31V4YKKUs7iUub1d1xokXuaSyl9QoWO8wUEI1Q+1+yIKjpFDL1tp+3frvX9J7hIV5ZEh1LiX9Gy7ikuX7K/qvIPjbhErgPv40nO0iXuz3VAzDAAAAtVZPdU7yKa4jGuQ4UVKg8QQfEUgQgJukRduUEkzTtCivtXrltsayCRLBGomtSL3LSpGElNJclnNePNPIGcdxcc9J5ghMnjS2EOkegi8BJwkhWWSrHZ8YDdFVIkBbrXM598G/GJBM5JxhHMeZVIpaq2ndwzDsJRl9N+dt9uncgt0E045Lg/O0x3aa9aLsYPASdVF5eC+5kgOsGhEnWCICOyl1TLMsi1COLZPngYfknRa+IjhEbiuQAPwHLE4Sl0Wfe1bGnmwD5XPXovlrzXCs/hF0SLBKrmW1Wmc8BAQ6OYOTEJVtBURJPtexxVXdIBjYWuRyaJZx9tK3/vP6lsvyTqqG0FZ5miaXAlrHqh8lmebIAO/BIwH0P0WLQFovpTRfR+EGRuKsdYyTJpFYaz0yIgPAe4K1wR+hK+c8X5rcVm7NoZ5FSOR6LfNMIMla9mJNAoWVP6Nci0xvmooES8nyqkNnI5IdeC2L5r3SMwoeHLUAx+UZE9WJPthKo6gyCfQZ+kUsiwQT7T7iH7HfOedFcJaI5QERL+7bIzk8gJIHt8wfT67oTsw7CVpuHPFtnozF68I8hFF3hGPn0Cx483mwlq5Zux8s90Z2SwbqQn+M5dHY4N1pbs2GpK3yfESnJexaQh49vdqyO+S60Jq8KaSk23smAgALCxaIpcebHcA6D16kbDxl8ULKJaXBc9kpJRdJW/yx1B7hXVHYDg3BaDfzaG00VvkxCrOScVpOE/doJI/CmhgebAHs1TJN03xJfaR1yDNxP9HayXW8ISWAk7zFoqKE8t1Wa5W1shMKSiot084gPvcrjgD+v/q5l1LUr1IIunEcxTwZg0zrIAXBfR/mqXwDoek6C5LelFLr/aL5+qiU8t5oUJKReYH05mYEoVmUlqDj4FpBju/SWsecntRP08nIBSDjF56pWFVEYnlua7wzQ6WSbPeE0OjsseJW5KcykBDsK5VlnA52KJ/qejwe0Pe96ZboR4EqwRQBP2m9ug+/feaDj7gIbMutTSB59RzJpUByAUAkmH9piVgI0mZma2R34OiXrLu/Y5DGr5HH3aqEVRZxIpkSOuVaQIruipxdoK4ASbPIK6WYzwE+Ozlaqe/7hcKLCVdBlzZxFYd87hSx2ij+AB0xzplMAhU4AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAhCAYAAABduGw9AAAEXElEQVRogdWaMY7sIAyGndErU6dFyh3mADn5HCB3iJSWmj7bjLPG2MaEZKX3SyPNEgLmwxjw7ABf7fsOHoUQXPW4Pp9PUTbPs1p/2zbzuaJDKBs8L27b5rKLKoRQcON8/mkPNO377q6LUJdlcdWnaoArQeXPq5DneT4hX5xcUa7Z1aQBlLx1WZasvrFiKDDJvhpQS+Z47wJLHbAJMEIJIRQQEbIEl6oyAGuJ94CV2ntMJmAKUSpH0ZhFhQCpN2DdC3Cf0mOQ1RgMkEOksVbzSgsYfUbjG9FfAv0TSXvTOZOfz6cAJu2SF/U/weTeXdsTRCHsAcB/RLuo2+DiKhjHEaZpysqk1dSxaVlxvwny8ABcNGqADrgcDoULAJBSOv/G71J9qruOXuCEHELIY3CnOMxLcCnIGOPpqVimfUfInrYBumFXz9YYIl49vbAOu8W9tEU1YOM4Zu1qp6AGiWMOIWSbnRewBdANN8YIMUZxcBbcbduq0Hm7FnDelmTTtm3nx1Axdh5ya4AP0ogUAprgUnHD74qPEhBpcrAM7RrHMbsqYxktV2RC1gBr8A7jmVt8wNYAYoyq99L4fKVvPukY9yUbK+KOePK5KwYXwnDABwEA2YaEy1+qh+Igp2kqyjybnEed7Zxg930/AEA8RXRvWBxWjFE1fJ7nzGtSSpn3IEjLW6W2ezYx7r21K78W+/d9PyhgF1iE4V2e0uC9G1CtD8nredve8GKFBmn/4NClZwC/HuyC69nNqTxwufFX4ioVDpDnP2rtSs+tsOVdIXiTcwMGqO/49IJgXVfvgOvt66q4jZ4YTW1oAkwlwabGtCzvXq/tUS3k1TZpLj7BL+iAS79LwPCgzk8T1tJ7UnxZ12zS7GwJk3fmIgAAiiwXFc8t0PqSPCFEalOS9/c2ajfN2nF5N+/zHKydWSXxZDqAf5l7Q4PHo1pWgpRpo/2nlJqOdriRWvaEEIYXfLNC0uHdcRcvJsZrpNWXBa4GXnpu5T5SSqI3Wt5raAghnB+AXw+u5je5kTwvywdGZ5cPQIIrfcf3NAhUmLChbdNJq0085h3wU1tdOF46zvf7XdRVYzA1CPMBGO8oTC37pcU5+v40TeLAaTJd66d2ydCASilLz6ZF69KJrx0LX63/qYMD41dazSAqD1yUBVcS9zjPeZjniLW2pFXFtSyLGAVeAAAxRvOopsUoSVp5SimbHC2tKAy6MNwb5ylkDSbXlTO5BhdADxHF72kUMjX0rizWt036YyM1ekgpHVK/PK8L8AuJltVWHH0PwD+JuJlpOh+u63p8OxiIp2WQx3EsGuN1pHoGHP7rrWms1Ne3Hes13mf2Nwq9nWf+0Ebat+WxXBSw9x1VX5CP/2sS7xNAXlUIYl1X12oUng0A+elgXVfxtKDp1pucB66WJqzVNy4oQ0rpYB45WP/R6b3qcrBXlHkwNniHN1tqSaxY72snILSfASrCy/v9Ljw8pZSFAIlFiwf/ACfoIF2V+QX7AAAAAElFTkSuQmCC");
+  background-size: 502px 80px, 312px 68px, 274px 36px, 298px 108px, 304px 116px, 172px 98px, 196px 76px, 176px 68px, 176px 66px;
+  background-position: calc(100% + 300px) 8%, calc(100% + 340px) 46%, calc(100% + 300px) 72%, calc(100% + 380px) 13%, calc(100% + 260px) 52%, calc(100% + 380px) 58%, calc(100% + 220px) 18%, calc(100% + 420px) 64%, calc(100% + 220px) 78%;
   mix-blend-mode: screen;
   opacity: 0.45;
   animation: lunas-clouds 110s linear infinite;
 }
 
 @keyframes lunas-clouds {
-  from { background-position: 100% 8%, 106% 17%, 182% 64%, 93% 13%, 190% 58%, 194% 70%; }
-  to   { background-position: -60% 11%, -54% 20%, -73% 67%, -67% 16%, -65% 61%, -61% 73%; }
+  from { background-position: calc(100% + 300px) 8%, calc(100% + 340px) 46%, calc(100% + 300px) 72%, calc(100% + 380px) 13%, calc(100% + 260px) 52%, calc(100% + 380px) 58%, calc(100% + 220px) 18%, calc(100% + 420px) 64%, calc(100% + 220px) 78%; }
+  to   { background-position: calc(0% - 620px) 11%, calc(0% - 620px) 44%, calc(0% - 620px) 75%, calc(0% - 620px) 16%, calc(0% - 620px) 50%, calc(0% - 620px) 56%, calc(0% - 620px) 21%, calc(0% - 620px) 62%, calc(0% - 620px) 81%; }
 }
 
-/* ---------- shooting stars: 8 in 2 shower groups, whole page ----------
-   Straight constant-velocity dives (emerge→blaze→exit are collinear,
-   so no staggered pacing). Each dash tapers wide→point and exits fully
-   off the left edge. Bands lean ~45-55° along the dive direction. */
+/* ---------- shooting stars: 8 steep dives, 2 shower groups ---------- */
 
 .markdown-preview-view.char-lunas .markdown-preview-sizer::after {
   content: "";
@@ -269,76 +346,81 @@
   pointer-events: none;
   background-repeat: no-repeat;
   background-image:
-    linear-gradient(163deg, transparent 0, transparent 40%, #ffffff 48%, rgba(232, 127, 215, 0.9) 53%, transparent 63%),
-    linear-gradient(158deg, transparent 0, transparent 40%, #ffffff 48%, rgba(200, 170, 255, 0.9) 53%, transparent 63%),
-    linear-gradient(168deg, transparent 0, transparent 40%, #fff6fb 48%, rgba(232, 127, 215, 0.85) 53%, transparent 63%),
-    linear-gradient(160deg, transparent 0, transparent 40%, #ffffff 48%, rgba(232, 127, 215, 0.85) 53%, transparent 63%),
-    linear-gradient(166deg, transparent 0, transparent 40%, #ffffff 48%, rgba(200, 170, 255, 0.85) 53%, transparent 63%),
-    linear-gradient(156deg, transparent 0, transparent 40%, #ffffff 48%, rgba(232, 127, 215, 0.9) 53%, transparent 63%),
-    linear-gradient(162deg, transparent 0, transparent 40%, #fff6fb 48%, rgba(200, 170, 255, 0.9) 53%, transparent 63%),
-    linear-gradient(159deg, transparent 0, transparent 40%, #ffffff 48%, rgba(232, 127, 215, 0.8) 53%, transparent 63%);;
+    linear-gradient(122deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.9) 52%, transparent 58%),,
+    linear-gradient(126deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.9) 52%, transparent 58%),,
+    linear-gradient(120deg, transparent 43%, #fff6fb 49%, rgba(232, 127, 215, 0.85) 52%, transparent 58%),,
+    linear-gradient(128deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.85) 52%, transparent 58%),,
+    linear-gradient(124deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.85) 52%, transparent 58%),,
+    linear-gradient(121deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.9) 52%, transparent 58%),,
+    linear-gradient(127deg, transparent 43%, #fff6fb 49%, rgba(200, 170, 255, 0.9) 52%, transparent 58%),,
+    linear-gradient(123deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.8) 52%, transparent 58%);
   background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px;
-  background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-  animation: lunas-shoot 16s linear infinite;
+  background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+  animation: lunas-shoot 12s linear infinite;
 }
+
 @keyframes lunas-shoot {
-  2% { background-position: 118% 6%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
+  2% { background-position: calc(100% + 220px) 4%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  3.5% { background-position: 118% -10%, 118% 11%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
+  3% { background-position: calc(100% + 240px) -10%, calc(100% + 220px) 8%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  4% { background-position: 95% 10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 225px 86px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  5% { background-position: 118% -10%, 118% -10%, 118% 4%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
+  4% { background-position: calc(68% + 0px) 150%, calc(100% + 240px) -10%, calc(100% + 220px) 2%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 6px 62px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  5% { background-position: calc(100% + 240px) -10%, calc(68% + 0px) 145%, calc(100% + 240px) -10%, calc(100% + 220px) 12%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 7px 62px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 155%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 8px 62px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  7% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 150%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 9px 62px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  30% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 120%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 24px 11px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  34% { background-position: calc(0% - 260px) 122%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 24px 11px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  38% { background-position: calc(100% + 240px) -10%, calc(0% - 260px) 126%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 24px 11px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  42% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 128%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 24px 11px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  55% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 50%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  5.5% { background-position: 118% -10%, 94% 15%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 215px 86px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  6.5% { background-position: -35% 32%, 118% -10%, 118% -10%, 118% 13%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 30px 13px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  7% { background-position: 118% -10%, 118% -10%, 95% 8%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 235px 86px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  7.5% { background-position: 118% -10%, -35% 37%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 30px 13px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  8.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 93% 17%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 220px 86px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  9% { background-position: 118% -10%, 118% -10%, -35% 30%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 30px 13px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  10.5% { background-position: 118% -10%, 118% -10%, 118% -10%, -35% 39%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 30px 13px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  10.6% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
+  56% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 54%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  55% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% 52%, 118% -10%, 118% -10%, 118% -10%;
+  57% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 150%, calc(100% + 240px) -10%, calc(100% + 220px) 48%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 59px 62px, 20px 9px, 20px 9px, 20px 9px; }
+  58% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 145%, calc(100% + 240px) -10%, calc(100% + 220px) 58%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 60px 62px, 20px 9px, 20px 9px; }
+  59% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 155%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 61px 62px, 20px 9px; }
+  60% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 150%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 62px 62px; }
+  68% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 124%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 24px 11px, 20px 9px, 20px 9px, 20px 9px; }
+  70% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 127%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 24px 11px, 20px 9px; }
+  72% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 121%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 24px 11px, 20px 9px, 20px 9px; }
+  76% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 123%;
+          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 24px 11px; }
+  9.6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  56.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% 57%, 118% -10%, 118% -10%;
+  62.6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  57% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 93% 56%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 225px 86px, 20px 9px, 20px 9px, 20px 9px; }
-  58% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% 50%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  58.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 94% 61%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 215px 86px, 20px 9px, 20px 9px; }
-  59% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, -35% 78%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 30px 13px, 20px 9px, 20px 9px, 20px 9px; }
-  59.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% 59%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  60% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 93% 54%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 235px 86px, 20px 9px; }
-  60.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, -35% 83%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 30px 13px, 20px 9px, 20px 9px; }
-  61.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 94% 63%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 220px 86px; }
-  62% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, -35% 76%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 30px 13px, 20px 9px; }
-  63.5% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, -35% 85%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 30px 13px; }
-  63.6% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  100% { background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
+  100% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
           background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
 }
 /* ---------- readability: translucent panels behind stat blocks ---------- */
 
 .markdown-preview-view.char-lunas .char-stats {
   background: rgba(10, 5, 20, 0.55);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+}
+
+/* Title header + quote block: raw-HTML divs carry no panel otherwise.
+   Keyed on their inline styles (change the style, lose the panel). */
+
+.markdown-preview-view.char-lunas div[style*="text-align: left"],
+.markdown-preview-view.char-lunas div[style*="border-left"] {
+  background: rgba(5, 2, 10, 0.45);
   border-radius: 10px;
   padding: 1rem 1.2rem;
 }

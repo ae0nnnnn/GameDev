@@ -64,6 +64,7 @@ njyh
 note
 needs
 ns
+never
 aliases
 align
 accent
@@ -228,6 +229,7 @@ rV
 rdf
 re
 rs
+ring
 power
 padding
 px
@@ -305,6 +307,11 @@ pJ
 profile
 photoshop
 palace
+presentable
+practical
+patch
+prized
+possession
 level
 left
 letter
@@ -370,6 +377,7 @@ lff
 lY
 ltKd
 lunas
+look
 status
 style
 span
@@ -488,6 +496,9 @@ short
 stamina
 scaling
 stRef
+spells
+somehow
+stole
 cssclasses
 class
 char
@@ -601,6 +612,8 @@ crit
 com
 cd
 crown
+comfy
+come
 div
 display
 dev
@@ -773,6 +786,8 @@ tier
 themes
 tEXtSoftware
 tn
+teaching
+those
 margin
 meet
 move
@@ -863,6 +878,7 @@ multi
 medium
 mR
 meta
+managed
 bottom
 block
 border
@@ -932,6 +948,9 @@ brq
 below
 begin
 bossfight
+billowing
+battle
+back
 font
 for
 from
@@ -1006,6 +1025,7 @@ fps
 fee
 fn
 first
+fear
 em
 example
 else
@@ -1156,6 +1176,10 @@ wMQ
 whiffing
 wm
 wears
+witch
+wear
+wants
+wore
 italic
 interactive
 interjections
@@ -1230,6 +1254,7 @@ id
 iid
 instanceID
 interaction
+instil
 opacity
 or
 on
@@ -1285,6 +1310,8 @@ obviously
 oUX
 odPZa
 oZcX
+often
+outfit
 var
 very
 vault
@@ -2307,6 +2334,7 @@ OS
 OrC
 OriginalDocumentID
 Oj
+On
 game
 google
 going
@@ -2356,6 +2384,8 @@ gA
 gC
 guts
 guilt
+gowns
+guess
 Willam
 WE
 WHEN
@@ -2404,6 +2434,7 @@ Windows
 Ws
 Wbu
 WW
+While
 use
 until
 up
@@ -2690,6 +2721,7 @@ hk
 hgZ
 hB
 hp
+hobby
 quality
 qB
 qEl

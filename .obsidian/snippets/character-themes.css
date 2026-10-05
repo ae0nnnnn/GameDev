@@ -587,3 +587,29 @@ body.nc-char-lunas .horizontal-main-container {
   --tab-background: #140826;
   --divider-color: #3b1a5e;
 }
+
+/* Viewport-fixed starfield floor: painted on the body itself while a
+   Lunas note is active (file-theme mirrors cssclasses to body.nc-*).
+   Viewport-sized + fixed attachment = immune to giant-layer raster
+   death, so stars exist top-to-bottom wherever you scroll. The note
+   field above keeps twinkling; this is the guaranteed floor. */
+
+body.nc-char-lunas {
+  background-image:
+    linear-gradient(180deg, #0d0618 0%, #140826 55%, #1c0b33 100%),
+    radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
+  background-size: auto, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, auto auto, auto auto, auto auto, auto auto;
+  background-position: center, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 12% 30%, 85% 15%, 60% 70%, 30% 88%;
+  background-repeat: no-repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+}

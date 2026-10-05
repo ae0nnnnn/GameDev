@@ -149,6 +149,7 @@ aft
 aoiPt
 aC
 aSgvi
+adjustin
 race
 rem
 reminders
@@ -209,6 +210,9 @@ rcb
 ro
 rbE
 rzr
+required
+require
+requires
 power
 padding
 px
@@ -457,6 +461,10 @@ scale
 shouldn
 secs
 stun
+stones
+stone
+speeds
+seconds
 cssclasses
 class
 char
@@ -562,6 +570,8 @@ cFe
 cS
 cB
 cJa
+carry
+chart
 div
 display
 dev
@@ -724,6 +734,7 @@ tJ
 took
 tweak
 themselves
+tier
 margin
 meet
 move
@@ -810,6 +821,7 @@ mC
 mages
 manually
 mult
+multi
 bottom
 block
 border
@@ -1209,6 +1221,8 @@ ob
 oi
 oe
 oa
+over
+obviously
 var
 very
 vault
@@ -1255,6 +1269,8 @@ vC
 vkrrr
 vjnaV
 vv
+vessel
+vessels
 In
 Iris
 Its
@@ -1315,6 +1331,7 @@ IYn
 IDATeo
 IEND
 Ignore
+Info
 Game
 GameDev
 GitHub
@@ -1412,6 +1429,7 @@ NK
 NM
 Nx
 NA
+Needs
 Aliases
 Adjacent
 Abilities
@@ -1537,6 +1555,8 @@ RKM
 RA
 Rek
 Reserves
+Refining
+Resonator
 Previous
 Power
 Personality
@@ -1635,6 +1655,10 @@ MY
 MH
 Mv
 Max
+Modification
+MAX
+Med
+Medium
 Species
 Status
 Stuff
@@ -1703,6 +1727,7 @@ SJH
 Scaling
 Stance
 Still
+Swap
 Level
 Length
 Link
@@ -1755,6 +1780,8 @@ LLl
 Lr
 Le
 LN
+Levels
+Light
 Type
 Tail
 TODOs
@@ -1811,6 +1838,7 @@ Tm
 TUH
 TWs
 TM
+These
 Flaw
 For
 FOR
@@ -1873,6 +1901,8 @@ FY
 FiS
 FO
 Frames
+Frame
+Fists
 Hair
 Helpful
 Hints
@@ -1928,6 +1958,7 @@ HS
 HSf
 He
 Hypr
+Heavy
 Colour
 Contains
 CODE
@@ -2089,6 +2120,7 @@ DPL
 DUO
 Dl
 Data
+DMG
 Outfit
 ON
 Oz
@@ -2215,6 +2247,7 @@ WIJ
 WX
 WU
 WT
+Weapon
 use
 until
 up
@@ -2260,6 +2293,7 @@ uR
 uxG
 uN
 uBHq
+upgrade
 Used
 USE
 UI
@@ -2294,6 +2328,7 @@ USC
 Uy
 Ul
 UFaKc
+Upgrade
 you
 yet
 your
@@ -2619,6 +2654,7 @@ BPS
 Bn
 BH
 Base
+BASE
 You
 YMz
 YV

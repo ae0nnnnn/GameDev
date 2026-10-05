@@ -19,7 +19,7 @@ connections:
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
-  <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">The Lunas</span>
+  <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">The Lunas (Lunara/Lunaris)</span>
   <span style="font-size: 1.1em; font-style: italic; opacity: 0.8;">“Every Beautiful Rose Has Its Thorns”</span>
 </div>
 
@@ -29,6 +29,8 @@ connections:
   <div style="margin-bottom: 0.8rem;">“The chains around my neck, the shackles I bear,  yet I do not complain for it's my own doing and it's my price to pay…”</div>
   
   <div style="margin-bottom: 0.5rem;"> “You feel it as well don't you? The crippling force weighing us down, chaining us to our own damnation,the shared fate destined to us.” <span class="narrator">  - Lunara to the Player when speaking to them after aborting the Wrath Route and starting the Guilt Route.</span> </div>
+
+
 
  <div style="margin-bottom: 0.5rem;"> “Let despair fester! Succumb to the hopelessness welling up deep within your very soul!” <span class="narrator"> - Lunaris just being Lunaris </span> </div>
  

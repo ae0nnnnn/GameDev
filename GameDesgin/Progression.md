@@ -39,12 +39,20 @@ Level MAX requires a tier 4 stone
 | Lv 10 - 19dmg          | Lv 10 -  dmg         | Lv 10 - 11.4dmg | Lv 10 - 19dmg  |
 | Lv MAX - 20dmg         | Lv MAX - 25 dmg      | Lv MAX - 12dmg  | Lv MAX - 20dmg |
 
-Weapon speeds
-
+### Weapon Data
+Swing cooldown
 Medium weapon swing cooldown - 0.225 seconds
-
 Heavy weapon swing cooldown- 0.25 seconds
-
 Light weapon swing cooldown - 0.2 seconds
-
 Fists swing cooldown - 0.1 seconds
+
+Range  -- needs to be done in `Vector3` 
+Medium weapon - medium range, long rang
+Heavy weapon - long range, very long
+Light weapon, short range, medium range
+Fists - short range, very short
+
+Hitbox Frames -- Needs to be redone as anims are changinh
+Light - Frame 7
+Med - Frame 9
+Heavy - Frame 10

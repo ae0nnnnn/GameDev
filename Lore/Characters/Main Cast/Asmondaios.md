@@ -17,7 +17,7 @@ connections:
 ---
 
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
-  <div style="margin-bottom: 0.5rem;">“[Quote 1]”</div>
+  <div style="margin-bottom: 0.5rem;">“Howdy! So now that you aren’t after my guts, what do you want?"  - <span class="narrator">- Interaction in the palace After the bossfight. – Any other route aside guilt on first interaction</span> </div>
   <div>“[Quote 2]”</div>
 </div>
 

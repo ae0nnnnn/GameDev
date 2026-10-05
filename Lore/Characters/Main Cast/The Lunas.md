@@ -145,6 +145,17 @@ That's too on the nose so I swapped it out with some of Asmondaios’ entropy (t
 
 However, when it comes to doing her actual job <span class="narrator">(Read Further Down)</span> she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high <span class="narrator"> -Also according to her, it’s also really fun to do - don't take my word for it, I am just the narrator.</span>
 
+On top of being a God has a hobby they are also a witch often creating many spells and teaching them to those that follow them.  
+  
+When Lunaris is out and about she tends to wear her over the top billowing gowns - her excuse is that she wants to look presentable and instil fear to all those that see her.  
+  
+While Lunara somehow managed to make an outfit that is not only practical in battle but comfy and presentable.
+
+However, the both of them will never wear anything white- (Read everything and come back to guess why).
+
+  
+
+They both wear Asmondaios’  glasses he wore before he got the eye patch (they stole it from him) and it's their most prized possession aside from their ring.
 
 
 

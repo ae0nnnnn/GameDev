@@ -597,6 +597,7 @@ changing
 crit
 com
 cd
+crown
 div
 display
 dev
@@ -1076,6 +1077,7 @@ extend
 end
 eH
 eNV
+even
 weight
 we
 works
@@ -1147,6 +1149,7 @@ wYW
 wMQ
 whiffing
 wm
+wears
 italic
 interactive
 interjections
@@ -1829,6 +1832,7 @@ SP
 ST
 SK
 Subdivistion
+Seraphim
 Level
 Length
 Link

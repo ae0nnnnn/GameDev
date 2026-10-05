@@ -56,3 +56,5 @@ Hitbox Frames -- Needs to be redone as anims are changinh
 Light - Frame 7
 Med - Frame 9
 Heavy - Frame 10
+
+## Character Leveling 

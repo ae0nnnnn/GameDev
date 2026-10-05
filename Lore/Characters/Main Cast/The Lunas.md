@@ -29,13 +29,8 @@ connections:
 
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
   <div style="margin-bottom: 0.8rem;">“The chains around my neck, the shackles I bear,  yet I do not complain for it's my own doing and it's my price to pay…”</div>
-  
   <div style="margin-bottom: 0.5rem;"> “You feel it as well don't you? The crippling force weighing us down, chaining us to our own damnation,the shared fate destined to us.” <span class="narrator">  - Lunara to the Player when speaking to them after aborting the Wrath Route and starting the Guilt Route.</span> </div>
-
-
-
  <div style="margin-bottom: 0.5rem;"> “Let despair fester! Succumb to the hopelessness welling up deep within your very soul!” <span class="narrator"> - Lunaris just being Lunaris </span> </div>
- 
  <div style="margin-bottom: 0.5rem;">  “Well hello there mortal…Lunara is on a break right now *you can see her trying to stifle a giggle* So what do you want or do you want to play a game?”  <span class="narrator"> - Root dialogue for Lunaris’ Dialogue tree </span>  </div></div>
 
 ---
@@ -66,7 +61,6 @@ connections:
       <div>Lunaris : Aggressive, boastful, sadistic, hedonistic, manipulative, cynical, unserious, gets bored easily, and cold</div>
     </div>
   </div>
-
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Flaw</span>
     <div style="display: flex; flex-direction: column; gap: 0.3rem;">
@@ -74,7 +68,6 @@ connections:
       <div>Lunaris : Indulgence</div>
     </div>
   </div>
-
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
     <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
@@ -106,25 +99,20 @@ connections:
 
 <div class="char-stats" style="margin-top: 2rem;">
   <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Relationship Web</span>
-  
   <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
   </ul>
-
   <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend, Partner and Entropic Half their Duality</span></li>
-	<li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
+  <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin and Fellow Subdivistion of The Balance (Neutrality) </span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FMiranda">Miranda</a>    — <span style="opacity: 0.8;"> Most Devoted Follower </span></li>
-		
-		
   </ul>
-
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
   <ul style="margin: 0.2rem 0 0 1.2rem;">
     <li>[Character Name] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
@@ -147,15 +135,15 @@ General Niall calls Lunaris the cruel one and calls Lunara the sensible one, Asm
 
 
   
-Lunaris actively toys with the space-time continuum during her free time and has committed several atrocities ranging from mild nuisances to timeline ending disasters just because she is bored. The innocent are not spared from this which only increases her sin count. <span class="narrator">(Her excuse is that they are just collateral damage)</span> 
+Lunaris actively toys with the space-time continuum during her free time and has committed several atrocities ranging from mild nuisances to timeline ending disasters just because she is bored. The innocent are not spared from this which only increases her sin count. <span class="narrator">(Her excuse is that they are just collateral damage)</span>
 
 She also loves to torture her enemies before killing them. <span class="narrator">(She sometimes goes as far as to undo the damage she has done just to inflict them again)</span>, however she does prefer mental torment to physical torture
 
 
 <span class="narrator">Yes yes I know isn't she meant to the embodiment of order, control and all that jazz  
-That's too on the nose so I swapped it out with some of Asmondaios’ entropy (though some elements are still present like her love for efficiency)</span> 
+That's too on the nose so I swapped it out with some of Asmondaios’ entropy (though some elements are still present like her love for efficiency)</span>
 
-However, when it comes to doing her actual job <span class="narrator">(Read Further Down)</span> she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high <span class="narrator"> -Also according to her, it’s also really fun to do - don't take my word for it, I am just the narrator.</span> 
+However, when it comes to doing her actual job <span class="narrator">(Read Further Down)</span> she is dead serious about it, always opting for the most efficient (and no matter how cruel) route possible. This is why she tends to immediately destroy a branch if the number of anomalies get too high <span class="narrator"> -Also according to her, it’s also really fun to do - don't take my word for it, I am just the narrator.</span>
 
 
 

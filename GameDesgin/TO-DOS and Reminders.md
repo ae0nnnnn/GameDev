@@ -18,6 +18,28 @@ GitHub Link - https://github.com/ae0nnnnn/My-NEA-Game-Hobby
 
 Æon :
 
+Animate Judgment 
+Redo the Fist Animations  - One done  
+Model The rest of Asmondaios’ weapons
+
+Figure out how to make cutscenes and grab moves - For Cutscenes use moon animator (actually no i can make the cam rig in blender and use the blender export plugin to export it to studio then in the cutscene activator start the runserver loop or something else that locks the cam to the rig  also for the dialogues i just realised something i can “borrow” the dialogue tree system i use for dialogues) or make try find something in blender (oh i already thought of using blender… oh well)  
+Redo all weapon welds based on C0 not C1- (Use the Plugin)
+
+Add wounded running animations 
+
+Add Uppercuts
+
+Make the Movement System(Climbing, wall jumps, double jumps, Wall Runs etc) -  Wallruns are done, Climbing is done
+
+Make the Stats System - Nearly Done
+
+Make the Skills and Classes System 
+
+Finish the Status Effects system - Basically done but I need to add VFX and some of  the other status effects  
+Improve the Inventory System = [
+
+Mostly the UI but some functionality can be improved …
+
 
 
  

@@ -17,6 +17,9 @@ class FileThemeMirror extends Plugin {
   async onload() {
     this.registerEvent(this.app.workspace.on('file-open', () => this.update()));
     this.registerEvent(this.app.workspace.on('active-leaf-change', () => this.update()));
+    // Safety net: if any navigation path doesn't emit an event, the
+    // 1.5s poll still converges classes + flash. Idempotent when idle.
+    this.registerInterval(window.setInterval(() => this.update(), 1500));
     this.registerEvent(this.app.metadataCache.on('changed', () => this.update()));
     this.app.workspace.onLayoutReady(() => this.update());
     this.update();
@@ -48,6 +51,7 @@ class FileThemeMirror extends Plugin {
             regProp = (window.CSS && window.CSS.registerProperty) ? 'yes' : 'no';
           } catch (e) {}
           lines.push('CSS.registerProperty (tween support): ' + regProp);
+          lines.push('last theme key: ' + (this._lastKey || '(none)'));
         } catch (e) {
           lines.push('ERROR: ' + e);
         }
@@ -72,19 +76,19 @@ class FileThemeMirror extends Plugin {
     try {
       this.clear();
       const file = this.app.workspace.getActiveFile();
-      if (!file) return;
-      const cache = this.app.metadataCache.getFileCache(file);
+      const cache = file ? this.app.metadataCache.getFileCache(file) : null;
       const classes = cache && cache.frontmatter && cache.frontmatter.cssclasses;
-      if (!classes) return;
-      const list = Array.isArray(classes) ? classes : [classes];
-      list.forEach((c) => {
-        const clean = sanitize(c);
-        if (clean) document.body.classList.add(PREFIX + clean);
-      });
-      this.maybeFlash();
+      if (classes) {
+        const list = Array.isArray(classes) ? classes : [classes];
+        list.forEach((c) => {
+          const clean = sanitize(c);
+          if (clean) document.body.classList.add(PREFIX + clean);
+        });
+      }
     } catch (e) {
       console.warn('file-theme: update failed', e);
     }
+    this.maybeFlash();
   }
 
   // Pulse a full-viewport wash whenever the active theme changes.

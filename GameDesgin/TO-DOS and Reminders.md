@@ -15,6 +15,17 @@ Also, THE SHORTEST A SWING ANIM SHOULD BE IS 0.5 SECS because if its shorter it 
 
 
 GitHub Link - https://github.com/ae0nnnnn/My-NEA-Game-Hobby
+I need to go round and add SFX where it's missing as its one on the things that is making the game feel off to me – if I can't make any sounds – just go to 
+[freesound.org](http://freesounds.org)
+
+  
+Also found something that i am going to store here  
+  
+1. If you give an object a highlight with its fill transparency to -1 of any negative number it inverts the colours, and you can actually go past -1 deep into the negatives and this increases the effect  
+  
+2. If you use tech 1 on a glass object with transparency to 1 and reflectance to 0 anything that is in or viewed through that object gets the colours inverted → this allows to create smooth divisions across one mesh
+
+
 
 Æon :
 
@@ -40,10 +51,37 @@ Improve the Inventory System = {
 
 Mostly the UI but some functionality can be improved …
 
-
+ Just fixed a bug where that if you picked a non-stackable item with the same name as one in your inventory the item slot bugged out (fixed by creating a true name and ran name system based on your play name and a random number for example Hat_damiehug_123322) → this is now out of date as I now use a UID system
+ 
+ I might remove the thing that creates extra stacks of an item if you have too many → however I would leave it for now as it's a QoL feature unless the players say that it clogs their inventories – I lied turns out that I deleted this already like good knows when
 }
 
+Also, I should also create a warning module that display a warning text when you try to perform an illegal action (Such as trying to change accessories turning a transformation or in combat) – this would also use the custom text module though i would prebake all the phrases when a user joins
+  
+Start making the other movesets
 
+## Stuff that I should do now!!!
+
+Shrink the size of the DrakeFang’s because it's massive. → actually now that I think about it, it's actually not that large 
+
+Add the trail VFX for weapon swings also improve the weapon VFX for literally everything (however only important weapons such as Exponentia weapons and boss weapons get unique VFX the rest would have the basic trail)
+
+Nerf all weapon damage into the ground because why on earth can I four-shot someone? Especially hvy
+
+  
+## Stuff that I can do really quickly and can do in my own time.
+
+Make a blinking highlight for stuff such as counters (Use the existing highlight logic as a base) - also use a billboard GUI for this as well on top the character model’s head - I have finished the highlight blocking 
+
+Also add resting which increases your health regen - all anims are done all is left is to implement it
+
+Make a cooldown manager module based on this (I already use tables rather than task.wait, however I want to localize everything so I don't to dig through the entire codebase) - [https://www.youtube.com/watch?v=_6F6vRt_9sM](https://www.youtube.com/watch?v=_6F6vRt_9sM)
+
+Add got hit effects that are bound by the animation → use Liam’s vid on this unless I decide to just add the hit effect directly to the weapon dictionary rather than having to redo all the swing anims every time I want to adjust the VFX.
+
+Also create the Weapons Object Class as this is going to be the place where a store every weapon's info and where I can finally start hooking their skills such as weapon arts.
+
+Setting a system that keys the slots settings and global settings - I would option to edit global settings and perslot settings. - I have added the fields to template
 
 
 

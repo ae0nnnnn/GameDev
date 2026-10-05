@@ -1,29 +1,34 @@
 {
   "endpoint": "public",
   "serverUrl": "https://api.languagetool.org",
-  "autoCheckDelay": 3000,
+  "autoCheckDelay": 1250,
   "shouldAutoCheck": true,
   "synonyms": "",
   "motherTongue": "",
-  "staticLanguage": "",
+  "staticLanguage": "en-GB",
   "languageVariety": {
-    "en": "en-US",
+    "en": "en-GB",
     "de": "de-DE",
     "pt": "pt-BR",
     "ca": "ca-ES"
   },
   "dictionary": [
+    "ANIM",
     "Asmondaios",
     "Grillby",
     "Judgement",
     "Lunara",
     "Lunaris",
+    "RunServer",
+    "RunService",
     "Satella",
     "Zenovia",
     "colour",
     "hvy",
+    "realised",
     "xxxxx",
-    "xxxxxx"
+    "xxxxxx",
+    "Æon"
   ],
   "syncDictionary": false,
   "remoteDictionary": [],

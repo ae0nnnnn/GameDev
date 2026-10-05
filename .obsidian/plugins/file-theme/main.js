@@ -81,13 +81,50 @@ class FileThemeMirror extends Plugin {
         const clean = sanitize(c);
         if (clean) document.body.classList.add(PREFIX + clean);
       });
+      this.maybeFlash();
     } catch (e) {
       console.warn('file-theme: update failed', e);
     }
   }
 
+  // Pulse a full-viewport wash whenever the active theme changes.
+  // CSS alone can't do this: the class swap and Obsidian's own content
+  // swap land in the same frame, so no CSS transition ever gets a
+  // before/after pair to animate between. WAAPI on our own overlay
+  // always runs, above everything, pointer-transparent.
+  maybeFlash() {
+    try {
+      const cur = [];
+      document.body.classList.forEach((c) => {
+        if (c.indexOf(PREFIX) === 0) cur.push(c);
+      });
+      cur.sort();
+      const key = cur.join(' ');
+      const prev = this._lastKey || '';
+      this._lastKey = key;
+      if (key === prev) return;
+      if (key.indexOf(PREFIX) === -1 && prev.indexOf(PREFIX) === -1) return;
+      let el = document.getElementById('nc-flash');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'nc-flash';
+        el.style.cssText = 'position:fixed;inset:0;z-index:99999;pointer-events:none;opacity:0;'
+          + 'background:radial-gradient(circle at 50% 28%, #3b1a5e 0%, #140826 55%, #0d0618 100%);';
+        document.body.appendChild(el);
+      }
+      if (el.getAnimations) el.getAnimations().forEach((a) => a.cancel());
+      el.animate(
+        [{ opacity: 0 }, { opacity: 0.85, offset: 0.28 }, { opacity: 0 }],
+        { duration: 750, easing: 'ease-in-out' }
+      );
+    } catch (e) {}
+  }
+
   onunload() {
     this.clear();
+    this._lastKey = '';
+    const el = document.getElementById('nc-flash');
+    if (el) el.remove();
   }
 }
 

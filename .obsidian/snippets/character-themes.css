@@ -48,10 +48,10 @@
   z-index: 1;
 }
 
-/* ---------- stars: dot tile + 2 frame-animated sparkles ----------
-   Twinkle layers: (1) static dot tile, (2)(3) sprite sparkles cycling
-   the strip frames via discrete background-image swaps. Positions and
-   sizes stay constant — only the images change per stop. */
+/* ---------- stars: dot tile + 4 frame-animated sparkles ----------
+   Twinkle layers: 7 static dots, plus 4 sprite sparkles (A/B/C/D spots)
+   cycling the strip frames via discrete background-image swaps.
+   Positions and sizes stay constant — only the images change per stop. */
 
 .markdown-preview-view.char-lunas::before {
   content: "";
@@ -69,7 +69,10 @@
     radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
     radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg==")background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, auto auto, auto auto, auto auto, auto auto;
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
+  background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, auto auto, auto auto, auto auto, auto auto;
   background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 86%;
   opacity: 0.8;
   animation: lunas-twinkle 3.8s ease-in-out infinite alternate,
@@ -80,124 +83,121 @@
   from { opacity: 0.45; }
   to   { opacity: 0.9; }
 }
-
-/* Frame-animated sparkles: A pings dot→large→dot while B runs offset,
+/* Frame-animated sparkles: A pings dot→large→dot, B/C/D run offset,
    so they never pulse in sync. 100% repeats 0% for a clean loop. */
 
 @keyframes lunas-sparkle {
   0% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
-  }
-  14.29% {
-    background-image:
-      radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC");
-  }
-  28.57% {
-    background-image:
-      radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
   }
+  14.29% {
+    background-image:
+      radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC");
+  }
+  28.57% {
+    background-image:
+      radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg==");
+  }
   42.86% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC");
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC");
   }
   57.14% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
   }
   71.43% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII=");
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII=");
   }
   85.71% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII=");
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAARUlEQVR4nO3PMQrAMAxDUf/c/86/SwImULK0mfQmTZJdFRH3qa48Pm9HFWCfA5iZqvKtoN95nuvPsHJb7y3OK86tEfGzBwzFHvaIED29AAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII=");
   }
   100% {
     background-image:
       radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
-      radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
+    radial-gradient(1px 1px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1px 1px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1px 1px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1px 1px at 120px 110px, #ffffff, transparent),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAyCAYAAAB/J6rzAAAAGklEQVR4nGNgGAWjgEbg/////wfaDaNghAMACWoD/SGaSJAAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAIklEQVR4nGNgGAWjYBSMGPAfCmBs+lvPQH9bR8EoGAXYAQCaORHv+M2BPwAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC"),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAyCAYAAABlG0p9AAAAJ0lEQVR4nGNgGAWjYBTQDvz/////ILAamzNo6LQB9PUoGAWjgGgAANCrE+3E/0IDAAAAAElFTkSuQmCC");
   }
 }
 
@@ -271,12 +271,12 @@
   pointer-events: none;
   background-repeat: no-repeat;
   background-image:
-    linear-gradient(45deg, transparent 36%, #ffffff 50%, rgba(232, 127, 215, 0.9) 58%, transparent 70%),
-    linear-gradient(52deg, transparent 36%, #ffffff 50%, rgba(200, 170, 255, 0.9) 58%, transparent 70%),
-    linear-gradient(48deg, transparent 36%, #fff6fb 50%, rgba(232, 127, 215, 0.85) 58%, transparent 70%),
-    linear-gradient(55deg, transparent 36%, #ffffff 50%, rgba(232, 127, 215, 0.85) 58%, transparent 70%),
-    linear-gradient(42deg, transparent 36%, #ffffff 50%, rgba(200, 170, 255, 0.85) 58%, transparent 70%),
-    linear-gradient(50deg, transparent 36%, #fff6fb 50%, rgba(232, 127, 215, 0.8) 58%, transparent 70%);
+    linear-gradient(45deg, transparent 0, transparent 100px, #ffffff 111px, rgba(232, 127, 215, 0.9) 117px, transparent 128px),
+    linear-gradient(52deg, transparent 0, transparent 100px, #ffffff 111px, rgba(200, 170, 255, 0.9) 117px, transparent 128px),
+    linear-gradient(48deg, transparent 0, transparent 100px, #fff6fb 111px, rgba(232, 127, 215, 0.85) 117px, transparent 128px),
+    linear-gradient(55deg, transparent 0, transparent 100px, #ffffff 111px, rgba(232, 127, 215, 0.85) 117px, transparent 128px),
+    linear-gradient(42deg, transparent 0, transparent 100px, #ffffff 111px, rgba(200, 170, 255, 0.85) 117px, transparent 128px),
+    linear-gradient(50deg, transparent 0, transparent 100px, #fff6fb 111px, rgba(232, 127, 215, 0.8) 117px, transparent 128px);
   background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px;
   background-position: 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%, 118% -10%;
   animation: lunas-shoot 16s linear infinite;

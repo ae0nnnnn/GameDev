@@ -73,7 +73,11 @@ class FileThemeMirror extends Plugin {
   }
 
   update() {
+    let oldBg = null;
     try {
+      try {
+        oldBg = getComputedStyle(document.body).backgroundColor;
+      } catch (e) {}
       this.clear();
       const file = this.app.workspace.getActiveFile();
       const cache = file ? this.app.metadataCache.getFileCache(file) : null;
@@ -88,40 +92,54 @@ class FileThemeMirror extends Plugin {
     } catch (e) {
       console.warn('file-theme: update failed', e);
     }
-    this.maybeFlash();
+      this.maybeFade(oldBg);
   }
 
-  // Pulse a full-viewport wash whenever the active theme changes.
-  // CSS alone can't do this: the class swap and Obsidian's own content
-  // swap land in the same frame, so no CSS transition ever gets a
-  // before/after pair to animate between. WAAPI on our own overlay
-  // always runs, above everything, pointer-transparent.
-  maybeFlash() {
+  // Fade transition between themes: snapshot the outgoing backdrop
+  // color, cover the fresh screen with it for one frame, then melt it
+  // away to reveal the new note. Reads as a true crossfade. Skipped
+  // when nothing themed changed, and entirely under reduced-motion.
+  maybeFade(oldBg) {
     try {
-      const cur = [];
-      document.body.classList.forEach((c) => {
-        if (c.indexOf(PREFIX) === 0) cur.push(c);
-      });
-      cur.sort();
-      const key = cur.join(' ');
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        this._lastKey = this._themeKey();
+        return;
+      }
+      const cur = this._themeKey();
       const prev = this._lastKey || '';
-      this._lastKey = key;
-      if (key === prev) return;
-      if (key.indexOf(PREFIX) === -1 && prev.indexOf(PREFIX) === -1) return;
+      const first = !this._started;
+      this._started = true;
+      this._lastKey = cur;
+      if (cur === prev) return;
+      let color = oldBg;
+      if (!color || color === 'rgba(0, 0, 0, 0)' || color === 'transparent') color = '#0d0618';
       let el = document.getElementById('nc-flash');
       if (!el) {
         el = document.createElement('div');
         el.id = 'nc-flash';
-        el.style.cssText = 'position:fixed;inset:0;z-index:99999;pointer-events:none;opacity:0;'
-          + 'background:radial-gradient(circle at 50% 28%, #3b1a5e 0%, #140826 55%, #0d0618 100%);';
+        el.style.cssText = 'position:fixed;inset:0;z-index:99999;pointer-events:none;opacity:0;';
         document.body.appendChild(el);
       }
+      el.style.background = color;
+      el.style.opacity = '1';
+      void el.offsetWidth;
       if (el.getAnimations) el.getAnimations().forEach((a) => a.cancel());
-      el.animate(
-        [{ opacity: 0 }, { opacity: 0.85, offset: 0.28 }, { opacity: 0 }],
-        { duration: 750, easing: 'ease-in-out' }
-      );
+      el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: first ? 900 : 650, easing: 'ease-out' })
+        .finished.catch(() => {}).then(() => {
+          try {
+            if (el.getAnimations && el.getAnimations().length === 0) el.style.opacity = '0';
+          } catch (e) {}
+        });
     } catch (e) {}
+  }
+
+  _themeKey() {
+    const cur = [];
+    document.body.classList.forEach((c) => {
+      if (c.indexOf(PREFIX) === 0) cur.push(c);
+    });
+    cur.sort();
+    return cur.join(' ');
   }
 
   onunload() {

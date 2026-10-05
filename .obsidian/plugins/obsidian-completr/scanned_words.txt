@@ -213,6 +213,9 @@ rzr
 required
 require
 requires
+range
+rang
+redone
 power
 padding
 px
@@ -465,6 +468,7 @@ stones
 stone
 speeds
 seconds
+short
 cssclasses
 class
 char
@@ -572,6 +576,7 @@ cB
 cJa
 carry
 chart
+changinh
 div
 display
 dev
@@ -822,6 +827,7 @@ mages
 manually
 mult
 multi
+medium
 bottom
 block
 border
@@ -1557,6 +1563,7 @@ Rek
 Reserves
 Refining
 Resonator
+Range
 Previous
 Power
 Personality
@@ -1728,6 +1735,7 @@ Scaling
 Stance
 Still
 Swap
+Swing
 Level
 Length
 Link
@@ -1959,6 +1967,7 @@ HSf
 He
 Hypr
 Heavy
+Hitbox
 Colour
 Contains
 CODE

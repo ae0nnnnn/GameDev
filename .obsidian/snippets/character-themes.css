@@ -445,7 +445,10 @@
 /* ---------- readability: translucent panels behind stat blocks ---------- */
 
 .markdown-preview-view.char-lunas .char-stats {
-  background: rgba(10, 5, 20, 0.55);
+  background-color: rgba(10, 5, 20, 0.55);
+  background-image: var(--lunas-dots);
+  background-size: var(--lunas-dots-size);
+  background-repeat: repeat;
   border-radius: 10px;
   padding: 1rem 1.2rem;
 }
@@ -455,12 +458,39 @@
 
 .markdown-preview-view.char-lunas div[style*="text-align: left"],
 .markdown-preview-view.char-lunas div[style*="border-left"] {
-  background: rgba(5, 2, 10, 0.45);
+  background-color: rgba(5, 2, 10, 0.45);
+  background-image: var(--lunas-dots);
+  background-size: var(--lunas-dots-size);
+  background-repeat: repeat;
   border-radius: 10px;
   padding: 1rem 1.2rem;
 }
 
-/* Legibility: translucent panels behind all body text so sky never
+/* Shared dot tile: every element-level rule below paints from this
+   variable, so coverage lives with the content, not one giant layer. */
+
+.markdown-preview-view.char-lunas {
+  --lunas-dots: radial-gradient(1.5px 1.5px at 30px 40px, #ffffff, transparent), radial-gradient(1px 1px at 150px 90px, #f2d9f7, transparent), radial-gradient(1.5px 1.5px at 80px 200px, #ffffff, transparent);
+  --lunas-dots-size: 300px 300px;
+}
+
+/* Dots on every structural element: small boxes always paint with
+   their element, so stars exist wherever content exists. Panels keep
+   their own background colors alongside. */
+
+.markdown-preview-view.char-lunas div:not(.char-stats),
+.markdown-preview-view.char-lunas h1,
+.markdown-preview-view.char-lunas h2,
+.markdown-preview-view.char-lunas h3,
+.markdown-preview-view.char-lunas h4,
+.markdown-preview-view.char-lunas h5,
+.markdown-preview-view.char-lunas h6 {
+  background-image: var(--lunas-dots);
+  background-size: var(--lunas-dots-size);
+  background-repeat: repeat;
+}
+
+/* Legibility/* Legibility: translucent panels behind all body text so sky never
    eats words. Headings get a deep shadow instead of boxes. */
 
 .markdown-preview-view.char-lunas p,
@@ -468,7 +498,10 @@
 .markdown-preview-view.char-lunas blockquote,
 .markdown-preview-view.char-lunas td,
 .markdown-preview-view.char-lunas th {
-  background: rgba(5, 2, 10, 0.45);
+  background-color: rgba(5, 2, 10, 0.45);
+  background-image: var(--lunas-dots);
+  background-size: var(--lunas-dots-size);
+  background-repeat: repeat;
   border-radius: 8px;
   padding: 0.4rem 0.7rem;
 }
@@ -521,7 +554,10 @@
 .markdown-preview-view.char-lunas div[style*="text-align:"],
 .markdown-preview-view.char-lunas div[style*="border-left"],
 .markdown-preview-view.char-lunas div[style*="margin-top:"]:not(.char-stats) {
-  background: rgba(5, 2, 10, 0.45);
+  background-color: rgba(5, 2, 10, 0.45);
+  background-image: var(--lunas-dots);
+  background-size: var(--lunas-dots-size);
+  background-repeat: repeat;
   border-radius: 10px;
   padding: 1rem 1.2rem;
 }

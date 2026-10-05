@@ -63,6 +63,7 @@ nj
 njyh
 note
 needs
+ns
 aliases
 align
 accent
@@ -151,6 +152,10 @@ aC
 aSgvi
 adjustin
 applies
+adobe
+aec
+acf
+ar
 race
 rem
 reminders
@@ -217,6 +222,10 @@ requires
 range
 rang
 redone
+rV
+rdf
+re
+rs
 power
 padding
 px
@@ -291,6 +300,8 @@ pFX
 pw
 pi
 pJ
+profile
+photoshop
 level
 left
 letter
@@ -473,6 +484,7 @@ seconds
 short
 stamina
 scaling
+stRef
 cssclasses
 class
 char
@@ -583,6 +595,8 @@ chart
 changinh
 changing
 crit
+com
+cd
 div
 display
 dev
@@ -663,6 +677,12 @@ dYl
 dnd
 dV
 discord
+dxi
+did
+documentID
+docid
+drR
+dRw
 text
 top
 the
@@ -747,6 +767,8 @@ tweak
 themselves
 tier
 themes
+tEXtSoftware
+tn
 margin
 meet
 move
@@ -835,6 +857,8 @@ manually
 mult
 multi
 medium
+mR
+meta
 bottom
 block
 border
@@ -902,6 +926,7 @@ bI
 bT
 brq
 below
+begin
 font
 for
 from
@@ -973,6 +998,8 @@ fK
 fI
 flickers
 fps
+fee
+fn
 em
 example
 else
@@ -1046,6 +1073,9 @@ ev
 enforce
 ever
 extend
+end
+eH
+eNV
 weight
 we
 works
@@ -1116,6 +1146,7 @@ wxv
 wYW
 wMQ
 whiffing
+wm
 italic
 interactive
 interjections
@@ -1184,6 +1215,11 @@ ihq
 iS
 iox
 img
+igi
+iTXtXML
+id
+iid
+instanceID
 opacity
 or
 on
@@ -1236,6 +1272,9 @@ oe
 oa
 over
 obviously
+oUX
+odPZa
+oZcX
 var
 very
 vault
@@ -1284,6 +1323,7 @@ vjnaV
 vv
 vessel
 vessels
+vt
 In
 Iris
 Its
@@ -1345,6 +1385,10 @@ IDATeo
 IEND
 Ignore
 Info
+IDATX
+ImageReadyq
+InstanceID
+IDATh
 Game
 GameDev
 GitHub
@@ -1392,6 +1436,9 @@ Gv
 GpY
 Gq
 GY
+GXLXC
+GwO
+Gg
 Name
 Narrator
 NOT
@@ -1443,6 +1490,7 @@ NM
 Nx
 NA
 Needs
+Nj
 Aliases
 Adjacent
 Abilities
@@ -1518,6 +1566,12 @@ Auto
 AP
 Agility
 AGL
+Ap
+Adobe
+AD
+AH
+An
+Ad
 Race
 Remember
 REMEMBER
@@ -1573,6 +1627,11 @@ Reserves
 Refining
 Resonator
 Range
+RwR
+RDF
+RC
+RO
+Rk
 Previous
 Power
 Personality
@@ -1630,6 +1689,9 @@ PrT
 Parry
 ParryAnimLength
 Proficiency
+Photoshop
+PWd
+PKCI
 Mortal
 Music
 Misc
@@ -1677,6 +1739,9 @@ MAX
 Med
 Medium
 Moves
+MpCehiHzreSzNTczkc
+Mx
+Mo
 Species
 Status
 Stuff
@@ -1754,6 +1819,11 @@ SPT
 Spells
 Speed
 Same
+SwX
+Sk
+SP
+ST
+SK
 Level
 Length
 Link
@@ -1809,6 +1879,7 @@ LN
 Levels
 Light
 Levelling
+LC
 Type
 Tail
 TODOs
@@ -1866,6 +1937,7 @@ TUH
 TWs
 TM
 These
+TUsU
 Flaw
 For
 FOR
@@ -1930,6 +2002,7 @@ FO
 Frames
 Frame
 Fists
+FU
 Hair
 Helpful
 Hints
@@ -1987,6 +2060,7 @@ He
 Hypr
 Heavy
 Hitbox
+HU
 Colour
 Contains
 CODE
@@ -2039,6 +2113,11 @@ CRP
 CYF
 CL
 Character
+CiCCPICC
+Core
+CreatorTool
+Cp
+CqL
 Eye
 EDITING
 Every
@@ -2093,6 +2172,8 @@ EOwG
 Ef
 END
 Endurance
+EDBE
+EAl
 Design
 DO
 DOING
@@ -2153,6 +2234,12 @@ Data
 DMG
 Dexterity
 DEX
+Dx
+Description
+DocumentID
+DE
+DerivedFrom
+DIDATx
 Outfit
 ON
 Oz
@@ -2192,6 +2279,8 @@ Oe
 OZ
 OS
 OrC
+OriginalDocumentID
+Oj
 game
 google
 going
@@ -2237,6 +2326,8 @@ gw
 gX
 gV
 guessing
+gA
+gC
 Willam
 WE
 WHEN
@@ -2281,6 +2372,10 @@ WU
 WT
 Weapon
 WPN
+Windows
+Ws
+Wbu
+WW
 use
 until
 up
@@ -2327,6 +2422,8 @@ uxG
 uN
 uBHq
 upgrade
+ucZ
+uZ
 Used
 USE
 UI
@@ -2362,6 +2459,7 @@ Uy
 Ul
 UFaKc
 Upgrade
+Uk
 you
 yet
 your
@@ -2397,6 +2495,10 @@ ya
 yI
 yc
 ySi
+yA
+yw
+yjQ
+yN
 just
 jc
 jd
@@ -2442,6 +2544,8 @@ jyy
 jW
 jbj
 jCMJxg
+jy
+jtol
 know
 keep
 kmmexh
@@ -2491,6 +2595,8 @@ kN
 kF
 kS
 kQu
+kiiG
+kK
 how
 have
 handled
@@ -2593,6 +2699,9 @@ qM
 qxq
 qt
 qx
+qanv
+qi
+qrE
 VISUAL
 VERSION
 Vault
@@ -2637,6 +2746,9 @@ VV
 Vn
 VD
 VIT
+VB
+VK
+VBa
 Based
 BE
 Beautiful
@@ -2688,6 +2800,12 @@ Bn
 BH
 Base
 BASE
+BR
+BBW
+BK
+BV
+Bt
+BS
 You
 YMz
 YV
@@ -2721,6 +2839,8 @@ Yp
 Yft
 YqNd
 YI
+Yh
+Yzl
 KJ
 Kw
 Kh
@@ -2757,6 +2877,7 @@ Kg
 KA
 KL
 Kn
+KV
 zj
 zOZ
 za
@@ -2789,6 +2910,10 @@ zoo
 zg
 zY
 zv
+zo
+zOE
+zlg
+zH
 Xo
 Xze
 XX
@@ -2818,6 +2943,8 @@ XUu
 XB
 XoU
 XR
+XRU
+XMP
 Zx
 ZQO
 ZV
@@ -2856,6 +2983,10 @@ ZyAd
 ZW
 ZcE
 ZUf
+ZIm
+ZL
+ZB
+ZMn
 xPc
 xs
 xQ
@@ -2900,6 +3031,13 @@ xrb
 xo
 xqa
 xb
+xWk
+xmp
+xpacket
+xmpmeta
+xmlns
+xmptk
+xmpMM
 QA
 Qx
 Qc
@@ -2937,6 +3075,7 @@ QC
 QK
 QSh
 Qvxwi
+QTw
 Jp
 JW
 JI
@@ -2980,3 +3119,5 @@ JEIM
 Jjr
 Jsx
 JVk
+JlX
+JB

@@ -1439,6 +1439,7 @@ GY
 GXLXC
 GwO
 Gg
+Good
 Name
 Narrator
 NOT
@@ -2126,6 +2127,7 @@ Core
 CreatorTool
 Cp
 CqL
+Cult
 Eye
 EDITING
 Every

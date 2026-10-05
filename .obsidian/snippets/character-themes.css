@@ -49,7 +49,7 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 14px rgba(0, 0, 0, 0.65);
 }
 
-/* ---------- stars ---------- */
+/* ---------- stars: 12 dots + 14 twinklers ---------- */
 
 .markdown-preview-view.char-lunas::before {
   content: "";
@@ -57,20 +57,20 @@
   inset: 0 -220px 0 0;
   z-index: 0;
   pointer-events: none;
-  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-image:
-    radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-    radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-    radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-    radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-    radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-    radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-    radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-    radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-    radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-    radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-    radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-    radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+    radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+    radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+    radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+    radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+    radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+    radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
@@ -81,9 +81,12 @@
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
     url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
-  background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px;
-  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 90%, 52% 26%, 84% 50%, 38% 74%, 62% 93%, 25% 72%, 70% 84%, 45% 96%;
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+    url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
+  background-size: 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, 170px 170px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px, 32px 100px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 90%, 52% 26%, 84% 50%, 38% 74%, 62% 93%, 25% 72%, 70% 84%, 45% 96%, 10% 80%, 50% 88%, 85% 97%;
   opacity: 0.85;
   animation: lunas-twinkle 3.8s ease-in-out infinite alternate,
              lunas-sparkle 1.4s linear infinite,
@@ -101,23 +104,23 @@
   from { transform: translateX(0); }
   to   { transform: translateX(-220px); }
 }
-/* 11 twinklers on offset loops. 100% repeats 0%. */
+/* 14 twinklers on offset loops. 100% repeats 0%. */
 
 @keyframes lunas-sparkle {
   0% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
@@ -128,22 +131,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
   }
   14.29% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
@@ -154,22 +160,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
   }
   28.57% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
@@ -180,22 +189,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg==");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
   }
   42.86% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
@@ -206,22 +218,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
   }
   57.14% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
@@ -232,22 +247,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg==");
   }
   71.43% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
@@ -258,22 +276,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg==");
   }
   85.71% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
@@ -284,22 +305,25 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
   }
   100% {
     background-image:
-      radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
-      radial-gradient(2px 2px at 90px 60px, #f2d9f7, transparent),
-      radial-gradient(2.5px 2.5px at 150px 25px, #ffffff, transparent),
-      radial-gradient(2px 2px at 60px 140px, #d9bfe3, transparent),
-      radial-gradient(2px 2px at 180px 170px, #ffffff, transparent),
-      radial-gradient(2px 2px at 30px 190px, #f2d9f7, transparent),
-      radial-gradient(2px 2px at 120px 110px, #ffffff, transparent),
-      radial-gradient(2px 2px at 40px 50px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 130px 20px, #e87fd7, transparent),
-      radial-gradient(1.5px 1.5px at 80px 120px, #ffffff, transparent),
-      radial-gradient(2px 2px at 150px 90px, #ffffff, transparent),
-      radial-gradient(1.5px 1.5px at 20px 150px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 90px 60px, #f2d9f7, transparent),
+      radial-gradient(2px 2px at 150px 25px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 60px 140px, #d9bfe3, transparent),
+      radial-gradient(1.5px 1.5px at 180px 170px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 30px 190px, #f2d9f7, transparent),
+      radial-gradient(1.5px 1.5px at 120px 110px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 40px 50px, #ffffff, transparent),
+      radial-gradient(1px 1px at 130px 20px, #e87fd7, transparent),
+      radial-gradient(1px 1px at 80px 120px, #ffffff, transparent),
+      radial-gradient(1.5px 1.5px at 150px 90px, #ffffff, transparent),
+      radial-gradient(1px 1px at 20px 150px, #f2d9f7, transparent),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
@@ -310,7 +334,10 @@
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC"),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAJUlEQVR4nO3OoQ0AAAjAMP5/GgwcgCIhrZpcBAAsZZu+/gHgsQLt/Av1xHxmsgAAAABJRU5ErkJggg=="),
       url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
-      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII=");
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAL0lEQVR4nO3PsQ0AIAwEsey/9NNSQIUiFMme4K4KgD5J8rvh0b5w2hmwOCARgKsFeFsT7eMlytYAAAAASUVORK5CYII="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAN0lEQVR4nO3QMQoAIAwEweD//7w2FiLRRgwIO+WluUuEJKkeQJa36iJna02G+bab8t4nT5Qk3elRXRvpwy59pAAAAABJRU5ErkJggg=="),
+      url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAyCAYAAABVl1tcAAAAIUlEQVR4nO3OMQEAAAgDoPUvPSv4eQgJSABgoW2vDwA8NPIrA/0/LewZAAAAAElFTkSuQmCC");
   }
 }
 
@@ -371,7 +398,7 @@
   to   { background-position: calc(0% - 620px) 11%, calc(0% - 620px) 44%, calc(0% - 620px) 75%, calc(0% - 620px) 16%, calc(0% - 620px) 50%, calc(0% - 620px) 56%, calc(0% - 620px) 21%, calc(0% - 620px) 62%, calc(0% - 620px) 81%; }
 }
 
-/* ---------- shooting stars: 9 in 3 shower groups, 9s loop ---------- */
+/* ---------- shooting stars: mirrored down-right, dramatic pulse ---------- */
 
 .markdown-preview-view.char-lunas .markdown-preview-sizer::after {
   content: "";
@@ -381,77 +408,77 @@
   pointer-events: none;
   background-repeat: no-repeat;
   background-image:
-    linear-gradient(163deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%),,
-    linear-gradient(158deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.95) 52%, transparent 58%),,
-    linear-gradient(168deg, transparent 43%, #fff6fb 49%, rgba(232, 127, 215, 0.9) 52%, transparent 58%),,
-    linear-gradient(160deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.9) 52%, transparent 58%),,
-    linear-gradient(166deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%),,
-    linear-gradient(156deg, transparent 43%, #fff6fb 49%, rgba(200, 170, 255, 0.95) 52%, transparent 58%),,
-    linear-gradient(162deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.9) 52%, transparent 58%),,
-    linear-gradient(159deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.9) 52%, transparent 58%),,
-    linear-gradient(161deg, transparent 43%, #fff6fb 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%);
-  background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px;
-  background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
+    linear-gradient(197deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%),,
+    linear-gradient(202deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.95) 52%, transparent 58%),,
+    linear-gradient(192deg, transparent 43%, #fff6fb 49%, rgba(232, 127, 215, 0.85) 52%, transparent 58%),,
+    linear-gradient(199deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.85) 52%, transparent 58%),,
+    linear-gradient(194deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%),,
+    linear-gradient(203deg, transparent 43%, #fff6fb 49%, rgba(200, 170, 255, 0.95) 52%, transparent 58%),,
+    linear-gradient(196deg, transparent 43%, #ffffff 49%, rgba(232, 127, 215, 0.9) 52%, transparent 58%),,
+    linear-gradient(201deg, transparent 43%, #ffffff 49%, rgba(200, 170, 255, 0.9) 52%, transparent 58%),,
+    linear-gradient(195deg, transparent 43%, #fff6fb 49%, rgba(232, 127, 215, 0.95) 52%, transparent 58%);
+  background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px;
+  background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
   animation: lunas-shoot 9s linear infinite;
 }
 
 @keyframes lunas-shoot {
-  2% { background-position: calc(100% + 220px) 4%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  3% { background-position: calc(100% + 240px) -10%, calc(100% + 220px) 8%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  4% { background-position: calc(68% + 0px) 19%, calc(100% + 240px) -10%, calc(100% + 220px) 2%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 190px 80px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  5% { background-position: calc(100% + 240px) -10%, calc(68% + 0px) 23%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 185px 80px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 16%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 195px 80px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  6.5% { background-position: calc(0% - 260px) 34%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 28px 12px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  7.5% { background-position: calc(100% + 240px) -10%, calc(0% - 260px) 38%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 28px 12px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  8.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 30%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 28px 12px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  36% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 40%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  37% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 44%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  38% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 52%, calc(100% + 240px) -10%, calc(100% + 220px) 38%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 190px 80px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  39% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 56%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 185px 80px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  40% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 50%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 195px 80px, 20px 9px, 20px 9px, 20px 9px; }
-  40.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 64%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 28px 12px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  41.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 68%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 28px 12px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  42.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 62%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 28px 12px, 20px 9px, 20px 9px, 20px 9px; }
-  68% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 66%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  69% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 220px) 70%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  70% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 77%, calc(100% + 240px) -10%, calc(100% + 220px) 64%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 190px 80px, 20px 9px, 20px 9px; }
-  71% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 81%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 185px 80px, 20px 9px; }
-  72% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(68% + 0px) 75%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 195px 80px; }
-  72.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 88%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 28px 12px, 20px 9px, 20px 9px; }
-  73.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 92%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 28px 12px, 20px 9px; }
-  74.5% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(0% - 260px) 86%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 28px 12px; }
-  8.6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  42.6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  74.6% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
-  100% { background-position: calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%, calc(100% + 240px) -10%;
-          background-size: 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px, 20px 9px; }
+  2% { background-position: calc(0% - 230px) 6%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  3% { background-position: calc(0% - 240px) -10%, calc(0% - 230px) 12%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  4% { background-position: calc(30% + 0px) 18%, calc(0% - 240px) -10%, calc(0% - 230px) 3%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 250px 84px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  5% { background-position: calc(0% - 240px) -10%, calc(30% + 0px) 24%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 245px 84px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  6% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 15%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 255px 84px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  6.5% { background-position: calc(100% + 260px) 32%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 12px 6px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  7.5% { background-position: calc(0% - 240px) -10%, calc(100% + 260px) 40%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 12px 6px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  8.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 28%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 12px 6px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  36% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 230px) 52%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  37% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 230px) 56%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  38% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 62%, calc(0% - 240px) -10%, calc(0% - 230px) 50%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 250px 84px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  39% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 66%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 245px 84px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  40% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 60%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 255px 84px, 16px 8px, 16px 8px, 16px 8px; }
+  40.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 74%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 12px 6px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  41.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 78%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 12px 6px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  42.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 72%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 12px 6px, 16px 8px, 16px 8px, 16px 8px; }
+  68% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 230px) 68%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  69% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 230px) 72%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  70% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 78%, calc(0% - 240px) -10%, calc(0% - 230px) 66%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 250px 84px, 16px 8px, 16px 8px; }
+  71% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 82%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 245px 84px, 16px 8px; }
+  72% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(30% + 0px) 76%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 255px 84px; }
+  72.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 90%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 12px 6px, 16px 8px, 16px 8px; }
+  73.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 94%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 12px 6px, 16px 8px; }
+  74.5% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(100% + 260px) 90%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 12px 6px; }
+  8.6% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  42.6% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  74.6% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
+  100% { background-position: calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%, calc(0% - 240px) -10%;
+          background-size: 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px, 16px 8px; }
 }
 /* ---------- readability: translucent panels behind stat blocks ---------- */
 

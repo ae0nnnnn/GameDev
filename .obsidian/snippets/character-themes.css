@@ -583,6 +583,10 @@
   .markdown-preview-view.char-lunas .markdown-preview-sizer::after {
     animation: none;
   }
+  body::before,
+  body {
+    transition: none;
+  }
 }
 
 /* Leftover panels: raw-HTML divs with no box yet. Keyed on their inline
@@ -673,13 +677,16 @@ body.nc-char-lunas .horizontal-main-container {
   --divider-color: #3b1a5e;
 }
 
-/* Viewport-fixed starfield floor: painted on the body itself while a
-   Lunas note is active (file-theme mirrors cssclasses to body.nc-*).
-   Viewport-sized + fixed attachment = immune to giant-layer raster
-   death, so stars exist top-to-bottom wherever you scroll. The note
-   field above keeps twinkling; this is the guaranteed floor. */
+/* Lunas sky overlay: full-viewport crossfade. Opacity is tweenable
+   on every engine (unlike gradient interpolation), so the main backdrop
+   glides even where @property transitions are unsupported. */
 
-body.nc-char-lunas {
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
     linear-gradient(180deg, var(--sky-1) 0%, var(--sky-2) 55%, var(--sky-3) 100%),
     radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
@@ -696,8 +703,22 @@ body.nc-char-lunas {
   background-size: auto, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, 220px 220px, auto auto, auto auto, auto auto, auto auto;
   background-position: center, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 12% 30%, 85% 15%, 60% 70%, 30% 88%;
   background-repeat: no-repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+  opacity: 0;
+  transition: opacity 0.9s ease;
 }
+
+body.nc-char-lunas {
+  background-color: transparent;
+}
+
+body.nc-char-lunas::before {
+  opacity: 1;
+}
+
+body {
+  transition: background-color 0.9s ease;
+}
+
 
 /* ============================================================
    Theme tween: crossfade the whole app when the active note's

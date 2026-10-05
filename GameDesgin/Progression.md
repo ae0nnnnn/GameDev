@@ -52,9 +52,19 @@ Heavy weapon - long range, very long
 Light weapon, short range, medium range
 Fists - short range, very short
 
-Hitbox Frames -- Needs to be redone as anims are changinh
+Hitbox Frames -- Needs to be redone as anims are changing
 Light - Frame 7
 Med - Frame 9
 Heavy - Frame 10
 
-## Character Leveling 
+## Character Levelling 
+
+### Stats
+
+Vitality (VIT)- health
+Endurance (END) - stamina, 
+Strength (STR) - Strength moves
+Dexterity (DEX) - Dexterity Moves and crit dmg
+Spirit (SPT) - SPT Moves and Spells, Balance Reserves
+Agility (AGL) - Speed and AGL (and DEX) scaling moves
+Weapon Proficiency (WPN) - M1 damage

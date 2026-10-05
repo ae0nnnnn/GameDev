@@ -1491,6 +1491,7 @@ Nx
 NA
 Needs
 Nj
+Neutrality
 Aliases
 Adjacent
 Abilities
@@ -1742,6 +1743,8 @@ Moves
 MpCehiHzreSzNTczkc
 Mx
 Mo
+Miranda
+Most
 Species
 Status
 Stuff
@@ -1824,6 +1827,7 @@ Sk
 SP
 ST
 SK
+Subdivistion
 Level
 Length
 Link
@@ -2003,6 +2007,10 @@ Frames
 Frame
 Fists
 FU
+Fellow
+FSide
+FMiranda
+Follower
 Hair
 Helpful
 Hints
@@ -2240,6 +2248,7 @@ DocumentID
 DE
 DerivedFrom
 DIDATx
+Devoted
 Outfit
 ON
 Oz

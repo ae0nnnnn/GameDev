@@ -15,7 +15,9 @@ connections:
   - "[[The Church of The Duality]]"
   - "[[Asmondaios]]"
   - "[[Satella]]"
-  -  "[[Asdeath]]"
+  - "[[Asdeath]]"
+  - "[[Miranda]]"
+  - "[[The Cult of The Good Goddess]]"
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
@@ -52,7 +54,7 @@ connections:
   <div><span class="char-label">Abilities</span> — Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> — Innate</div>
   <div><span class="char-label">Battle Theme</span> — Phase 1: Moonlit Sonata | Phase 2: A Sinner’s Delight ~ Let The Reveries Ensue!</div>
-  <div><span class="char-label">Affiliation</span> — <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> </div>
+  <div><span class="char-label">Affiliation</span> — <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Cult%20of%20The%20Good%20Goddess">The Cult of The Good Goddess</a>  </div>
   <div><span class="char-label">Drops</span> — Godly Chest</div>
   <div><span class="char-label">Status</span> — Alive</div>
 </div>
@@ -117,7 +119,9 @@ connections:
 	<li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin </span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin and Fellow Subdivistion of The Balance (Neutrality) </span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FMiranda">Miranda</a>    — <span style="opacity: 0.8;"> Most Devoted Follower </span></li>
+		
 		
   </ul>
 

@@ -54,7 +54,7 @@
 .markdown-preview-view.char-lunas::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 0 -220px 0 0; /* extra width: drift loops seamlessly */
   z-index: 0;
   pointer-events: none;
   background-repeat: repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -83,7 +83,15 @@
   background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 78% 10%, 20% 38%, 65% 64%, 30% 90%, 52% 26%, 84% 50%, 38% 74%, 62% 93%;
   opacity: 0.85;
   animation: lunas-twinkle 3.8s ease-in-out infinite alternate,
-             lunas-sparkle 1.4s linear infinite;
+             lunas-sparkle 1.4s linear infinite,
+             lunas-stardrift 240s linear infinite;
+}
+
+/* Slow positional drift: keeps the giant layer freshly painted. */
+
+@keyframes lunas-stardrift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-220px); }
 }
 
 @keyframes lunas-twinkle {
@@ -477,4 +485,66 @@
   .markdown-preview-view.char-lunas .markdown-preview-sizer::after {
     animation: none;
   }
+}
+
+/* Leftover panels: raw-HTML divs with no box yet. Keyed on their inline
+   styles (change the style, lose the panel). None of these nest inside
+   .char-stats, so no double-boxing. */
+
+.markdown-preview-view.char-lunas div[style*="text-align:"],
+.markdown-preview-view.char-lunas div[style*="border-left"],
+.markdown-preview-view.char-lunas div[style*="margin-top:"]:not(.char-stats) {
+  background: rgba(5, 2, 10, 0.45);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+}
+
+/* ============================================================
+   App chrome theming — requires the file-theme plugin, which
+   mirrors the active note's cssclasses onto body as nc-* classes.
+   Everything below applies ONLY while a char-lunas note is the
+   active file; opening any other note removes the classes and the
+   app reverts on its own. Future characters: body.nc-char-<name>.
+   ============================================================ */
+
+body.nc-char-lunas {
+  --background-primary: #140826;
+  --background-primary-alt: #1c0b33;
+  --background-secondary: #1c0b33;
+  --background-secondary-alt: #241040;
+  --background-modifier-border: #3b1a5e;
+  --background-modifier-hover: rgba(232, 127, 215, 0.12);
+  --interactive-accent: #e87fd7;
+  --interactive-accent-hover: #f2a5e2;
+  --text-normal: #efe6f7;
+  --text-muted: #c9b8d9;
+  --text-faint: #a68fc2;
+  --tab-background-active: #241040;
+  --tab-text-color-focused-active: #f6ecf9;
+  --titlebar-background: #0d0618;
+  --titlebar-background-focused: #140826;
+  --ribbon-background: #0d0618;
+  --ribbon-background-collapsed: #0d0618;
+  --status-bar-background: #0d0618;
+}
+
+body.nc-char-lunas .workspace-ribbon,
+body.nc-char-lunas .workspace-tab-header-container,
+body.nc-char-lunas .status-bar,
+body.nc-char-lunas .titlebar {
+  background-color: #0d0618;
+}
+
+body.nc-char-lunas .workspace-tab-header.is-active,
+body.nc-char-lunas .workspace-tab-header.is-active:hover {
+  background-color: #241040;
+  color: #f6ecf9;
+}
+
+body.nc-char-lunas ::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 127, 215, 0.35);
+}
+
+body.nc-char-lunas ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(232, 127, 215, 0.55);
 }

@@ -1,0 +1,9 @@
+{
+	"id": "file-theme",
+	"name": "File Theme Mirror",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Mirrors the active note's cssclasses onto document.body as nc-* classes, so snippets can theme the whole app per file.",
+	"author": "Lore Vault",
+	"isDesktopOnly": false
+}

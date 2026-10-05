@@ -30,7 +30,9 @@ Also found something that i am going to store here
   
 2. If you use tech 1 on a glass object with transparency to 1 and reflectance to 0 anything that is in or viewed through that object gets the colours inverted → this allows to create smooth divisions across one mesh
 
+Ignore the img below  as this is just a note i took from an animation discord server on how to do speed flickers
 
+![[SpeedFlickImg.png]]
 ## To-dos
 Æon :
 

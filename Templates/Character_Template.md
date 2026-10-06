@@ -91,7 +91,7 @@ connections:
   <ul style="margin: 0.2rem 0 0 1.2rem;">
     <li>[Character Name 3] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
   </ul>
-</div>
+
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">
   <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>

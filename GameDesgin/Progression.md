@@ -61,9 +61,15 @@ Hitbox frames
 [Dev]:  -- Needs to be redone as anims are changing
 
 </div> 
-Light - Frame 7
+Light - Frame 21
 Med - Frame 9
 Heavy - Frame 10
+
+
+Windup Frames
+Light - Starts 8 ends frame 14
+Med 
+Heavy
 
 ## Character Levelling 
 

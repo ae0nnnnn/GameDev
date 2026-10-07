@@ -77,12 +77,8 @@ class FileThemeMirror extends Plugin {
   }
 
   update() {
-    let oldBg = null;
+    let desired = [];
     try {
-      try {
-        oldBg = getComputedStyle(document.body).backgroundColor;
-      } catch (e) {}
-      this.clear();
       const file = this.app.workspace.getActiveFile();
       const cache = file ? this.app.metadataCache.getFileCache(file) : null;
       const classes = cache && cache.frontmatter && cache.frontmatter.cssclasses;
@@ -90,37 +86,49 @@ class FileThemeMirror extends Plugin {
         const list = Array.isArray(classes) ? classes : [classes];
         list.forEach((c) => {
           const clean = sanitize(c);
-          if (clean) document.body.classList.add(PREFIX + clean);
+          if (clean) desired.push(PREFIX + clean);
         });
       }
     } catch (e) {
       console.warn('file-theme: update failed', e);
     }
-      this.maybeFade(oldBg);
+    this.maybeFade(desired);
   }
 
-  // Caelestia-style transition: the incoming theme blooms out of a
-  // circle (from the last click, else screen center) over the old
-  // screen, then melts away to reveal the new note — whose text fades
-  // up at the same time. Skipped when nothing themed changed, and
-  // entirely under reduced-motion.
-  maybeFade(oldBg) {
-    void oldBg;
+  applyClasses(desired) {
     try {
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        this._lastKey = this._themeKey();
-        return;
-      }
-      const cur = this._themeKey();
+      this.clear();
+      desired.forEach((c) => document.body.classList.add(c));
+    } catch (e) {}
+  }
+
+  // Caelestia-style transition, sequenced so the eye never catches
+  // mid-state: (1) wipe blooms over the OLD world, classes untouched;
+  // (2) at cover point the theme classes swap + text fade is armed,
+  // both hidden behind the opaque overlay; (3) overlay melts, revealing
+  // an already-themed note whose text fades up. Skipped when nothing
+  // themed changed, and entirely under reduced-motion.
+  maybeFade(desired) {
+    try {
+      const key = desired.slice().sort().join(' ');
       const prev = this._lastKey || '';
       const first = !this._started;
       this._started = true;
-      this._lastKey = cur;
-      if (cur === prev) return;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        this.applyClasses(desired);
+        this._lastKey = key;
+        return;
+      }
+      if (key === prev) return;
+      this._lastKey = key;
+      if (this._swapTimer) {
+        window.clearTimeout(this._swapTimer);
+        this._swapTimer = 0;
+      }
       const NEW_BG = {
         'nc-char-lunas': 'radial-gradient(circle at 50% 28%, #3b1a5e 0%, #140826 55%, #0d0618 100%)',
       };
-      const incoming = NEW_BG[cur.split(' ')[0]] || '#1e1e1e';
+      const incoming = NEW_BG[key.split(' ')[0]] || '#1e1e1e';
       const x = (typeof this._clickX === 'number') ? Math.round(this._clickX) : Math.round(window.innerWidth / 2);
       const y = (typeof this._clickY === 'number') ? Math.round(this._clickY) : Math.round(window.innerHeight / 2);
       const start = 'circle(0% at ' + x + 'px ' + y + 'px)';
@@ -139,6 +147,7 @@ class FileThemeMirror extends Plugin {
       if (el.getAnimations) el.getAnimations().forEach((a) => a.cancel());
       const seq = (this._flashSeq || 0) + 1;
       this._flashSeq = seq;
+      const coverMs = first ? 680 : 610;
       const anim = el.animate(
         [
           { clipPath: start, opacity: 1, offset: 0 },
@@ -157,16 +166,58 @@ class FileThemeMirror extends Plugin {
       };
       if (anim && anim.finished) anim.finished.then(done).catch(() => {});
       else window.setTimeout(done, 950);
-      try {
-        const vc = document.querySelector('.workspace-leaf.mod-active .view-content');
+      this._swapTimer = window.setTimeout(() => {
+        this._swapTimer = 0;
+        try {
+          this.applyClasses(desired);
+          this.fadeText();
+        } catch (e) {}
+      }, coverMs);
+    } catch (e) {}
+  }
+
+  // Text fade that actually lands: finds the incoming view by matching
+  // the leaf to the active file (never trusts .mod-active mid-switch),
+  // retries while the new view renders, and releases on a timer so a
+  // paint is guaranteed between hide and show.
+  fadeText() {
+    try {
+      let tries = 0;
+      const attempt = () => {
+        tries += 1;
+        let vc = null;
+        try {
+          const file = this.app.workspace.getActiveFile();
+          if (file) {
+            const leaves = [];
+            this.app.workspace.iterateAllLeaves((l) => leaves.push(l));
+            for (const l of leaves) {
+              try {
+                if (l.view && l.view.file === file && l.view.containerEl) {
+                  vc = l.view.containerEl.querySelector('.view-content');
+                  if (vc) break;
+                }
+              } catch (e) {}
+            }
+          }
+          if (!vc) {
+            const active = document.querySelector('.workspace-leaf.mod-active .view-content');
+            if (active) vc = active;
+          }
+        } catch (e) {}
         if (vc) {
-          vc.classList.add('nc-entering');
-          void vc.offsetWidth;
-          window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
-            try { vc.classList.remove('nc-entering'); } catch (e) {}
-          }));
+          try {
+            vc.classList.add('nc-entering');
+            void vc.offsetWidth;
+            window.setTimeout(() => {
+              try { vc.classList.remove('nc-entering'); } catch (e) {}
+            }, 80);
+          } catch (e) {}
+        } else if (tries < 6) {
+          window.setTimeout(attempt, 90);
         }
-      } catch (e) {}
+      };
+      attempt();
     } catch (e) {}
   }
 
@@ -182,6 +233,10 @@ class FileThemeMirror extends Plugin {
   onunload() {
     this.clear();
     this._lastKey = '';
+    if (this._swapTimer) {
+      window.clearTimeout(this._swapTimer);
+      this._swapTimer = 0;
+    }
     const el = document.getElementById('nc-flash');
     if (el) el.remove();
   }

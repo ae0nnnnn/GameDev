@@ -132,13 +132,10 @@ Lunara tries to stop the player before the final boss.
 Their motto in life is “It's better to die trying than to not try at all”
 
 General Niall calls Lunaris the cruel one and calls Lunara the sensible one, Asmondaios calls the both of them Luna as he has spent so long with them, they are the same person to him both sadistic or kind; Zenovia, Satella and Fafnir call the both of them mum.
-
-
   
 Lunaris actively toys with the space-time continuum during her free time and has committed several atrocities ranging from mild nuisances to timeline ending disasters just because she is bored. The innocent are not spared from this which only increases her sin count. <span class="narrator">(Her excuse is that they are just collateral damage)</span>
 
 She also loves to torture her enemies before killing them. <span class="narrator">(She sometimes goes as far as to undo the damage she has done just to inflict them again)</span>, however she does prefer mental torment to physical torture
-
 
 <span class="narrator">Yes yes I know isn't she meant to the embodiment of order, control and all that jazz  
 That's too on the nose so I swapped it out with some of Asmondaios’ entropy (though some elements are still present like her love for efficiency)</span>
@@ -148,15 +145,16 @@ However, when it comes to doing her actual job <span class="narrator">(Read Furt
 On top of being a God has a hobby they are also a witch often creating many spells and teaching them to those that follow them.  
   
 When Lunaris is out and about she tends to wear her over the top billowing gowns - her excuse is that she wants to look presentable and instil fear to all those that see her.  
-  
+
 While Lunara somehow managed to make an outfit that is not only practical in battle but comfy and presentable.
 
 However, the both of them will never wear anything white- (Read everything and come back to guess why).
 
-  
+They both wear Asmondaios’ glasses he wore before he got the eye patch (they stole it from him) and it's their most prized possession aside from their ring.
 
-They both wear Asmondaios’  glasses he wore before he got the eye patch (they stole it from him) and it's their most prized possession aside from their ring.
+They also really love wearing hats whether it's her classic witch’s one we normally see her with or the numerous elegantly designed ones tucked away just waiting to be used. <span class="narrator"> -Though one might say it’s because they find sunlight uncomfortable</span> 
 
+For a God The Lunas’ appearance is quite demonic in a sense → their wing, horn, tail and fangs - Lunaris makes it a part of her aesthetic while Lunara hides them though she doesn't hide the fangs just makes them smaller.
 
 
 

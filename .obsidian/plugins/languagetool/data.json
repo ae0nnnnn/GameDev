@@ -51,7 +51,9 @@
   "enabledCategories": [],
   "disabledCategories": [],
   "enabledRules": [],
-  "disabledRules": [],
+  "disabledRules": [
+    "FILE_EXTENSIONS_CASE"
+  ],
   "longCheckNotification": true,
   "injectProperties": true
 }

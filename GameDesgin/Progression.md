@@ -46,13 +46,21 @@ Heavy weapon swing cooldown- 0.25 seconds
 Light weapon swing cooldown - 0.2 seconds
 Fists swing cooldown - 0.1 seconds
 
-Range  -- needs to be done in `Vector3` 
+Range 
+<div class="char-devnote">
+[Dev]:  -- needs to be done in `Vector3` 
+
+</div> 
 Medium weapon - medium range, long rang
 Heavy weapon - long range, very long
 Light weapon, short range, medium range
 Fists - short range, very short
 
-Hitbox Frames -- Needs to be redone as anims are changing
+Hitbox frames
+<div class="char-devnote">
+[Dev]:  -- Needs to be redone as anims are changing
+
+</div> 
 Light - Frame 7
 Med - Frame 9
 Heavy - Frame 10
@@ -61,10 +69,10 @@ Heavy - Frame 10
 
 ### Stats
 
-Vitality (VIT)- health
-Endurance (END) - stamina, 
-Strength (STR) - Strength moves
-Dexterity (DEX) - Dexterity Moves and crit dmg
-Spirit (SPT) - SPT Moves and Spells, Balance Reserves
-Agility (AGL) - Speed and AGL (and DEX) scaling moves
-Weapon Proficiency (WPN) - M1 damage
+Vitality (VIT) → health
+Endurance (END) → stamina, 
+Strength (STR) →Strength moves
+Dexterity (DEX) → Dexterity Moves and crit dmg
+Spirit (SPT) → SPT Moves and Spells, Balance Reserves
+Agility (AGL) → Speed and AGL (and DEX) scaling moves
+Weapon Proficiency (WPN) → M1 damage

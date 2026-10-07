@@ -255,7 +255,15 @@ Their thought processes:
   </div>
 </div>
 
+Due to being a Celestial they can apply the Balance into 2 personal waveforms which are Space and Soul Manipulation.
 
+Space - She commands all the physical properties of space to her very whim (Basically just Physics - Mass, Pressure, Creation, Force, Energy, Speed etc)
+
+Soul Manipulation - She is able to alter the physical and spiritual properties of anyone’s soul even while they are still alive. This forms the base of her necromancy if she was to use Exponentia (Lunaris uses her collection of souls banished to the Abyss and those she has control over. Which in theory should exponentially increase the power of her necromancy spells per soul)
+
+Lunaris loves to experiment with her eldritch monstrosities, she is also the creator of the necromancy skill tree under the SPT Stat- (She taught basic necromancy to her most devoted followers and then the teachings spread- although it’s still considered one of the dark arts by the morally virtuous party poopers!) - I forgot to mention you can get the stronger abilities if you make a contract with her for your soul - well used to anyway
+
+However, due to the restraints Lunara placed on her own soul to keep Lunaris at bay and seal away her necromancy abilities  (Due it being fueled by the souls of Lunaris’ collection through her contracts’ victims) her ability to manipulate souls is severely weakened to to point that she can only perform a couple utilities with it.
 
 
 

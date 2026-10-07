@@ -166,12 +166,95 @@ As a demonic/vampiric adjacent Celestial they are slightly carnivorous (they sti
 
 During their birthday Asmondaios make sure to go out of his way to make sure he has absolutely nothing to do, he does this by “abstracting” the day for those not involved with the celebrations and every 4 years he lets the day go by as normal to prevent any strain on the timelines and  any desync
  
-All Mortals  (Excluding Zenovia and Gilgamesh) and Anomalies assume that Lunaris is on a “Hiatus” so to speak, seeing as she hasn’t tormented anyone or nuked a branch in a long time. In their delusion they believe that it's because of their prayers she finally decided to be merciful.
+All Mortals (Excluding Zenovia and Gilgamesh) and Anomalies assume that Lunaris is on a “Hiatus” so to speak, seeing as she hasn’t tormented anyone or nuked a branch in a long time. In their delusion they believe that it's because of their prayers she finally decided to be merciful.
 
 Because Asmondaios doesn’t leave the palace often no one knows what he actually looks like this is why if you were to walk into any of the churches most of the artworks will be of Lunaris.
 
-
 They prefer mastering their skills and their potency over pure brute force so she focuses more into SPT (Spirit) and DEX (Dexterity) rather than STR (Strength).
+
+
+Both Lunara and Lunaris are master spell casters however Lunaris tends not to bother with it; she calls it a “coward's way of fighting”.
+
+When asked about their ideals Lunara answers with 
+“Well chosen words with kindness at their heart can speak louder than actions whereas Lunaris just answers with “I do whatever I want and live my life however I want and why should I bother with what people think?”
+
+
+After her boss fight Lunara’s goal is not to get rid of her sins but to finally confront it and Lunaris
+
+She says that it’s about time she took that step.
+
+Lunaris too deep within her heart, a fact she denies, wants to understand how and why she began feel ever so sightly compassionate 
+
+Their thought processes:
+<div class="char-stats" style="margin-top: 2rem;">  
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    
+    <!-- Lunara's Thought Process -->
+    <div>
+      <strong>Lunara:</strong>
+      <ul style="margin: 0.4rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+        <li>What is the problem?</li>
+        <li>What's the most efficient solution?</li>
+        <li>Does this solution harm anyone?
+          <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li><em>If so, is there a way to avoid it?</em> — Surely there has to be a way..</li>
+            <li><em>If no, is there a way to reduce the pain</em> — Oh well there goes that..</li>
+          </ul>
+        </li>
+        <li>Most likely yes, then adjust plan — Reduce</li>
+        <li>Execute modified plan</li>
+        <li><strong>Any pain caused?</strong>
+          <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li><em>If yes:</em> Heal them quickly.</li>
+            <li><em>If no:</em> Yippe, crisis averted.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Lunaris's Thought Process -->
+    <div>
+      <strong>Lunaris:</strong>
+      <ul style="margin: 0.4rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+        <li>What is the problem?</li>
+        <li>What's the most efficient solution?</li>
+        <li>Does this solution harm anyone?
+          <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li><em>If so, do I care about them?</em>
+              <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+                <li><em>If yes:</em> Make a new plan or adjust accordingly.</li>
+                <li><em>If no:</em> Execute the plan as usual.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><strong>Aftermath…</strong>
+          <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+            <li>Was anyone hurt in the end?
+              <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+                <li><em>If not:</em> Perfect, then no need to do anything extra.</li>
+                <li><em>If yes:</em> Heal those who weren't concerned with the plan, discreetly <span class="char-narrative-inline">(We have an image to protect)</span>.</li>
+              </ul>
+            </li>
+            <li>Any deaths?
+              <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+                <li><em>If no:</em> Oh well, all is fine and dandy — moving on with the day.</li>
+                <li><em>If yes:</em> Were their sins horrific enough to be sent to the Abyss?
+                  <ul style="margin: 0.2rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.3rem;">
+                    <li><em>If yes:</em> Send them to Layer 1 — They were bound to get here anyway~</li>
+                    <li><em>If no:</em> Send them to Layer 0 or put them back into the Balance Cycle — Sorry~</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 
 
 

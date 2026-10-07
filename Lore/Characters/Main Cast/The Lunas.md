@@ -156,6 +156,22 @@ They also really love wearing hats whether it's her classic witch’s one we nor
 
 For a God The Lunas’ appearance is quite demonic in a sense → their wing, horn, tail and fangs - Lunaris makes it a part of her aesthetic while Lunara hides them though she doesn't hide the fangs just makes them smaller.
 
+Underneath their left eye is a tattoo of a teardrop raised to the power 99 while they also have a star and heart on their left cheek. They also have a tattoo of a rose and centipede on their right leg. <span class="narrator">--The star is her Potentia marking the heart, rose and centipede is just another tattoo</span> 
+
+Lunaris is actually quite skilled as using her tail in combat almost using it like a third arm she normally holds her dagger there when she is using her scythe <span class="narrator"> -- She wraps her tail around it</span>.
+
+They wear a ring with Asmondaios’ nickname on it <span class="narrator"> - (Assie)</span>  and love to banter with him.
+
+As a demonic/vampiric adjacent Celestial they are slightly carnivorous (they still eat plants and veg tho) and can drink blood (which they actually find tasty)
+
+During their birthday Asmondaios make sure to go out of his way to make sure he has absolutely nothing to do, he does this by “abstracting” the day for those not involved with the celebrations and every 4 years he lets the day go by as normal to prevent any strain on the timelines and  any desync
+ 
+All Mortals  (Excluding Zenovia and Gilgamesh) and Anomalies assume that Lunaris is on a “Hiatus” so to speak, seeing as she hasn’t tormented anyone or nuked a branch in a long time. In their delusion they believe that it's because of their prayers she finally decided to be merciful.
+
+Because Asmondaios doesn’t leave the palace often no one knows what he actually looks like this is why if you were to walk into any of the churches most of the artworks will be of Lunaris.
+
+
+They prefer mastering their skills and their potency over pure brute force so she focuses more into SPT (Spirit) and DEX (Dexterity) rather than STR (Strength).
 
 
 

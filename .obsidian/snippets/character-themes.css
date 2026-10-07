@@ -732,3 +732,21 @@ body .nav-files-container,
 body .workspace-leaf-content {
   transition: background-color 0.8s ease, color 0.8s ease, border-color 0.8s ease;
 }
+
+/* Incoming-view text fade (driven by file-theme's transient
+   .nc-entering class). Narrow scope: content containers only, so
+   typing never feels laggy. Instant under reduced-motion. */
+
+.workspace-leaf .view-content {
+  transition: opacity 0.45s ease;
+}
+
+.workspace-leaf .view-content.nc-entering {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .workspace-leaf .view-content {
+    transition: none;
+  }
+}

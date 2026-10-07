@@ -20,6 +20,10 @@ class FileThemeMirror extends Plugin {
     // Safety net: if any navigation path doesn't emit an event, the
     // 1.5s poll still converges classes + flash. Idempotent when idle.
     this.registerInterval(window.setInterval(() => this.update(), 1500));
+    this.registerDomEvent(document, 'mousedown', (e) => {
+      this._clickX = e.clientX;
+      this._clickY = e.clientY;
+    });
     this.registerEvent(this.app.metadataCache.on('changed', () => this.update()));
     this.app.workspace.onLayoutReady(() => this.update());
     this.update();
@@ -95,11 +99,13 @@ class FileThemeMirror extends Plugin {
       this.maybeFade(oldBg);
   }
 
-  // Fade transition between themes: snapshot the outgoing backdrop
-  // color, cover the fresh screen with it for one frame, then melt it
-  // away to reveal the new note. Reads as a true crossfade. Skipped
-  // when nothing themed changed, and entirely under reduced-motion.
+  // Caelestia-style transition: the incoming theme blooms out of a
+  // circle (from the last click, else screen center) over the old
+  // screen, then melts away to reveal the new note — whose text fades
+  // up at the same time. Skipped when nothing themed changed, and
+  // entirely under reduced-motion.
   maybeFade(oldBg) {
+    void oldBg;
     try {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         this._lastKey = this._themeKey();
@@ -111,25 +117,56 @@ class FileThemeMirror extends Plugin {
       this._started = true;
       this._lastKey = cur;
       if (cur === prev) return;
-      let color = oldBg;
-      if (!color || color === 'rgba(0, 0, 0, 0)' || color === 'transparent') color = '#0d0618';
+      const NEW_BG = {
+        'nc-char-lunas': 'radial-gradient(circle at 50% 28%, #3b1a5e 0%, #140826 55%, #0d0618 100%)',
+      };
+      const incoming = NEW_BG[cur.split(' ')[0]] || '#1e1e1e';
+      const x = (typeof this._clickX === 'number') ? Math.round(this._clickX) : Math.round(window.innerWidth / 2);
+      const y = (typeof this._clickY === 'number') ? Math.round(this._clickY) : Math.round(window.innerHeight / 2);
+      const start = 'circle(0% at ' + x + 'px ' + y + 'px)';
+      const end = 'circle(150% at ' + x + 'px ' + y + 'px)';
       let el = document.getElementById('nc-flash');
       if (!el) {
         el = document.createElement('div');
         el.id = 'nc-flash';
-        el.style.cssText = 'position:fixed;inset:0;z-index:99999;pointer-events:none;opacity:0;';
+        el.style.cssText = 'position:fixed;inset:0;z-index:99999;pointer-events:none;opacity:1;';
         document.body.appendChild(el);
       }
-      el.style.background = color;
-      el.style.opacity = '1';
+      el.style.background = incoming;
+      el.style.clipPath = start;
+      if ('webkitClipPath' in el.style) el.style.webkitClipPath = start;
       void el.offsetWidth;
       if (el.getAnimations) el.getAnimations().forEach((a) => a.cancel());
-      el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: first ? 900 : 650, easing: 'ease-out' })
-        .finished.catch(() => {}).then(() => {
-          try {
-            if (el.getAnimations && el.getAnimations().length === 0) el.style.opacity = '0';
-          } catch (e) {}
-        });
+      const seq = (this._flashSeq || 0) + 1;
+      this._flashSeq = seq;
+      const anim = el.animate(
+        [
+          { clipPath: start, opacity: 1, offset: 0 },
+          { clipPath: end, opacity: 1, offset: 0.72 },
+          { clipPath: end, opacity: 0, offset: 1 },
+        ],
+        { duration: first ? 950 : 850, easing: 'ease-out', fill: 'forwards' }
+      );
+      const done = () => {
+        try {
+          if (this._flashSeq === seq) {
+            const cur2 = document.getElementById('nc-flash');
+            if (cur2) cur2.remove();
+          }
+        } catch (e) {}
+      };
+      if (anim && anim.finished) anim.finished.then(done).catch(() => {});
+      else window.setTimeout(done, 950);
+      try {
+        const vc = document.querySelector('.workspace-leaf.mod-active .view-content');
+        if (vc) {
+          vc.classList.add('nc-entering');
+          void vc.offsetWidth;
+          window.requestAnimationFrame(() => window.requestAnimationFrame(() => {
+            try { vc.classList.remove('nc-entering'); } catch (e) {}
+          }));
+        }
+      } catch (e) {}
     } catch (e) {}
   }
 

@@ -272,20 +272,16 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 
 <div class="char-stats" style="margin-top: 2rem;">
   <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Skills</span>
-  
   <div style="display: flex; flex-direction: column; gap: 1rem;">
     <div>
       <strong>Divine Authority</strong> (They have the right to command universe as they see fit) — This is the skill you need to fully use both Space and Time Manipulation.
     </div>
-
     <div>
       <strong>Exponentially increasing Balance Aptitude</strong> — Her Celestial heritage and her direct connection to the Balance.
     </div>
-
     <div>
       <strong>Conceptual Visualization</strong> — Everything that exists has a soul even things that do properly exist in 3D space and their innate affinity for souls and their divine nature allows them to perceive and interact with beings such as (The literal embodiment of Time, Space, Death, Life and the other Concepts and sadly that includes me) <span class="narrator">[Don't be confused by saying isn't for example Satella the Pillar of Death Literally Death? That's where you'd be wrong. She is more like an aspect of Death but not fully death; same thing applies to The Lunas (Space), Asmondaios (Time), Fafnir (Life)]</span> → to dumb it down a bit, each person is a filled bucket which part of the concept itself is while the concept is the well the bucket was taken from. And don't worry, that doesn't include any "Oh, it's all a game" motifs or "Nothing is real" as honestly it's getting a little too overused, however the closest we get to it are the OSTs which she does hear faintly and uses to compose her pieces – So yes, even the songs have some minor lore implications, so basically she is actually the composer for all of them (lorewise).
     </div>
-
     <div>
       <strong>Hemolysis</strong> — By using their vampiric tendencies combined with minor soul manipulation, she can drink the blood of an enemy she is able to remember everything about them for a moderate period of time. Allowing her to create puppets of them or try to discern stuff about them (though they are really not that good at the latter so they give all the information to Asmondaios for him to process) allowing them to view their victims' memories and bio-data. 
       <br><br>
@@ -299,7 +295,6 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
       <br><br>
       Naturally, this makes her resistant to most blood-based abilities and bleeding out as she can just drink her supply of blood to recover hers.
     </div>
-
     <div>
       <strong>Most notable spell ever casted — Interstellar Collapse</strong> — The user summons a massive star which then collapses into a black hole. The user will have to control it to avoid getting sucked in as well. If not controlled properly it will kill everyone including the user in the immediate area. Attacking the user while they are charging will collapse the hole early, which kills both people. 
       <br><br>
@@ -311,7 +306,46 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 </div>
 
 
+<div class="char-stats" style="margin-top: 2rem;">
+  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Inventory</span>
+  <div style="display: flex; flex-direction: column; gap: 1rem;">
+    <div>
+      <strong>Spare Armament & Hidden Gear</strong> — Both Lunara and Lunaris always have spare weapons typically stored away in her thigh bag; these are normally just a spare dagger and a lot of throwing needles and stars with blades hidden in the soles of their shoes.
+    </div>
+    <div>
+      <strong>Sin Ledger</strong> — <span class="narrator">“Keeping track of everyone’s misdeeds and who needs to be sorted and needs to be reviewed is bound to be bad for my mental health plus it's too much of a hassle~” — Lunaris</span> It is a unique creation of the Lunas. To any unauthorized users, it reads as a manic mess of information that is bound to make the reader lose their mind, however if you are authorized all you need to do is to think of the person you want to read about aloud by their variant code using dot notation (This is just the name of the branch the variant is from, for example a Bob variant on Branch://Nul would be Bob.Branch://Nul, and yes it has to be dot notation as she is oddly specific about formatting). Typically, the ledger is either in their handbag/spatial inventory or slung from a chain on their waist.
+    </div>
+    <div>
+      <strong>Blood Vials</strong> — 6 in total. 2 of them are filled with the blood of her summons whose traits she found very advantageous, 1 of them is filled with Asmondaios’ (for emergencies), and the final 3 are empty in case she wants to collect a sample from the opponent she is fighting. These are normally tucked away in her thigh bag or strapped to her belt (if one is present).
+    </div>
+    <div>
+      <strong>Balance & Healing Output Note</strong> — The Lunas have the highest Balance sensitivity and healing output out of everyone, being able to heal most physical and spiritual injuries.
+    </div>
+  </div>
+</div>
 
+
+<span class="narrator">Ok ok *Huff* *wheeze* finally escaped that hellhole- Those of you who have fought her yes You.. You should know that wasn't even her Exponentia far from it</span> 
+
+<span class="narrator">Allow me to give you a taste of what it means to fight the True Goddess not the Goddess of Space, The Goddess of Eternal Damnation</span> 
+
+<span class="narrator">So fir-</span> 
+
+<span class="narrator">()</span> 
+
+
+
+  
+
+
+
+
+
+
+(Have Mercy! Please)
+
+(Lunaris- “Can’t have you spilling all my secrets now can't we?”)  
+(Lunaris- “Go on then tell your story”)
 
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">

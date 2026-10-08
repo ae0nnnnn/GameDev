@@ -41,6 +41,7 @@ connections:
   <div><span class="char-label">In Game Name</span> — Lunara</div>
   <div><span class="char-label">Aliases</span> — Luna, Lunara, Lunaris, The Angel of Death, The Divine Arbiter</div>
   <div><span class="char-label">Race</span> — Celestial (Arch-Draculain)</div>
+  <div><span class="char-label">Variant Type</span> — Prime</div>
   <div><span class="char-label">Age</span> — 17 Eons</div>
   <div><span class="char-label">Birthday</span> — February 29th XXXX</div>
   <div><span class="char-label">Height</span> — 5ft 4in</div>

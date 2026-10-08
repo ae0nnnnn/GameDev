@@ -27,6 +27,7 @@ connections:
   <div><span class="char-label">In Game Name</span> — </div>
   <div><span class="char-label">Aliases</span> — </div>
   <div><span class="char-label">Race</span> — </div>
+  <div><span class="char-label">Variant Type</span> — </div>
   <div><span class="char-label">Adjacent / Previous Mortal Species</span> — </div>
   <div><span class="char-label">Age</span> — </div>
   <div><span class="char-label">Birthday</span> — </div>

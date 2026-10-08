@@ -74,6 +74,7 @@ connections:
   </div>
 </div>
 
+<div class="char-stats" style="margin-top: 2rem;">
 <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em; margin-top: 2rem;">Relationship Web</span>
   
   <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>

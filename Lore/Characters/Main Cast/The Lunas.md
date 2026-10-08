@@ -20,7 +20,7 @@ connections:
   - "[[Asdeath]]"
   - "[[Miranda]]"
   - "[[The Cult of The Good Goddess]]"
-  - [[The North Stars]]
+  - "[[The North Stars]]"
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
@@ -266,7 +266,27 @@ Soul Manipulation - She is able to alter the physical and spiritual properties o
 
 Lunaris loves to experiment with her eldritch monstrosities, she is also the creator of the necromancy skill tree under the SPT Stat- (She taught basic necromancy to her most devoted followers and then the teachings spread- although it’s still considered one of the dark arts by the morally virtuous party poopers!) - I forgot to mention you can get the stronger abilities if you make a contract with her for your soul - well used to anyway
 
-However, due to the restraints Lunara placed on her own soul to keep Lunaris at bay and seal away her necromancy abilities  (Due it being fueled by the souls of Lunaris’ collection through her contracts’ victims) her ability to manipulate souls is severely weakened to to point that she can only perform a couple utilities with it.
+However, due to the restraints Lunara placed on her own soul to keep Lunaris at bay and seal away her necromancy abilities  (Due it being fuelled by the souls of Lunaris’ collection through her contracts’ victims) her ability to manipulate souls is severely weakened to to point that she can only perform a couple utilities with it.
+
+<div class="char-stats" style="margin-top: 2rem;">
+  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Arsenal</span>
+  
+  <div style="display: flex; flex-direction: column; gap: 1rem;">
+    
+    <div>
+      <strong>Potentia</strong>
+      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
+        <li>
+          <strong>The Fractured Kunai</strong> — Ever-flowing shards held together by the Lunas’ Balance. It is a medium weapon capable of being used like a light weapon. Its range is as large as The Lunas’ range of Spiritual Pressure.
+        </li>
+        <li>
+          <strong>The Executioner's Scythe</strong> — A scythe created using the souls of the damned and Lunaris’ Balance. Its lantern grows brighter the more souls it has consumed from the Abyss.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
 
 
 

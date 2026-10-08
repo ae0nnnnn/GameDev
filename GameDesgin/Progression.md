@@ -2,7 +2,11 @@
 
 ## Base Stats and Frame Data
 Base hp - 250 - Scaling is done, but it needs to be improved 
-Base Stance - 100 (Max should be around 110-120) <span class="narrator">- Still need to make it scale with END/VIT </span> 
+Base Stance - 100 (Max should be around 110-120) 
+<div class="char-devnote">
+[Dev]: - Still need to make it scale with END/VIT 
+
+</div> 
 Base Balance Reserves - 250 (Max should be around 450 though i shouldn’t enforce this because if players want to be mages they can do what ever)
 
 Parry frames = 0.22 secs 

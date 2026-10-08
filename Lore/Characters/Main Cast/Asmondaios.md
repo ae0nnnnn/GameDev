@@ -8,6 +8,14 @@ status: Alive
 cssclasses:
   - character-sheet
 connections:
+ - "[[The Lunas]]"
+ - "[[Zenovia]]"
+ - "[[Satella]]"
+ - "[[Fafnir]]"
+ - "[[Asdeath]]"
+ - "[[The Church of The Duality]]"
+ - "[[S.T.A.B]]"
+ - "[[T.C.C]]"
 ---
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Asmondaios</span>

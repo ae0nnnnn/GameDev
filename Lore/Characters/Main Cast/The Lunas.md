@@ -190,7 +190,7 @@ She says that it’s about time she took that step.
 Lunaris too deep within her heart, a fact she denies, wants to understand how and why she began feel ever so sightly compassionate 
 
 Their thought processes:
-<div class="char-stats" style="margin-top: 2rem;">  
+<div class="char-stats" style="margin-top: 2rem;">
   <div style="display: flex; flex-direction: column; gap: 1.5rem;">
     
     <!-- Lunara's Thought Process -->
@@ -215,7 +215,6 @@ Their thought processes:
         </li>
       </ul>
     </div>
-
     <!-- Lunaris's Thought Process -->
     <div>
       <strong>Lunaris:</strong>
@@ -255,7 +254,6 @@ Their thought processes:
         </li>
       </ul>
     </div>
-
   </div>
 </div>
 

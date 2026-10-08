@@ -298,6 +298,8 @@ read
 recycling
 replaced
 reincarnation
+reflections
+return
 power
 padding
 px
@@ -667,6 +669,8 @@ story
 sinner
 somewhere
 stilted
+scuffs
+surprised
 cssclasses
 class
 char
@@ -831,6 +835,7 @@ cursing
 claimed
 currently
 controlling
+congratulations
 div
 display
 dev
@@ -1279,6 +1284,8 @@ bad
 belt
 banishes
 blame
+beware
+beat
 font
 for
 from
@@ -2066,6 +2073,7 @@ Another
 Attacking
 Armament
 Allow
+Anomaly
 Race
 Remember
 REMEMBER
@@ -2407,6 +2415,7 @@ LC
 Layer
 Life
 Ledger
+Late
 Type
 Tail
 TODOs
@@ -2610,6 +2619,7 @@ Hidden
 Healing
 Huff
 Have
+Herta
 Colour
 Contains
 CODE
@@ -3026,6 +3036,7 @@ universe
 urge
 unauthorized
 users
+upon
 Used
 USE
 UI
@@ -3394,6 +3405,7 @@ VBa
 Visualization
 Vials
 Variant
+Vanity
 Based
 BE
 Beautiful

@@ -268,25 +268,11 @@ Lunaris loves to experiment with her eldritch monstrosities, she is also the cre
 
 However, due to the restraints Lunara placed on her own soul to keep Lunaris at bay and seal away her necromancy abilities  (Due it being fuelled by the souls of Lunaris’ collection through her contracts’ victims) her ability to manipulate souls is severely weakened to to point that she can only perform a couple utilities with it.
 
-<div class="char-stats" style="margin-top: 2rem;">
-  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Arsenal</span>
-  
-  <div style="display: flex; flex-direction: column; gap: 1rem;">
-    
-    <div>
-      <strong>Potentia</strong>
-      <ul style="margin: 0.3rem 0 0 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
-        <li>
-          <strong>The Fractured Kunai</strong> — Ever-flowing shards held together by the Lunas’ Balance. It is a medium weapon capable of being used like a light weapon. Its range is as large as The Lunas’ range of Spiritual Pressure.
-        </li>
-        <li>
-          <strong>The Executioner's Scythe</strong> — A scythe created using the souls of the damned and Lunaris’ Balance. Its lantern grows brighter the more souls it has consumed from the Abyss.
-        </li>
-      </ul>
-    </div>
+<div class="char-stats" style="margin-top: 2rem;"> <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Arsenal</span> <div style="display: flex; flex-direction: column; gap: 1rem;"> <div> <strong>Potentia</strong> <ul style="margin: 0.3rem 0 1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;"> <li> <strong>The Fractured Kunai</strong> — Ever-flowing shards held together by the Lunas’ Balance. It is a medium weapon capable of being used like a light weapon. Its range is as large as The Lunas’ range of Spiritual Pressure. </li> <li> <strong>The Executioner's Scythe</strong> — A scythe created using the souls of the damned and Lunaris’ Balance. Its lantern grows brighter the more souls it has consumed from the Abyss. </li> </ul> </div> <div> <strong>Exponentia</strong> — ??? <span class="narrator">(Sorry I am not allowed to tell you anything… I am not even sure if she has one…)</span> </div> </div> </div>
 
-  </div>
-</div>
+
+
+
 
 
 

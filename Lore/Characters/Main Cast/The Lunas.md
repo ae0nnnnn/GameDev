@@ -270,15 +270,10 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 
 <div class="char-stats" style="margin-top: 2rem;"> <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Arsenal</span> <div style="display: flex; flex-direction: column; gap: 1rem;"> <div> <strong>Potentia</strong> <ul style="margin: 0.3rem 0 1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;"> <li> <strong>The Fractured Kunai</strong> — Ever-flowing shards held together by the Lunas’ Balance. It is a medium weapon capable of being used like a light weapon. Its range is as large as The Lunas’ range of Spiritual Pressure. </li> <li> <strong>The Executioner's Scythe</strong> — A scythe created using the souls of the damned and Lunaris’ Balance. Its lantern grows brighter the more souls it has consumed from the Abyss. </li> </ul> </div> <div> <strong>Exponentia</strong> — ??? <span class="narrator">(Sorry I am not allowed to tell you anything… I am not even sure if she has one…)</span> </div> </div> </div>
 
-
-
-
-
 <div class="char-stats" style="margin-top: 2rem;">
   <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Skills</span>
   
-  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-    
+  <div style="display: flex; flex-direction: column; gap: 1rem;">
     <div>
       <strong>Divine Authority</strong> (They have the right to command universe as they see fit) — This is the skill you need to fully use both Space and Time Manipulation.
     </div>
@@ -288,7 +283,7 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
     </div>
 
     <div>
-      <strong>Conceptual Visualization</strong> — Everything that exists has a soul even things that do properly exist in 3D space and their innate affinity for souls and their divine nature allows them to perceive and interact with beings such as (The literal embodiment of Time, Space, Death, Life and the other Concepts and sadly that includes me) <span class="narrator">[Don't be confused by saying isn't for example Satella the Pillar of Death Literally Death? That's where you'd be wrong. She is more like an aspect of Death but not fully death; same thing applies to The Lunas (Space), Asmondaios (Time), Fafnir (Life)]</span> $\rightarrow$ to dumb it down a bit, each person is a filled bucket which part of the concept itself is while the concept is the well the bucket was taken from. And don't worry, that doesn't include any "Oh, it's all a game" motifs or "Nothing is real" as honestly it's getting a little too overused, however the closest we get to it are the OSTs which she does hear faintly and uses to compose her pieces – So yes, even the songs have some minor lore implications, so basically she is actually the composer for all of them (lorewise).
+      <strong>Conceptual Visualization</strong> — Everything that exists has a soul even things that do properly exist in 3D space and their innate affinity for souls and their divine nature allows them to perceive and interact with beings such as (The literal embodiment of Time, Space, Death, Life and the other Concepts and sadly that includes me) <span class="narrator">[Don't be confused by saying isn't for example Satella the Pillar of Death Literally Death? That's where you'd be wrong. She is more like an aspect of Death but not fully death; same thing applies to The Lunas (Space), Asmondaios (Time), Fafnir (Life)]</span> → to dumb it down a bit, each person is a filled bucket which part of the concept itself is while the concept is the well the bucket was taken from. And don't worry, that doesn't include any "Oh, it's all a game" motifs or "Nothing is real" as honestly it's getting a little too overused, however the closest we get to it are the OSTs which she does hear faintly and uses to compose her pieces – So yes, even the songs have some minor lore implications, so basically she is actually the composer for all of them (lorewise).
     </div>
 
     <div>
@@ -312,9 +307,11 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
       <br><br>
       High Risk High Reward — Damage: (if failed) Instakill — (if Succeeded) None — Unblockable — Unparryable — (The opponent will have to either run or try to face them in the domain) — One Time use per Transformation — Must be Chanted.
     </div>
-
   </div>
 </div>
+
+
+
 
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">

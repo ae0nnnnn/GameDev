@@ -21,9 +21,9 @@ connections:
 
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
   <div style="margin-bottom: 0.5rem;">“Do not bother me...I don't have the time for you.”<span class="narrator">– Interaction dialogue</span> </div>
-  <div>“I am surprised, congratulations I guess” *She doesn’t even look up from what she is doing*.<span class="narrator">– if you beat Asmondaios and return to her</span> </div>
-<div>“[Quote 2]”</div>
-<div>“[Quote 2]”</div>
+  <div style="margin-bottom: 0.5rem;">“I am surprised, congratulations I guess” *She doesn’t even look up from what she is doing*.<span class="narrator">– if you beat Asmondaios and return to her</span> </div>
+<div style="margin-bottom: 0.5rem;">“[Quote 2]”</div>
+<div style="margin-bottom: 0.5rem;">“[Quote 2]”</div>
 </div>
 
 ---

@@ -274,7 +274,47 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 
 
 
+<div class="char-stats" style="margin-top: 2rem;">
+  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Skills</span>
+  
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    
+    <div>
+      <strong>Divine Authority</strong> (They have the right to command universe as they see fit) — This is the skill you need to fully use both Space and Time Manipulation.
+    </div>
 
+    <div>
+      <strong>Exponentially increasing Balance Aptitude</strong> — Her Celestial heritage and her direct connection to the Balance.
+    </div>
+
+    <div>
+      <strong>Conceptual Visualization</strong> — Everything that exists has a soul even things that do properly exist in 3D space and their innate affinity for souls and their divine nature allows them to perceive and interact with beings such as (The literal embodiment of Time, Space, Death, Life and the other Concepts and sadly that includes me) <span class="narrator">[Don't be confused by saying isn't for example Satella the Pillar of Death Literally Death? That's where you'd be wrong. She is more like an aspect of Death but not fully death; same thing applies to The Lunas (Space), Asmondaios (Time), Fafnir (Life)]</span> $\rightarrow$ to dumb it down a bit, each person is a filled bucket which part of the concept itself is while the concept is the well the bucket was taken from. And don't worry, that doesn't include any "Oh, it's all a game" motifs or "Nothing is real" as honestly it's getting a little too overused, however the closest we get to it are the OSTs which she does hear faintly and uses to compose her pieces – So yes, even the songs have some minor lore implications, so basically she is actually the composer for all of them (lorewise).
+    </div>
+
+    <div>
+      <strong>Hemolysis</strong> — By using their vampiric tendencies combined with minor soul manipulation, she can drink the blood of an enemy she is able to remember everything about them for a moderate period of time. Allowing her to create puppets of them or try to discern stuff about them (though they are really not that good at the latter so they give all the information to Asmondaios for him to process) allowing them to view their victims' memories and bio-data. 
+      <br><br>
+      She can also project her conscience into these puppets to increase their combat efficiency because on their own they are lowkey kinda dumb to some extent (relative to the actual intelligence of the person copied) but it leaves her main body vulnerable (And no, neither Lunas can just leave the other one of them in their main body as that's how they work). 
+      <br><br>
+      These puppets, though semi-brittle, can use their original's abilities to a certain extent, but require a significant amount of the person's blood and/or in-depth knowledge of them to properly use them. 
+      <br><br>
+      Another subset of moves of this are transformations; by using the data and her space manipulation she can freely turn into anyone she wants and as an added bonus she can even replicate mentalities (Though it's stacked on top of hers). 
+      <br><br>
+      She doesn't spam this ability too much because it might overfill her working memory with too much information. Also, she doesn't want to get addicted, as resisting the urge to drink blood every day is tough enough already. Plus, for transformations, it would probably erode her personality (Though I doubt it because her ego is too massive). 
+      <br><br>
+      Naturally, this makes her resistant to most blood-based abilities and bleeding out as she can just drink her supply of blood to recover hers.
+    </div>
+
+    <div>
+      <strong>Most notable spell ever casted — Interstellar Collapse</strong> — The user summons a massive star which then collapses into a black hole. The user will have to control it to avoid getting sucked in as well. If not controlled properly it will kill everyone including the user in the immediate area. Attacking the user while they are charging will collapse the hole early, which kills both people. 
+      <br><br>
+      If the hole is fully stable, everyone in the vicinity is sucked in as usual, however when trapped inside the terrain is actually a maze — you are expected to run/hide from the summoner (or fight if you want) or find a randomly generated exit (Only one person per exit, that means that if you were trapped with other players you must either team up or fight to the death), after the summoner is satisfied and deactivates the skill (Minimum of 5 minutes first) or the duration which is 15 minutes has displayed. The entire space collapses in itself and kills everyone still inside. 
+      <br><br>
+      High Risk High Reward — Damage: (if failed) Instakill — (if Succeeded) None — Unblockable — Unparryable — (The opponent will have to either run or try to face them in the domain) — One Time use per Transformation — Must be Chanted.
+    </div>
+
+  </div>
+</div>
 
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">

@@ -16,6 +16,7 @@ connections:
  - "[[The Church of The Duality]]"
  - "[[S.T.A.B]]"
  - "[[T.C.C]]"
+ - "[[The North Stars]]"
 ---
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Asmondaios</span>

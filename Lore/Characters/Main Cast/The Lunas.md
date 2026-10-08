@@ -20,6 +20,7 @@ connections:
   - "[[Asdeath]]"
   - "[[Miranda]]"
   - "[[The Cult of The Good Goddess]]"
+  - [[The North Stars]]
 ---
 
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">

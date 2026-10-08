@@ -34,7 +34,7 @@ connections:
   <div style="margin-bottom: 0.8rem;">“The chains around my neck, the shackles I bear,  yet I do not complain for it's my own doing and it's my price to pay…”</div>
   <div style="margin-bottom: 0.5rem;"> “You feel it as well don't you? The crippling force weighing us down, chaining us to our own damnation,the shared fate destined to us.” <span class="narrator">  - Lunara to the Player when speaking to them after aborting the Wrath Route and starting the Guilt Route.</span> </div>
  <div style="margin-bottom: 0.5rem;"> “Let despair fester! Succumb to the hopelessness welling up deep within your very soul!” <span class="narrator"> - Lunaris just being Lunaris </span> </div>
- <div style="margin-bottom: 0.5rem;">  “Well hello there mortal…Lunara is on a break right now *you can see her trying to stifle a giggle* So what do you want or do you want to play a game?”  <span class="narrator"> - Root dialogue for Lunaris’ Dialogue tree </span>  </div></div>
+ <div style="margin-bottom: 0.5rem;">  “Well hello there mortal…Lunara is on a break right now <em>you can see her trying to stifle a giggle</em> So what do you want or do you want to play a game?”  <span class="narrator"> - Root dialogue for Lunaris’ Dialogue tree </span>  </div></div>
 
 ---
 <div class="char-stats">

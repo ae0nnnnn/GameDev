@@ -331,9 +331,23 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 
 <span class="narrator">So fir-</span> 
 
-<span class="narrator">()</span> 
+<span class="narrator">Lunaris- “So this is where you hide~”</span> 
+
+<span class="narrator">Have Mercy! Please!</span> 
+
+<span class="narrator">Lunaris- “Can’t have you spilling all my secrets now can't we?” </span> 
+<span class="narrator">Lunaris- “Go on then tell your story”</span> 
+
+They are worshipped as the judge, jury and executioner of the multiverse and have to be the person who banishes heretics to the Abyss (Takes a sinner to know a sinner).
+
+They are also in charge of making new souls and recycling the souls of the deceased to make sure the Balance taken out of the system to create them was replaced via their reincarnation thus they are also worshipped as the Mother of All Souls. 
 
 
+Lunaris doesn't care about the contents of her worshippers prayers as long it moderately interests her if that condition is met you can basically pray for anything no matter how cruel or morbid it is, of course you decide to pray for things that will normally be considered a sin (Killing, cursing etc) you will have to bear the weight of those sins and Lunaris is not to blame.
+
+By praying such prayers you agree to having your souls’ ownership claimed by Lunaris  through a divine contract and obviously she would make it very very obvious when she is outlining the terms and conditions before answering.
+
+As such her hexagram - The Ouroboros would appear somewhere on the victims body and you can tell if she is currently controlling that person with its glowing and their left (or right if they only have the right) turns yellow with its pupil stilted 
 
   
 
@@ -342,10 +356,9 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
 
 
 
-(Have Mercy! Please)
 
-(Lunaris- “Can’t have you spilling all my secrets now can't we?”)  
-(Lunaris- “Go on then tell your story”)
+
+
 
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">

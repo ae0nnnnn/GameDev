@@ -40,17 +40,14 @@ connections:
   <div><span class="char-label">Adjacent / Previous Mortal Species</span> — Kitsune</div>
   <div><span class="char-label">Age</span> — Not Telling</div>
   <div><span class="char-label">Birthday</span> — April 23</div>
-  <div><span class="char-label">Height</span> — </div>
-  <div><span class="char-label">Weight</span> — </div>
-  <div><span class="char-label">Boss Title</span> — Phase 1:  | Phase 2: </div>
-  <div><span class="char-label">Power Level</span> — </div>
-  <div><span class="char-label">Enemy Type</span> — NPC, Lore</div>
-  <div><span class="char-label">Abilities</span> — </div>
-  <div><span class="char-label">Abilities Type</span> — </div>
-  <div><span class="char-label">Battle Theme</span> — Phase 1:  | Phase 2: </div>
-  <div><span class="char-label">Affiliation</span> — </div>
-  <div><span class="char-label">Drops</span> — </div>
-  <div><span class="char-label">Status</span> — </div>
+  <div><span class="char-label">Height</span> — 5ft 5in</div>
+  <div><span class="char-label">Weight</span> —  Why Should I tell you?</div>
+  <div><span class="char-label">Power Level</span> — Late Calamity</div>
+  <div><span class="char-label">Enemy Type</span> — NPC (Lore), NPC(Faction Leader)</div>
+  <div><span class="char-label">Abilities</span> — The Mirror World (The Infinte Refractal</div>
+  <div><span class="char-label">Abilities Type</span> — Innate</div>
+  <div><span class="char-label">Affiliation</span> —  <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FA.I.R">A.I.R</a> </div>
+  <div><span class="char-label">Status</span> — Alive</div>
 </div>
 
 ---
@@ -58,12 +55,12 @@ connections:
 <div class="char-stats" style="margin-top: 2rem;">
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Personality</span>
-    <div>[Insert Personality description]</div>
+    <div>Ruthless, Spiteful, Spatially aware, Strategic, Cunning, Aloof, Uncaring of others, Nihilistic</div>
   </div>
 
   <div style="margin-bottom: 1.5rem;">
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Flaw</span>
-    <div>[Insert Flaw]</div>
+    <div>VAbi</div>
   </div>
 
   <div style="margin-bottom: 1.5rem;">

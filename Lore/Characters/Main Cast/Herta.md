@@ -43,8 +43,8 @@ connections:
   <div><span class="char-label">Height</span> — 5ft 5in</div>
   <div><span class="char-label">Weight</span> —  Why Should I tell you?</div>
   <div><span class="char-label">Power Level</span> — Late Calamity</div>
-  <div><span class="char-label">Enemy Type</span> — NPC (Lore), NPC(Faction Leader)</div>
-  <div><span class="char-label">Abilities</span> — The Mirror World (The Infinte Refractal</div>
+  <div><span class="char-label">Enemy Type</span> — NPC (Lore), NPC (Faction Leader)</div>
+  <div><span class="char-label">Abilities</span> — The Mirror World (The Infinite Refractal)</div>
   <div><span class="char-label">Abilities Type</span> — Innate</div>
   <div><span class="char-label">Affiliation</span> —  <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FA.I.R">A.I.R</a> </div>
   <div><span class="char-label">Status</span> — Alive</div>
@@ -71,12 +71,13 @@ connections:
       <div><strong>Hair Colour:</strong> Rogue(ish) pink - (<span class="hexchip" style="--hex:#F8A4C0">#F8A4C0</span>) </div>
       <div><strong>Hair Style:</strong> Long and Flowing</div>
       <div><strong>Facial Details:</strong>Mirror Potentia Marking </div>
+      <div><strong>Ears:</strong> Soft and puffy <span class="narrator">-I advise you don’t try pet them or else you are as good as dead</span> </div>
       <div><strong>Accessories:</strong>
         <ul style="margin: 0.2rem 0 0 1.2rem;">
           <li><em>[Accessory Name]:</em> Stats and gimmicks — </li>
         </ul>
       </div>
-      <div><strong>Outfit Preferences/Type:</strong> </div>
+      <div><strong>Outfit Preferences/Type:</strong> Traditional and more formal (Current Outfit: A pink kimono with a hem slit on the left side with a thigh band)</div>
     </div>
   </div>
 </div>

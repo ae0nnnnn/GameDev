@@ -140,7 +140,9 @@ During her time in the clan she was a very vain person so when she turned into a
 
 Normally application of the mirror world is just to  interact with/ manipulate reflections but her mastery of it is so advanced that she is able to “break” these mirrors and traverse the reflection realm as a form of transportation (though it only takes her to an adjacent branch) hence why she still would need a dimensional dagger to get to ChronosSpatium hence from now on I’m referring to her iteration of The Mirror World as The Infinite Refractal
 
-A three tailed Kitsune is already considered a formidable opponent Herta was a 5 tailed one before becoming an Anomaly and naturally she kept their buffs and abilities  and can still gain more tails.
+A three tailed Kitsune is already considered a formidable opponent Herta was a 5 tailed one before becoming an Anomaly and naturally she kept their buffs and abilities  and can still gain more tails as her power increases.
+
+
 
 
 

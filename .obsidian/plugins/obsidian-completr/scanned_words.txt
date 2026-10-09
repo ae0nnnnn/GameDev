@@ -206,6 +206,7 @@ advantageous
 agree
 answering
 appear
+above
 race
 rem
 reminders
@@ -300,6 +301,7 @@ replaced
 reincarnation
 reflections
 return
+relationship
 power
 padding
 px
@@ -412,6 +414,7 @@ plus
 pray
 praying
 pupil
+push
 level
 left
 letter
@@ -496,6 +499,7 @@ lose
 ledger
 languidly
 let
+less
 status
 style
 span
@@ -674,6 +678,8 @@ stilted
 scuffs
 surprised
 stretches
+soon
+sight
 cssclasses
 class
 char
@@ -840,6 +846,9 @@ currently
 controlling
 congratulations
 chair
+close
+cheesecake
+cheap
 div
 display
 dev
@@ -1194,6 +1203,7 @@ multiverse
 moderately
 met
 morbid
+meter
 bottom
 block
 border
@@ -1291,6 +1301,9 @@ banishes
 blame
 beware
 beat
+badly
+brought
+brush
 font
 for
 from
@@ -1385,6 +1398,7 @@ failed
 face
 fought
 fir
+friends
 em
 example
 else
@@ -1484,6 +1498,7 @@ emergencies
 empty
 escaped
 executioner
+entertain
 weight
 we
 works
@@ -1679,6 +1694,7 @@ immediate
 inside
 injuries
 interests
+imitation
 opacity
 or
 on
@@ -1871,6 +1887,7 @@ IDATh
 Interaction
 Interstellar
 Instakill
+Ideological
 Game
 GameDev
 GitHub
@@ -1982,6 +1999,7 @@ Nothing
 Naturally
 Nul
 Note
+Nial
 Aliases
 Adjacent
 Abilities
@@ -2079,6 +2097,7 @@ Attacking
 Armament
 Allow
 Anomaly
+Aw
 Race
 Remember
 REMEMBER
@@ -2142,6 +2161,7 @@ Rk
 Reduce
 Risk
 Reward
+Rival
 Previous
 Power
 Personality
@@ -2208,6 +2228,7 @@ Physics
 Pressure
 Plus
 Prime
+PlayerName
 Mortal
 Music
 Misc
@@ -2266,6 +2287,9 @@ Minimum
 Must
 Mercy
 Mother
+Mirror
+Moveset
+Mirrored
 Species
 Status
 Stuff
@@ -2361,6 +2385,8 @@ Succeeded
 Spare
 Sin
 Souls
+Sure
+Sky
 Level
 Length
 Link
@@ -2488,6 +2514,7 @@ Typically
 Those
 True
 Takes
+Thorn
 Flaw
 For
 FOR
@@ -2560,6 +2587,7 @@ Follower
 Force
 Fractured
 Fufufu
+FGeneral
 Hair
 Helpful
 Hints
@@ -2627,6 +2655,7 @@ Healing
 Huff
 Have
 Herta
+How
 Colour
 Contains
 CODE
@@ -2692,6 +2721,7 @@ Concepts
 Collapse
 Chanted
 Can
+Clan
 Eye
 EDITING
 Every
@@ -2828,6 +2858,7 @@ Does
 Due
 Damage
 Damnation
+Director
 Outfit
 ON
 Oz
@@ -2986,6 +3017,8 @@ We
 Were
 Which
 Windup
+Want
+World
 use
 until
 up
@@ -3124,6 +3157,7 @@ yjQ
 yN
 years
 yellow
+yours
 just
 jc
 jd
@@ -3363,6 +3397,7 @@ qi
 qrE
 quite
 quick
+quaint
 VISUAL
 VERSION
 Vault
@@ -3477,6 +3512,7 @@ By
 Bob
 Branch
 Blood
+Begone
 You
 YMz
 YV

@@ -25,25 +25,26 @@ connections:
 <div style="margin-bottom: 0.5rem;">“Well hello <strong><em>PlayerName</em></strong>, Do you really want to speak to me that badly? How quaint"<span class="narrator">- If you somehow push her relationship meter to friends</span> </div>
 <div style="margin-bottom: 0.5rem;">“Fufufu~  Look who is back already, you sure do love talking to me but sure I don’t mind <em>she languidly stretches in her chair</em>, let's be quick about it though I have things to do.”<span class="narrator"> – If you get the relationship meter to close</span></div>
 <div style="margin-bottom: 0.5rem;">"<strong><em>PlayerName</em></strong>~ you are back so soon... Want a cheesecake? I brought one too many"<span class="narrator"> - Max Relationship random dialogue start</span></div>
+<div style="margin-bottom: 0.5rem;">“... Begone from my sight with that cheap imitation of yours”<span class="narrator">– If you use The Mirror World Moveset  and less than friends</span></div>
+<div style="margin-bottom: 0.5rem;">“Aw.. trying to be me so badly aren't you? Sure I can entertain the thought however you really need to brush up~”<span class="narrator">– If you use The Mirror World Moveset  and is friends and above</span></div>
 
 </div>
 
 ---
 
 <div class="char-stats">
-  <div><span class="char-label">In Game Name</span> — </div>
-  <div><span class="char-label">Aliases</span> — </div>
-  <div><span class="char-label">Race</span> — </div>
-  <div><span class="char-label">Variant Type</span> — </div>
-  <div><span class="char-label">Adjacent / Previous Mortal Species</span> — </div>
-  <div><span class="char-label">Age</span> — </div>
-  <div><span class="char-label">Birthday</span> — </div>
+  <div><span class="char-label">In Game Name</span> — Director Herta</div>
+  <div><span class="char-label">Aliases</span> — Herta, The Mirrored One, The Thorn of the Sky Clan </div>
+  <div><span class="char-label">Race</span> — Anomaly</div>
+  <div><span class="char-label">Variant Type</span> — Prime</div>
+  <div><span class="char-label">Adjacent / Previous Mortal Species</span> — Kitsune</div>
+  <div><span class="char-label">Age</span> — Not Telling</div>
+  <div><span class="char-label">Birthday</span> — April 23</div>
   <div><span class="char-label">Height</span> — </div>
   <div><span class="char-label">Weight</span> — </div>
   <div><span class="char-label">Boss Title</span> — Phase 1:  | Phase 2: </div>
   <div><span class="char-label">Power Level</span> — </div>
-  <div><span class="char-label">Vitality</span> — </div>
-  <div><span class="char-label">Enemy Type</span> — </div>
+  <div><span class="char-label">Enemy Type</span> — NPC, Lore</div>
   <div><span class="char-label">Abilities</span> — </div>
   <div><span class="char-label">Abilities Type</span> — </div>
   <div><span class="char-label">Battle Theme</span> — Phase 1:  | Phase 2: </div>

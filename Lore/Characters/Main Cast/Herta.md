@@ -165,7 +165,7 @@ Her fav dessert is a cheesecake — <span class="narrator">(Herta: Why are still
       <strong>The Infinite Refractal</strong> — The ability to create mirrors using The Mirror World at the progenitor level of mastery. <span class="narrator">(Herta: tch… how lazy of you I know how much detail you put into Asmondaios’ and Lunara’s, how about mine…)</span>
     </div>
      <div>
-      <strong>Azure Compatibility</strong> — As a member of the Sky Clan she is naturally compatible with the  Azure Series of spells, techniques and Resonators (including Sōjin Shasaku)</span>
+       <strong>Azure Compatibility</strong> — As a member of the Sky Clan she is naturally compatible with the  Azure Series of spells, techniques and Resonators (including Sōjin Shasaku)
     </div>
     <div>
       <strong>Exponentia</strong>

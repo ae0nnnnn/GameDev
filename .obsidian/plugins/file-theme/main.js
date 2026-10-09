@@ -20,6 +20,12 @@ class FileThemeMirror extends Plugin {
     // Safety net: if any navigation path doesn't emit an event, the
     // 1.5s poll still converges classes + flash. Idempotent when idle.
     this.registerInterval(window.setInterval(() => this.update(), 1500));
+    // Raw-anchor translator: clicks on plain <a href> tags inside raw
+    // HTML (which Obsidian renders but never wires up) resolve exactly
+    // like native links. The :not([data-href]) guard means rendered
+    // Markdown links can never collide; Reading view only, so editor
+    // clicks keep placing the cursor.
+    this.registerDomEvent(document, 'click', (e) => this.openRawAnchor(e), true);
     this.registerDomEvent(document, 'mousedown', (e) => {
       this._clickX = e.clientX;
       this._clickY = e.clientY;
@@ -228,6 +234,52 @@ class FileThemeMirror extends Plugin {
     });
     cur.sort();
     return cur.join(' ');
+  }
+
+  // Resolve a click on a raw-HTML anchor the same way Obsidian
+  // resolves its own links. Returns true when handled.
+  openRawAnchor(e) {
+    try {
+      if (e.defaultPrevented) return false;
+      if (e.button !== 0 && e.button !== 1) return false;
+      const t = e.target && e.target.closest ? e.target.closest('a[href]:not([data-href])') : null;
+      if (!t) return false;
+      const raw = t.getAttribute('href') || '';
+      if (!raw || /^[a-z][a-z0-9+.-]*:/i.test(raw) || raw.charAt(0) === '#') return false;
+      const reading = t.closest('.markdown-preview-view');
+      if (!reading) return false;
+      let sourcePath = null;
+      try {
+        const leaves = [];
+        this.app.workspace.iterateAllLeaves((l) => leaves.push(l));
+        for (const l of leaves) {
+          try {
+            if (l.containerEl && l.containerEl.contains(t) && l.view && l.view.file) {
+              sourcePath = l.view.file.path;
+              break;
+            }
+          } catch (err) {}
+        }
+      } catch (err) {}
+      if (!sourcePath) {
+        try {
+          const active = this.app.workspace.getActiveFile();
+          if (active) sourcePath = active.path;
+        } catch (err) {}
+      }
+      if (!sourcePath) return false;
+      e.preventDefault();
+      e.stopPropagation();
+      const openInNew = !!(e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1);
+      let target = raw;
+      try {
+        target = decodeURIComponent(raw);
+      } catch (err) {}
+      this.app.workspace.openLinkText(target, sourcePath, openInNew);
+      return true;
+    } catch (err) {
+      return false;
+    }
   }
 
   onunload() {

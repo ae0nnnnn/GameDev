@@ -142,6 +142,17 @@ Normally application of the mirror world is just to  interact with/ manipulate r
 
 A three tailed Kitsune is already considered a formidable opponent Herta was a 5 tailed one before becoming an Anomaly and naturally she kept their buffs and abilities  and can still gain more tails as her power increases.
 
+And because she is much more proficient in balance control she can retract the extra details at will
+
+The reason why she let the player go challenge the gods (If using A.I.R as your progression route) is because she views all her subordinates as disposable.
+
+Honestly she doesn’t really care if A.I.R wins or loses. To be honest she doesn’t even know why she joined AIR. She is finding it quite boring and actually wants to betray them because their beliefs are too drastic in her opinion, though is given the chance she would want to rule as God. I mean isn’t everyone beneath her?  
+
+Many within A.I.R would love to date her but of course they all know is wistful thinking almost like a flower one admires but can never pluck for themselves.
+
+She deeply adored and admired the Divine Protective Spirit Huáxiáng Tiāngāo when growing up so much so that she copied her fan fighting style.
+
+
 
 
 

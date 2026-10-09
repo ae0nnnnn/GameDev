@@ -152,6 +152,41 @@ Many within A.I.R would love to date her but of course they all know is wistful 
 
 She deeply adored and admired the Divine Protective Spirit Huáxiáng Tiāngāo when growing up so much so that she copied her fan fighting style.
 
+Although she seems unapproachable if you push on without getting yourself killed she would warm up to you eventually <span class="narrator">(Though I can’t guarantee this)</span>
+
+She has a thing for desserts, the only time she shows genuine joy is when wolfing one down and her expressions are so cute though you might never see them as only time has one is when no else is around. <span class="narrator">(Herta: How dare you… you swore you wouldn’t tell anyone!)</span> 
+
+Her fav dessert is a cheesecake — <span class="narrator">(Herta: Why are still going on about this!)</span> As much as her and Lunaris are enemies she does admit that Lunaris has an amazing sense of fashion.
+
+<div class="char-stats" style="margin-top: 2rem;">
+  <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Skills and Abilities</span>
+  <div style="display: flex; flex-direction: column; gap: 1rem;">
+    <div>
+      <strong>The Infinite Refractal</strong> — The ability to create mirrors using The Mirror World at the progenitor level of mastery. <span class="narrator">(Herta: tch… how lazy of you I know how much detail you put into Asmondaios’ and Lunara’s, how about mine…)</span>
+    </div>
+    <div>
+      <strong>Exponentia</strong>
+      <ul style="margin: 0.3rem 0 1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
+        <li><strong>Weapon:</strong> Glass Rapier</li>
+        <li>
+          <strong>Gimmick:</strong>
+          <ul style="margin: 0.2rem 0 0 1.2rem;">
+            <li>Improves the quality of the illusion so much so that it’s indistinguishable from reality.</li>
+            <li>Becomes immune to Illusions that are inferior to your own.</li>
+            <li><span class="narrator">“The veil between reality and illusion is already paper thin. All one needs is a little perspective to finally tear it.~”</span></li>
+          </ul>
+        </li>
+        <li><strong>Chant:</strong> <span class="narrator">“[TBD but i might steal/rephrase the phrase above]”</span></li>
+        <li>
+          <strong>Transformation:</strong> Eye colour shifts to a red, hair and fur colours shifts to white with red tips. Her kimono becomes almost like a reflective mirror. Summon 5 towering mirrors that follow behind her.
+        </li>
+        <li>
+          Due to the increase of raw power output granted she can temporarily force her way up to 9 tails though it’s rather unstable.
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 
 

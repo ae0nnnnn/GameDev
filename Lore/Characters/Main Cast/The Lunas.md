@@ -116,6 +116,7 @@ connections:
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin and Fellow Subdivistion of The Balance (Neutrality) </span></li>
     <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FMiranda">Miranda</a>    — <span style="opacity: 0.8;"> Most Devoted Follower </span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FGeneral%20Nial">General Nial</a>  — <span style="opacity: 0.8;"> Ideological Rival and Friend </span></li>
   </ul>
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
   <ul style="margin: 0.2rem 0 0 1.2rem;">

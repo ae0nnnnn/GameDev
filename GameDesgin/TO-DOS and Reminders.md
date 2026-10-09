@@ -32,7 +32,7 @@ Also found something that i am going to store here
 
 Ignore the img below  as this is just a note i took from an animation discord server on how to do speed flickers
 
-![[SpeedFlickImg.png]]
+![](../Images/SpeedFlickImg.png)
 ## To-dos
 Æon :
 

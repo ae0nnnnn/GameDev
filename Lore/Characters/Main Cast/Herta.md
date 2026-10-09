@@ -33,8 +33,8 @@ connections:
 ---
 
 <div class="char-stats">
-  <div><span class="char-label">In Game Name</span> — Director Herta</div>
-  <div><span class="char-label">Aliases</span> — Herta, The Mirrored One, The Thorn of the Sky Clan </div>
+  <div><span class="char-label">In Game Name</span> — Director Herta, The Head Strategist</div>
+  <div><span class="char-label">Aliases</span> — Herta, Director, The Mirrored One, The Thorn of the Sky Clan </div>
   <div><span class="char-label">Race</span> — Anomaly</div>
   <div><span class="char-label">Variant Type</span> — Prime</div>
   <div><span class="char-label">Adjacent / Previous Mortal Species</span> — Kitsune</div>

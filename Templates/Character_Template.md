@@ -62,7 +62,8 @@ connections:
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
     <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
       <div><strong>Eye Colour:</strong> </div>
-      <div><strong>Hair:</strong> </div>
+      <div><strong>Hair Colour:</strong> </div>
+      <div><strong>Hair Style:</strong> </div>
       <div><strong>Facial Details:</strong> </div>
       <div><strong>Accessories:</strong>
         <ul style="margin: 0.2rem 0 0 1.2rem;">

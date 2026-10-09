@@ -207,6 +207,7 @@ agree
 answering
 appear
 above
+aware
 race
 rem
 reminders
@@ -1763,6 +1764,7 @@ ok
 ownership
 obvious
 outlining
+others
 var
 very
 vault
@@ -2002,6 +2004,7 @@ Nul
 Note
 Nial
 Not
+Nihilistic
 Aliases
 Adjacent
 Abilities
@@ -2101,6 +2104,7 @@ Allow
 Anomaly
 Aw
 April
+Aloof
 Race
 Remember
 REMEMBER
@@ -2166,6 +2170,7 @@ Risk
 Reward
 Rival
 Refractal
+Ruthless
 Previous
 Power
 Personality
@@ -2391,6 +2396,10 @@ Sin
 Souls
 Sure
 Sky
+Should
+Spiteful
+Spatially
+Strategic
 Level
 Length
 Link
@@ -2664,6 +2673,7 @@ Huff
 Have
 Herta
 How
+Hazel
 Colour
 Contains
 CODE
@@ -2730,6 +2740,7 @@ Collapse
 Chanted
 Can
 Clan
+Cunning
 Eye
 EDITING
 Every
@@ -3027,6 +3038,7 @@ Which
 Windup
 Want
 World
+Why
 use
 until
 up
@@ -3124,6 +3136,7 @@ Uk
 Underneath
 Unblockable
 Unparryable
+Uncaring
 you
 yet
 your

@@ -78,6 +78,8 @@ neither
 notable
 needles
 notation
+nobles
+naturally
 aliases
 align
 accent
@@ -209,6 +211,11 @@ appear
 above
 aware
 advise
+aswell
+advice
+anomaly
+application
+advanced
 race
 rem
 reminders
@@ -305,6 +312,11 @@ reflections
 return
 relationship
 rings
+reach
+reminisce
+reflection
+realm
+referring
 power
 padding
 px
@@ -420,6 +432,9 @@ pupil
 push
 puffy
 pet
+poetry
+peaceful
+potentia
 level
 left
 letter
@@ -505,6 +520,7 @@ ledger
 languidly
 let
 less
+leaders
 status
 style
 span
@@ -686,6 +702,11 @@ stretches
 soon
 sight
 slit
+spellcasting
+smarts
+spite
+starts
+sky
 cssclasses
 class
 char
@@ -856,6 +877,11 @@ close
 cheesecake
 cheap
 corners
+circlets
+cared
+calm
+clansmen
+clan
 div
 display
 dev
@@ -973,6 +999,12 @@ domain
 dot
 deceased
 diamond
+days
+despised
+dignified
+dresses
+dirty
+dimensional
 text
 top
 the
@@ -1092,6 +1124,18 @@ taste
 thus
 terms
 talking
+tails
+tactician
+towards
+today
+taking
+toll
+turned
+traverse
+transportation
+takes
+three
+tailed
 margin
 meet
 move
@@ -1212,6 +1256,12 @@ moderately
 met
 morbid
 meter
+motivate
+mother
+misc
+mirror
+mastery
+mirrors
 bottom
 block
 border
@@ -1313,6 +1363,12 @@ badly
 brought
 brush
 band
+barely
+bow
+beauty
+became
+becoming
+buffs
 font
 for
 from
@@ -1411,6 +1467,12 @@ friends
 fours
 facing
 formal
+follows
+family
+fond
+fortitude
+fights
+formidable
 em
 example
 else
@@ -1511,6 +1573,8 @@ empty
 escaped
 executioner
 entertain
+eventually
+ended
 weight
 we
 works
@@ -1613,6 +1677,8 @@ wheeze
 wasn
 worshipped
 worshippers
+worked
+witnessing
 italic
 interactive
 interjections
@@ -1709,6 +1775,8 @@ interests
 imitation
 ish
 inward
+infection
+iteration
 opacity
 or
 on
@@ -1779,6 +1847,8 @@ obvious
 outlining
 others
 outer
+outstanding
+opts
 var
 very
 vault
@@ -1835,6 +1905,7 @@ victims
 view
 vulnerable
 vicinity
+vain
 In
 Iris
 Its
@@ -1960,6 +2031,7 @@ Good
 Gilgamesh
 Gear
 Go
+Gold
 Name
 Narrator
 NOT
@@ -2020,6 +2092,7 @@ Note
 Nial
 Not
 Nihilistic
+Normally
 Aliases
 Adjacent
 Abilities
@@ -2120,6 +2193,8 @@ Anomaly
 Aw
 April
 Aloof
+Ann
+Arletur
 Race
 Remember
 REMEMBER
@@ -2317,6 +2392,7 @@ Moveset
 Mirrored
 Marking
 Multiple
+Member
 Species
 Status
 Stuff
@@ -2421,6 +2497,7 @@ Strategic
 Strategist
 Style
 Soft
+Safe
 Level
 Length
 Link
@@ -2628,6 +2705,9 @@ FGeneral
 Faction
 FA
 Flowing
+Fox
+Former
+FZania
 Hair
 Helpful
 Hints
@@ -2697,6 +2777,7 @@ Have
 Herta
 How
 Hazel
+Herself
 Colour
 Contains
 CODE
@@ -2765,6 +2846,7 @@ Can
 Clan
 Cunning
 Current
+ChronosSpatium
 Eye
 EDITING
 Every
@@ -2830,6 +2912,7 @@ Exponentially
 Everything
 Eternal
 Ears
+Earings
 Design
 DO
 DOING
@@ -2904,6 +2987,7 @@ Damage
 Damnation
 Director
 Desgin
+Descendant
 Outfit
 ON
 Oz
@@ -3007,6 +3091,9 @@ grows
 getting
 generated
 glowing
+genuinely
+graceful
+gain
 Willam
 WE
 WHEN
@@ -3123,6 +3210,10 @@ urge
 unauthorized
 users
 upon
+unconditionally
+unafraid
+unknown
+utterly
 Used
 USE
 UI
@@ -3311,6 +3402,8 @@ knowledge
 kill
 kills
 kimono
+knew
+kept
 how
 have
 handled
@@ -3404,6 +3497,14 @@ hellhole
 heretics
 hexagram
 hem
+hairpin
+had
+house
+hated
+hatred
+herself
+help
+hence
 quality
 qB
 qEl
@@ -3562,6 +3663,7 @@ Bob
 Branch
 Blood
 Begone
+Brooch
 You
 YMz
 YV
@@ -3748,6 +3850,7 @@ ZIm
 ZL
 ZB
 ZMn
+Zania
 xPc
 xs
 xQ

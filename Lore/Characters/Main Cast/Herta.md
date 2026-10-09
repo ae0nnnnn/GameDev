@@ -9,8 +9,13 @@ cssclasses:
   - character-sheet
 connections:
   - "[[A.I.R]]"
+  - "[[The Sky Clan]]"
+  - "[[Zania]]"
   - "[[The Lunas]]"
   - "[[Asmondaios]]"
+  - "[[Zenovia]]"
+  - "[[S.T.A.B]]"
+  - "[[The Duality]]"
 ---
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Herta</span>
@@ -74,7 +79,9 @@ connections:
       <div><strong>Ears:</strong> Soft and puffy <span class="narrator">-I advise you don’t try pet them or else you are as good as dead</span> </div>
       <div><strong>Accessories:</strong>
         <ul style="margin: 0.2rem 0 0 1.2rem;">
-          <li><em>[Accessory Name]:</em> Stats and gimmicks — </li>
+          <li><em>Gold Hair Brooch and Earings:</em> Stats and gimmicks — None </li>
+          <li><em>Fox hairpin:</em> Stats and gimmicks — None </li>
+          <li><em>Gold circlets:</em> Stats and gimmicks — Can expand to be worn on your tails aswell</li>
         </ul>
       </div>
       <div><strong>Outfit Preferences/Type:</strong> Traditional and more formal (Current Outfit: A pink kimono with a hem slit on the left side with a thigh band)</div>
@@ -87,21 +94,60 @@ connections:
   
   <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li>[Faction Name 1] — <span style="opacity: 0.8;">[Standing / Role]</span></li>
-    <li>[Faction Name 2] — <span style="opacity: 0.8;">[Standing / Role]</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FA.I.R">A.I.R</a> — <span style="opacity: 0.8;">Director and Head Strategist</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Sky%20Clan">The Sky Clan</a> — <span style="opacity: 0.8;">Former Branch Family Member</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>  — <span style="opacity: 0.8;"> Enemy</span></li>
+     <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>   — <span style="opacity: 0.8;"> Enemy</span></li>
+    
   </ul>
 
   <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li>[Character Name 1] — <span style="opacity: 0.8;">[Relationship / Dynamic Description]</span></li>
-    <li>[Character Name 2] — <span style="opacity: 0.8;">[Relationship / Dynamic Description]</span></li>
+    <li>She— <span style="opacity: 0.8;">...</span></li>
+    <li> Herself — <span style="opacity: 0.8;">...</span></li>
+	<li> And Her — <span style="opacity: 0.8;">...</span></li>
+	<li> Ann— <span style="opacity: 0.8;"> Her Mother and probably the only person she ever cared about unconditionally.</span></li>
+	 <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FZania">Zania</a> — <span style="opacity: 0.8;"> Clan's Descendant</span></li>
   </ul>
 
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
   <ul style="margin: 0.2rem 0 0 1.2rem;">
-    <li>[Character Name 3] — <span style="opacity: 0.8;">[Conflict / Dynamic Description]</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a>  — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FThe%20Lunas">The Lunas</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
+    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
   </ul>
 </div>
+
+She is one of the leaders of A.I.R.
+
+She is the tactician of the group as is unafraid to spell things out as is … though Arletur barely ever follows her advice.
+
+She was part of the branch family of the Sky Clan.
+
+Every single time she had to bow her head towards the nobles of her house she hated it because she was better than most if not all of them at spellcasting, smarts, beauty poetry etc. 
+
+This hatred eventually became the spite she used to motivate herself to reach where she is today.
+
+She was quite fond of her mother so much that when her mental fortitude starts taking a toll she can’t help but to reminisce about the days before she knew how the sky calm worked and all was peaceful.
+
+How she became an Anomaly is unknown <span class="narrator">(Safe to assume it was via infection like most)</span>  but when her clansmen found out when she did by witnessing her kill some of the nobles and her other misc people that she utterly despised.
+
+Her beauty is genuinely outstanding and she opts for a more graceful and dignified look. 
+
+She often tries to end fights as quickly as possible to avoid getting her dresses dirty.
+
+During her time in the clan she was a very vain person so when she turned into an anomaly she ended up with the Mirror World  for a potentia. → she is the original user
+
+Normally application of the mirror world is just to  interact with/ manipulate reflections but her mastery of it is so advanced that she is able to “break” these mirrors and traverse the reflection realm as a form of transportation (though it only takes her to an adjacent branch) hence why she still would need a dimensional dagger to get to ChronosSpatium hence from now on I’m referring to her iteration of The Mirror World as The Infinite Refractal
+
+A three tailed Kitsune is already considered a formidable opponent Herta was a 5 tailed one before becoming an Anomaly and naturally she kept their buffs and abilities  and can still gain more tails.
+
+
+
+
+
+
+
 
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">
   <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>

@@ -164,6 +164,9 @@ Her fav dessert is a cheesecake — <span class="narrator">(Herta: Why are still
     <div>
       <strong>The Infinite Refractal</strong> — The ability to create mirrors using The Mirror World at the progenitor level of mastery. <span class="narrator">(Herta: tch… how lazy of you I know how much detail you put into Asmondaios’ and Lunara’s, how about mine…)</span>
     </div>
+     <div>
+      <strong>Azure Compatibility</strong> — As a member of the Sky Clan she is naturally compatible with the  Azure Series of spells, techniques and Resonators (including Sōjin Shasaku)</span>
+    </div>
     <div>
       <strong>Exponentia</strong>
       <ul style="margin: 0.3rem 0 1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
@@ -189,7 +192,9 @@ Her fav dessert is a cheesecake — <span class="narrator">(Herta: Why are still
 </div>
 
 
+She is a DEX and SPT type fighter often opting for spells rather than direct confrontation where possible, allowing her to set up as many mirrors as possible as once her opponent figures it out they tend to try to break them.
 
+  
 
 
 
@@ -201,5 +206,8 @@ Her fav dessert is a cheesecake — <span class="narrator">(Herta: Why are still
 <div style="margin-top: 3rem; margin-bottom: 1.5rem;">
   <span class="char-label" style="display: block; font-size: 1.2em; border-bottom: 1px solid var(--interactive-accent); padding-bottom: 0.3rem;">Author's Notes / Trivia</span>
 </div>
+The only way to actually get her backstory is via her dialogue tree which is the final conversation before close.
+
+The key to progressing her relationship meter is having a good mixture of Wit and Charisma while also feeding into her vanity and gently rebuffing it on the occasion this way she finds you interesting to keep around
 
 

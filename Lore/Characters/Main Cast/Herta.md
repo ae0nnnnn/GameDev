@@ -22,8 +22,11 @@ connections:
 <div style="margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid var(--interactive-accent); opacity: 0.85;">
   <div style="margin-bottom: 0.5rem;">“Do not bother me...I don't have the time for you.”<span class="narrator">– Interaction dialogue</span> </div>
   <div style="margin-bottom: 0.5rem;">“I am surprised, congratulations I guess” <em>She doesn’t even look up from what she is doing</em>.<span class="narrator">– if you beat Asmondaios and return to her</span> </div>
-<div style="margin-bottom: 0.5rem;">“[Quote 2]”</div>
-<div style="margin-bottom: 0.5rem;">“[Quote 2]”</div>
+<div style="margin-bottom: 0.5rem;">“Well hello <strong><em>PlayerName</em></strong>, Do you really want to speak to me that badly? How quaint"<span class="narrator">- If you somehow push her relationship meter to friends</span> </div>
+<div style="margin-bottom: 0.5rem;">“Fufufu~  Look who is back already, you sure do love talking to me but sure I don’t mind <em>she languidly stretches in her chair</em>, let's be quick about it though I have things to do.”<span class="narrator"> – If you get the relationship meter to close</span></div>
+
+<div style="margin-bottom: 0.5rem;">"<strong><em>PlayerName<em>~ you are back so soon... Want a cheesecake? I brought one too many"<span class="narrator"> – If you get the relationship meter to close</span></div>
+
 </div>
 
 ---

@@ -67,9 +67,10 @@ connections:
     <span class="char-label" style="display: block; margin-bottom: 0.2rem;">Appearance</span>
     <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
       <div><strong>Eye Colour:</strong> <span class="hexchip" style="--hex:#E67F20">#E67F20</span>  </div>
+    <div><strong>Iris Desgin:</strong>  Multiple rings with fours “corners” of the outer one having a diamond on it facing inward</div>
       <div><strong>Hair Colour:</strong> Rogue(ish) pink - (<span class="hexchip" style="--hex:#F8A4C0">#F8A4C0</span>) </div>
-      <div><strong>Hair Style:</strong> </div>
-      <div><strong>Facial Details:</strong> </div>
+      <div><strong>Hair Style:</strong> Long and Flowing</div>
+      <div><strong>Facial Details:</strong>Mirror Potentia Marking </div>
       <div><strong>Accessories:</strong>
         <ul style="margin: 0.2rem 0 0 1.2rem;">
           <li><em>[Accessory Name]:</em> Stats and gimmicks — </li>

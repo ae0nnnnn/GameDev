@@ -303,6 +303,7 @@ reincarnation
 reflections
 return
 relationship
+rings
 power
 padding
 px
@@ -850,6 +851,7 @@ chair
 close
 cheesecake
 cheap
+corners
 div
 display
 dev
@@ -966,6 +968,7 @@ displayed
 domain
 dot
 deceased
+diamond
 text
 top
 the
@@ -1400,6 +1403,8 @@ face
 fought
 fir
 friends
+fours
+facing
 em
 example
 else
@@ -1696,6 +1701,8 @@ inside
 injuries
 interests
 imitation
+ish
+inward
 opacity
 or
 on
@@ -1765,6 +1772,7 @@ ownership
 obvious
 outlining
 others
+outer
 var
 very
 vault
@@ -2171,6 +2179,7 @@ Reward
 Rival
 Refractal
 Ruthless
+Rogue
 Previous
 Power
 Personality
@@ -2299,6 +2308,8 @@ Mother
 Mirror
 Moveset
 Mirrored
+Marking
+Multiple
 Species
 Status
 Stuff
@@ -2400,6 +2411,8 @@ Should
 Spiteful
 Spatially
 Strategic
+Strategist
+Style
 Level
 Length
 Link
@@ -2605,6 +2618,7 @@ Fufufu
 FGeneral
 Faction
 FA
+Flowing
 Hair
 Helpful
 Hints
@@ -2878,6 +2892,7 @@ Due
 Damage
 Damnation
 Director
+Desgin
 Outfit
 ON
 Oz

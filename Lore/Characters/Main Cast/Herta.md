@@ -51,7 +51,7 @@ connections:
   <div><span class="char-label">Enemy Type</span> — NPC (Lore), NPC (Faction Leader)</div>
   <div><span class="char-label">Abilities</span> — The Mirror World (The Infinite Refractal)</div>
   <div><span class="char-label">Abilities Type</span> — Innate</div>
-  <div><span class="char-label">Affiliation</span> —  <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FA.I.R">A.I.R</a> </div>
+  <div><span class="char-label">Affiliation</span> —  <a href="../../Factions/A.I.R.md">A.I.R</a> </div>
   <div><span class="char-label">Status</span> — Alive</div>
 </div>
 
@@ -94,10 +94,10 @@ connections:
   
   <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FA.I.R">A.I.R</a> — <span style="opacity: 0.8;">Director and Head Strategist</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Sky%20Clan">The Sky Clan</a> — <span style="opacity: 0.8;">Former Branch Family Member</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>  — <span style="opacity: 0.8;"> Enemy</span></li>
-     <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>   — <span style="opacity: 0.8;"> Enemy</span></li>
+    <li><a href="../../Factions/A.I.R.md">A.I.R</a> — <span style="opacity: 0.8;">Director and Head Strategist</span></li>
+    <li><a href="../../Factions/The%20Sky%20Clan.md">The Sky Clan</a> — <span style="opacity: 0.8;">Former Branch Family Member</span></li>
+    <li><a href="../../Factions/S.T.A.B.md">S.T.A.B</a>  — <span style="opacity: 0.8;"> Enemy</span></li>
+     <li><a href="../../Factions/The%20Duality.md">The Duality</a>   — <span style="opacity: 0.8;"> Enemy</span></li>
     
   </ul>
 
@@ -107,14 +107,14 @@ connections:
     <li> Herself — <span style="opacity: 0.8;">...</span></li>
 	<li> And Her — <span style="opacity: 0.8;">...</span></li>
 	<li> Ann— <span style="opacity: 0.8;"> Her Mother and probably the only person she ever cared about unconditionally.</span></li>
-	 <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FZania">Zania</a> — <span style="opacity: 0.8;"> Clan's Descendant</span></li>
+	 <li> <a href="../Side%20Cast/Zania.md">Zania</a> — <span style="opacity: 0.8;"> Clan's Descendant</span></li>
   </ul>
 
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
   <ul style="margin: 0.2rem 0 0 1.2rem;">
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a>  — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FThe%20Lunas">The Lunas</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
+    <li><a href="./Asmondaios.md">Asmondaios</a>  — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
+    <li><a href="./The%20Lunas.md">The Lunas</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
+    <li><a href="./Zenovia.md">Zenovia</a>   — <span style="opacity: 0.8;">Enemy Faction's Leader</span></li>
   </ul>
 </div>
 

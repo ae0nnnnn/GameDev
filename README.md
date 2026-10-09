@@ -24,7 +24,7 @@ For example :
 
 For example 
 <div class="char-devnote">
-[Dev]:  This is the main page for game dev -- <a href="obsidian://open?vault=Lore&file=GameDesgin%2FTO-DOS%20and%20Reminders">TO-DOS and Reminders</a> 
+[Dev]:  This is the main page for game dev -- <a href="./GameDesgin/TO-DOS%20and%20Reminders.md">TO-DOS and Reminders</a> 
 
 </div> 
 

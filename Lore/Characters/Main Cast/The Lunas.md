@@ -53,7 +53,7 @@ connections:
   <div><span class="char-label">Abilities</span> — Space Manipulation, Soul Manipulation, Hemolysis</div>
   <div><span class="char-label">Abilities Type</span> — Innate</div>
   <div><span class="char-label">Battle Theme</span> — Phase 1: Moonlit Sonata | Phase 2: A Sinner’s Delight ~ Let The Reveries Ensue!</div>
-  <div><span class="char-label">Affiliation</span> — <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Duality">The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a>, <a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Cult%20of%20The%20Good%20Goddess">The Cult of The Good Goddess</a>  </div>
+  <div><span class="char-label">Affiliation</span> — <a href="../../Factions/The%20Duality.md">The Duality</a>, <a href="../../Factions/S.T.A.B.md">S.T.A.B</a>, <a href="../../Factions/The%20Church%20of%20The%20Duality.md">The Church of The Duality</a>, <a href="../../Factions/The%20Cult%20of%20The%20Good%20Goddess.md">The Cult of The Good Goddess</a>  </div>
   <div><span class="char-label">Drops</span> — Godly Chest</div>
   <div><span class="char-label">Status</span> — Alive</div>
 </div>
@@ -105,18 +105,18 @@ connections:
   <span class="char-label" style="display: block; margin-bottom: 1rem; font-size: 1.2em;">Relationship Web</span>
   <p style="margin-bottom: 0.55rem;"><strong>Factions & Organizations</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FS.T.A.B">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FFactions%2FThe%20Church%20of%20The%20Duality">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
+    <li><a href="../../Factions/S.T.A.B.md">S.T.A.B</a> — <span style="opacity: 0.8;">Ally</span></li>
+    <li><a href="../../Factions/The%20Church%20of%20The%20Duality.md">The Church of The Duality</a> — <span style="opacity: 0.8;">Ordinance Denomination Figurehead</span></li>
   </ul>
   <p style="margin-bottom: 0.5rem;"><strong>Family & Close Bonds</strong></p>
   <ul style="margin: 0.2rem 0 1rem 1.2rem;">
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsmondaios">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend, Partner and Entropic Half their Duality</span></li>
-  <li> <a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FZenovia">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FSatella">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FFafnir">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FAsdeath">Asdeath</a>   — <span style="opacity: 0.8;"> Kin and Fellow Subdivistion of The Balance (Neutrality) </span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FSide%20Cast%2FMiranda">Miranda</a>    — <span style="opacity: 0.8;"> Most Devoted Follower </span></li>
-    <li><a href="obsidian://open?vault=Lore&file=Lore%2FCharacters%2FMain%20Cast%2FGeneral%20Nial">General Nial</a>  — <span style="opacity: 0.8;"> Ideological Rival and Friend </span></li>
+    <li><a href="./Asmondaios.md">Asmondaios</a> — <span style="opacity: 0.8;">Best Friend, Partner and Entropic Half their Duality</span></li>
+  <li> <a href="./Zenovia.md">Zenovia</a>  — <span style="opacity: 0.8;"> Oldest Daughter (Adopted)</span></li>
+    <li><a href="./Satella.md">Satella</a> — <span style="opacity: 0.8;">2nd Daughter (Biological)</span></li>
+    <li><a href="./Fafnir.md">Fafnir</a>  — <span style="opacity: 0.8;"> Only Son (Biological)</span></li>
+    <li><a href="./Asdeath.md">Asdeath</a>   — <span style="opacity: 0.8;"> Kin and Fellow Subdivistion of The Balance (Neutrality) </span></li>
+    <li><a href="../Side%20Cast/Miranda.md">Miranda</a>    — <span style="opacity: 0.8;"> Most Devoted Follower </span></li>
+    <li><a href="./General%20Nial.md">General Nial</a>  — <span style="opacity: 0.8;"> Ideological Rival and Friend </span></li>
   </ul>
   <p style="margin-bottom: 0.5rem;"><strong>Rivals & Antagonists</strong></p>
   <ul style="margin: 0.2rem 0 0 1.2rem;">

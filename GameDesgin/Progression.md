@@ -16,7 +16,9 @@ ParryAnimLength and also the stun for whiffing 45 frames at 60fps.
 
 NieR: Automata-Esque Spot Dodge Atack - 36f at 60fps
 windup - frame 2-3
-HitStart - frame 5-7 - Generous Veritcal Hitbox
+HitStart - frame 5-7 - Generous Veritcal Hitbox as it an uptilit
+HitEnd - frame 17 - 19 
+frames 19 to 36 follow through poses
 
 ## Weapon Info
 

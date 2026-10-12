@@ -14,11 +14,11 @@ Hypr Parry Frames = 0.12
 Auto Parry (AP) Frames = 0.3 (I'm just guessing here) secs after a parry however right now they can extend each other → I am going to tweak it that AP frames can only extend themselves once then you have to manually parry the multi-hit again → done
 ParryAnimLength and also the stun for whiffing 45 frames at 60fps.
 
-NieR: Automata-Esque Spot Dodge Atack - 36f at 60fps
+NieR: Automata-Esque Spot Dodge Attack - 36f at 60fps
 windup - frame 2-3
 HitStart - frame 5-7 - Generous Veritcal Hitbox as it an uptilit
 HitEnd - frame 17 - 19 
-frames 19 to 36 follow through poses
+Frames 19 to 36 follow through to until end
 
 ## Weapon Info
 
@@ -58,10 +58,10 @@ Fists swing cooldown - 0.1 seconds
 
 Range 
 <div class="char-devnote">
-[Dev]:  -- needs to be done in `Vector3` 
+[Dev]:  -- needs to be done in `Vector3`
 
 </div> 
-Medium weapon - medium range, long rang
+Medium weapon - medium range, long range
 Heavy weapon - long range, very long
 Light weapon, short range, medium range
 Fists - short range, very short
@@ -71,8 +71,8 @@ Hitbox frames
 [Dev]:  -- Needs to be redone as anims are changing
 
 </div> 
-Light - Frame 21
-Med - Frame 9
+Light - Frame 21 - set in stone
+Med - Frame 9 - 
 Heavy - Frame 10
 
 

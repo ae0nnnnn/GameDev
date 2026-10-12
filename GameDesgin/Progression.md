@@ -25,7 +25,7 @@ Frames 19 to 36 follow through to until end
 ### Weapon Refining 
 
 Upgrade stones are required to upgrade your vessel weapon or Resonator 
-These do not carry over per Potentia Swap or Weapon Modification for vessels and obviously for only now Resonator
+These do not carry over per Potentia Swap or Weapon Modification for vessels and obviously for only one Resonator copy 
 
 Levels 1-3 require a tier 1 stone
 Levels 4-6 require a tier 2 stone
@@ -72,7 +72,7 @@ Hitbox frames
 
 </div> 
 Light - Frame 21 - set in stone
-Med - Frame 9 - 
+Med - Frame  24 - set in stone
 Heavy - Frame 10
 
 

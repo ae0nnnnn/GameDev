@@ -1,8 +1,7 @@
 ---
 name:
   - The Lunas
-aliases:
-  - Lunara, Lunaris
+aliases: [Lunara, Lunaris, The Angel of Death, The Princess of Ruin]
 race: Celestial (Arch-Draculain)
 power_level: Peak Calamity
 status: Alive

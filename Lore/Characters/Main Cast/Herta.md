@@ -1,7 +1,7 @@
 ---
 name:
   - Herta
-aliases: [Herta, The Mirrored One, The Thorn of the Sky Clan]
+aliases: [Herta, The Mirrored One, The Thorn of the Sky Clan, The Imaginary Demoness]
 race: Anomaly
 power_level: Late Calamity
 status: Alive

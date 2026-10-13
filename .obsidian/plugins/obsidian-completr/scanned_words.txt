@@ -223,6 +223,7 @@ adored
 admired
 admit
 amazing
+anywhere
 race
 rem
 reminders
@@ -740,6 +741,9 @@ shows
 swore
 shifts
 set
+st
+sakes
+said
 cssclasses
 class
 char
@@ -1557,6 +1561,7 @@ fighter
 figures
 feeding
 finds
+flammable
 em
 example
 else
@@ -2139,6 +2144,8 @@ Gold
 Glass
 Gimmick
 Generous
+Glutton
+Gluttony
 Name
 Narrator
 NOT
@@ -2446,6 +2453,9 @@ Prime
 PlayerName
 Path
 Protective
+Primordial
+Playter
+PLayer
 Mortal
 Music
 Misc
@@ -2512,6 +2522,8 @@ Multiple
 Member
 Misplaced
 Many
+Malum
+Malice
 Species
 Status
 Stuff
@@ -2908,6 +2920,8 @@ Honestly
 Hu
 HitStart
 HitEnd
+Human
+Hey
 Colour
 Contains
 CODE
@@ -3047,6 +3061,8 @@ Eternal
 Ears
 Earings
 Esque
+Equal
+Emperor
 Design
 DO
 DOING
@@ -3123,6 +3139,8 @@ Director
 Desgin
 Descendant
 Dodge
+Demura
+Don
 Outfit
 ON
 Oz
@@ -3170,6 +3188,7 @@ OSTs
 Output
 Ok
 Ouroboros
+October
 game
 google
 going
@@ -3659,6 +3678,7 @@ help
 hence
 honest
 hair
+headquarters
 quality
 qB
 qEl
@@ -3821,6 +3841,7 @@ Begone
 Brooch
 Bad
 Becomes
+Bound
 You
 YMz
 YV
@@ -3857,6 +3878,7 @@ YI
 Yh
 Yzl
 Yippe
+Years
 KJ
 Kw
 Kh

@@ -19,11 +19,6 @@ connections:
   - "[[Herta]]"
   - "[[Zenovia]]"
 ---
-
-
-
-
-
 <div style="text-align: left; margin-top: 1rem; margin-bottom: 2rem;">
   <span style="font-size: 2.2em; font-weight: 700; letter-spacing: -0.02em; display: block; margin-bottom: 0.5rem;">Zania</span>
   <span style="font-size: 1.1em; font-style: italic; opacity: 0.8;">“Don’t let this one get anywhere near anything flammable for all of our sakes.”</span>

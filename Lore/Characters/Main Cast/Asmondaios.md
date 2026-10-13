@@ -17,4 +17,5 @@ connections:
  - "[[S.T.A.B]]"
  - "[[T.C.C]]"
  - "[[The North Stars]]"
+ - "[[Malum]]"
 ---

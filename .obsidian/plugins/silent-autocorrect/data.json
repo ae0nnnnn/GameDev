@@ -1,0 +1,619 @@
+{
+  "autoCorrectEnabled": true,
+  "undoOnBackspace": true,
+  "correctTwoInitialCapitals": true,
+  "capitalizeFirstLetterSentences": true,
+  "capitalizeSolitaryI": true,
+  "fixCommonContractions": true,
+  "useFrequencyDictionary": true,
+  "fixSplitMergeErrors": true,
+  "freqCandidateTopN": 50000,
+  "freqDownloadPrompted": true,
+  "correctionLog": [
+    {
+      "id": "mv73ox0a0nba",
+      "original": "cahs",
+      "corrected": "cash",
+      "confidence": 0.9049762806351915,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791921327130,
+      "reverted": true
+    },
+    {
+      "id": "mv73kf46xcgt",
+      "original": "RAw",
+      "corrected": "Raw",
+      "confidence": 1,
+      "kind": "case",
+      "label": "CASE",
+      "canAdd": false,
+      "note": "Measures of Financial Performance",
+      "time": 1791921117318
+    },
+    {
+      "id": "mv73k9hwbq97",
+      "original": "distnict",
+      "corrected": "distinct",
+      "confidence": 0.99,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791921110036
+    },
+    {
+      "id": "mv73k5foa73i",
+      "original": "classoifed",
+      "corrected": "classified",
+      "confidence": 0.6559330273514271,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791921104772
+    },
+    {
+      "id": "mv73iayami6y",
+      "original": "convertefd",
+      "corrected": "converted",
+      "confidence": 0.9545456580255199,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791921018610,
+      "reverted": true
+    },
+    {
+      "id": "mv73i9yphgce",
+      "original": "convertef",
+      "corrected": "converters",
+      "confidence": 0.5924592260817916,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791921017329,
+      "reverted": true
+    },
+    {
+      "id": "mv73i2w6o02q",
+      "original": "theat",
+      "corrected": "the at",
+      "confidence": 0.92,
+      "kind": "spacing",
+      "label": "SPACING",
+      "canAdd": false,
+      "note": "Measures of Financial Performance",
+      "time": 1791921008166,
+      "reverted": true
+    },
+    {
+      "id": "mv73hv91jnc7",
+      "original": "casgh",
+      "corrected": "cash",
+      "confidence": 0.8149762806351916,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920998261,
+      "reverted": true
+    },
+    {
+      "id": "mv73e9wijv8x",
+      "original": "functiuon",
+      "corrected": "function",
+      "confidence": 0.9362094655348604,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920830626
+    },
+    {
+      "id": "mv73dyeq819h",
+      "original": "usuful",
+      "corrected": "useful",
+      "confidence": 0.8427418211278708,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920815730
+    },
+    {
+      "id": "mv73dwntv3r2",
+      "original": "hgave",
+      "corrected": "have",
+      "confidence": 0.8365715507513146,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920813465
+    },
+    {
+      "id": "mv73dpexhprv",
+      "original": "twelevel",
+      "corrected": "twelve",
+      "confidence": 0.5908087144479581,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920804073
+    },
+    {
+      "id": "mv73di057qxc",
+      "original": "expetced",
+      "corrected": "expected",
+      "confidence": 0.99,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920794469
+    },
+    {
+      "id": "mv73de5iok13",
+      "original": "cahs",
+      "corrected": "cash",
+      "confidence": 0.9049762806351915,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920789478
+    },
+    {
+      "id": "mv73dd9b7ggg",
+      "original": "equienet",
+      "corrected": "equine",
+      "confidence": 0.5491717793407538,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920788319
+    },
+    {
+      "id": "mv73d8f5fuu2",
+      "original": "cahs",
+      "corrected": "cash",
+      "confidence": 0.9049762806351915,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920782049
+    },
+    {
+      "id": "mv73d3vf0ght",
+      "original": "buinsess",
+      "corrected": "business",
+      "confidence": 0.6200705150338035,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920776155
+    },
+    {
+      "id": "mv73btyz86ax",
+      "original": "imporant",
+      "corrected": "important",
+      "confidence": 0.9388978191658786,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920716667
+    },
+    {
+      "id": "mv73brwpeoah",
+      "original": "impoetant",
+      "corrected": "important",
+      "confidence": 0.99,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920713993,
+      "reverted": true
+    },
+    {
+      "id": "mv73b8g0am40",
+      "original": "vlae",
+      "corrected": "vale",
+      "confidence": 0.8826965513140635,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920688768,
+      "reverted": true
+    },
+    {
+      "id": "mv73ar8ul810",
+      "original": "shoiwn",
+      "corrected": "shown",
+      "confidence": 0.8439551534495434,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920666478
+    },
+    {
+      "id": "mv73a0tn63su",
+      "original": "WHen",
+      "corrected": "When",
+      "confidence": 1,
+      "kind": "case",
+      "label": "CASE",
+      "canAdd": false,
+      "note": "Measures of Financial Performance",
+      "time": 1791920632235,
+      "reverted": true
+    },
+    {
+      "id": "mv737hgxqqls",
+      "original": "valye",
+      "corrected": "value",
+      "confidence": 0.8810036252172901,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920513841
+    },
+    {
+      "id": "mv737d6p9i4v",
+      "original": "brnad",
+      "corrected": "brand",
+      "confidence": 0.9353011683014378,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920508289,
+      "reverted": true
+    },
+    {
+      "id": "mv7375sfil7v",
+      "original": "tangile",
+      "corrected": "tangible",
+      "confidence": 0.8515644648814531,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920498703
+    },
+    {
+      "id": "mv7371gma512",
+      "original": "usuage",
+      "corrected": "usage",
+      "confidence": 0.8367587339646435,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920493094
+    },
+    {
+      "id": "mv73704m4wum",
+      "original": "usua",
+      "corrected": "usual",
+      "confidence": 0.7738599420243025,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920491366,
+      "reverted": true
+    },
+    {
+      "id": "mv736wgi85n2",
+      "original": "thier",
+      "corrected": "their",
+      "confidence": 0.99,
+      "kind": "table",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920486610,
+      "reverted": true
+    },
+    {
+      "id": "mv736oriqvef",
+      "original": "regulary",
+      "corrected": "regularly",
+      "confidence": 0.8923629100751023,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920476638
+    },
+    {
+      "id": "mv736is2ayvq",
+      "original": "cardivasculr",
+      "corrected": "cardiovascular",
+      "confidence": 0.6759164665003093,
+      "kind": "spelling",
+      "label": "MEDICAL",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920468882
+    },
+    {
+      "id": "mv7363nahkyi",
+      "original": "cahnges",
+      "corrected": "changes",
+      "confidence": 0.99,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920449270,
+      "reverted": true
+    },
+    {
+      "id": "mv7359yxutx2",
+      "original": "fiitings",
+      "corrected": "fittings",
+      "confidence": 0.8846250685823428,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920410809,
+      "reverted": true
+    },
+    {
+      "id": "mv7334r5uata",
+      "original": "fittin",
+      "corrected": "fitting",
+      "confidence": 0.8577351212072386,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "Measures of Financial Performance",
+      "time": 1791920310737,
+      "reverted": true
+    }
+  ],
+  "autocorrectSensitivity": "proactive",
+  "shorthandsEnabled": true,
+  "clinicalShorthands": {
+    "pt": {
+      "key": "pt",
+      "expansion": "patient",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "pts": {
+      "key": "pts",
+      "expansion": "patients",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "hx": {
+      "key": "hx",
+      "expansion": "history",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "dx": {
+      "key": "dx",
+      "expansion": "diagnosis",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "tx": {
+      "key": "tx",
+      "expansion": "treatment",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "rx": {
+      "key": "rx",
+      "expansion": "prescription",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "sx": {
+      "key": "sx",
+      "expansion": "symptoms",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "fx": {
+      "key": "fx",
+      "expansion": "fracture",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "sob": {
+      "key": "sob",
+      "expansion": "shortness of breath",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "w/o": {
+      "key": "w/o",
+      "expansion": "without",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "w/": {
+      "key": "w/",
+      "expansion": "with",
+      "enabled": true,
+      "mode": "silent",
+      "category": "clinical"
+    },
+    "prn": {
+      "key": "prn",
+      "expansion": "as needed",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "bid": {
+      "key": "bid",
+      "expansion": "twice daily",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "tid": {
+      "key": "tid",
+      "expansion": "three times daily",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "qid": {
+      "key": "qid",
+      "expansion": "four times daily",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "po": {
+      "key": "po",
+      "expansion": "orally",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "npo": {
+      "key": "npo",
+      "expansion": "nothing by mouth",
+      "enabled": true,
+      "mode": "silent",
+      "category": "dosage"
+    },
+    "bp": {
+      "key": "bp",
+      "expansion": "blood pressure",
+      "enabled": true,
+      "mode": "silent",
+      "category": "vitals"
+    },
+    "hr": {
+      "key": "hr",
+      "expansion": "heart rate",
+      "enabled": true,
+      "mode": "silent",
+      "category": "vitals"
+    },
+    "rr": {
+      "key": "rr",
+      "expansion": "respiratory rate",
+      "enabled": true,
+      "mode": "silent",
+      "category": "vitals"
+    },
+    "temp": {
+      "key": "temp",
+      "expansion": "temperature",
+      "enabled": true,
+      "mode": "silent",
+      "category": "vitals"
+    }
+  },
+  "subDictionaries": {
+    "cardiology": {
+      "id": "cardiology",
+      "name": "Cardiology & Pulmonology",
+      "description": "Heart, circulation, arrhythmia, lungs, and ECG terminology",
+      "category": "cardiology",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 61
+    },
+    "pharmacology": {
+      "id": "pharmacology",
+      "name": "Pharmacology & Medications",
+      "description": "Generic and brand-name drugs, dosages, and pharmacokinetics",
+      "category": "pharmacology",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 321
+    },
+    "surgery": {
+      "id": "surgery",
+      "name": "Surgery & Procedures",
+      "description": "Surgical interventions, scopes, incisions, and diagnostics",
+      "category": "surgery",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 55
+    },
+    "neurology": {
+      "id": "neurology",
+      "name": "Neurology & Psychiatry",
+      "description": "Brain, nervous system, cognitive disorders, and mental health",
+      "category": "neurology",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 34
+    },
+    "pathology": {
+      "id": "pathology",
+      "name": "Pathology & Oncology",
+      "description": "Diseases, laboratory values, hematology, and neoplasms",
+      "category": "pathology",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 38
+    },
+    "anatomy": {
+      "id": "anatomy",
+      "name": "Anatomy & Physiology",
+      "description": "Organs, musculoskeletal, vasculature, and anatomical landmarks",
+      "category": "anatomy",
+      "enabled": true,
+      "mode": "silent",
+      "wordCount": 97
+    }
+  },
+  "enableEnglishDict": true,
+  "customWords": [
+    "hypokalemia",
+    "troponin",
+    "holter",
+    "ecg",
+    "copd",
+    "gerd",
+    "cabg",
+    "dvt",
+    "pe"
+  ],
+  "customSubWords": {
+    "cardiology": [],
+    "pharmacology": [],
+    "surgery": [],
+    "neurology": [],
+    "pathology": [],
+    "anatomy": []
+  },
+  "customReplacements": {}
+}

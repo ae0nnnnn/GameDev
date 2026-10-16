@@ -24,15 +24,16 @@ Use Cmdr for admin commands and server announcements 1
 Use ZonePlus 3.2 for POIs when making maps → though it would be ages from now
 
   
-Also found something that i am going to store here  
+Also found something things that i am going to store here  
   
 1. If you give an object a highlight with its fill transparency to -1 of any negative number it inverts the colours, and you can actually go past -1 deep into the negatives and this increases the effect  
   
 2. If you use tech 1 on a glass object with transparency to 1 and reflectance to 0 anything that is in or viewed through that object gets the colours inverted → this allows to create smooth divisions across one mesh
+3. When making vfx make sure that the zindex is greater than or equal to 1.5 so they don't clip into the floor 
 
 Ignore the img below  as this is just a note i took from an animation discord server on how to do speed flickers
 
-![](../Images/SpeedFlickImg.png)
+![[SpeedFlickImg.png]]
 ## To-dos
 Æon :
 

@@ -11,6 +11,17 @@
   "freqDownloadPrompted": true,
   "correctionLog": [
     {
+      "id": "mvbait44tofs",
+      "original": "dont",
+      "corrected": "don't",
+      "confidence": 0.99,
+      "kind": "table",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "TO-DOS and Reminders",
+      "time": 1792174664164
+    },
+    {
       "id": "mv73ox0a0nba",
       "original": "cahs",
       "corrected": "cash",

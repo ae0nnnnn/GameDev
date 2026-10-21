@@ -298,6 +298,9 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
       <br><br>
       High Risk High Reward — Damage: (if failed) Instakill — (if Succeeded) None — Unblockable — Unparryable — (The opponent will have to either run or try to face them in the domain) — One Time use per Transformation — Must be Chanted.
     </div>
+<div>
+      <strong>Balance & Healing Output</strong> — The Lunas have the highest Balance sensitivity and healing output out of everyone, being able to heal most physical and spiritual injuries.
+    </div>
   </div>
 </div>
 
@@ -313,9 +316,6 @@ However, due to the restraints Lunara placed on her own soul to keep Lunaris at 
     </div>
     <div>
       <strong>Blood Vials</strong> — 6 in total. 2 of them are filled with the blood of her summons whose traits she found very advantageous, 1 of them is filled with Asmondaios’ (for emergencies), and the final 3 are empty in case she wants to collect a sample from the opponent she is fighting. These are normally tucked away in her thigh bag or strapped to her belt (if one is present).
-    </div>
-    <div>
-      <strong>Balance & Healing Output Note</strong> — The Lunas have the highest Balance sensitivity and healing output out of everyone, being able to heal most physical and spiritual injuries.
     </div>
   </div>
 </div>

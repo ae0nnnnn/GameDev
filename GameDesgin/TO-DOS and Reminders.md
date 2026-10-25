@@ -33,7 +33,11 @@ Also found something things that i am going to store here
 
 Ignore the img below  as this is just a note i took from an animation discord server on how to do speed flickers
 
+
+
 ![[SpeedFlickImg.png]]
+
+However that only applies to flickers that want to have an after image if you want one without it you should just tween all the parts in the model's transparency to make the whole thing flicker 
 ## To-dos
 Æon :
 

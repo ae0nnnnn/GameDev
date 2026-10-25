@@ -11,6 +11,28 @@
   "freqDownloadPrompted": true,
   "correctionLog": [
     {
+      "id": "mvnlmk0v3zn9",
+      "original": "transperecy",
+      "corrected": "transparency",
+      "confidence": 0.6455309928485702,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "TO-DOS and Reminders",
+      "time": 1792918908895
+    },
+    {
+      "id": "mvnll4p96aen",
+      "original": "thjat",
+      "corrected": "that",
+      "confidence": 0.8421913814987411,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "TO-DOS and Reminders",
+      "time": 1792918842381
+    },
+    {
       "id": "mvbait44tofs",
       "original": "dont",
       "corrected": "don't",

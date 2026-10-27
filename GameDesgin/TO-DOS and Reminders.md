@@ -14,10 +14,9 @@ Also, **PLEASE REMEMBER WHEN DOING THE WIND UP FRAMES ACTUALLY MAKE THEM WIND UP
 
 Also, THE SHORTEST A SWING ANIM SHOULD BE IS 0.5 SECS because if its shorter it would be near impossible to consistently parry it
 
-
 GitHub Link - https://github.com/ae0nnnnn/My-NEA-Game-Hobby
 I need to go round and add SFX where it's missing as its one on the things that is making the game feel off to me – if I can't make any sounds – just go to 
-[freesound.org](http://freesounds.org)
+[freesound.org](http://freesound.org)
 
 Use Mixamo and Pinterest for reference work (Animations)  
 Use Cmdr for admin commands and server announcements 1

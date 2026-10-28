@@ -8,5 +8,7 @@
   "silent-autocorrect",
   "advanced-rename-and-delete-handler",
   "obsidian-custom-attachment-location",
-  "advanced-metadata-cache"
+  "advanced-metadata-cache",
+  "languagetool",
+  "better-markdown-links"
 ]

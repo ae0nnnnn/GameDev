@@ -10,7 +10,7 @@
   "sharedAttachmentPaths": [],
   "shouldCreateNoteToPreserveOriginalName": false,
   "shouldEnsurePathCompatibilityOnAndroid": false,
-  "shouldEnsurePathCompatibilityOnEveryPlatform": false,
+  "shouldEnsurePathCompatibilityOnEveryPlatform": true,
   "shouldEnsurePathCompatibilityOnIos": false,
   "shouldEnsurePathCompatibilityOnLinux": true,
   "shouldEnsurePathCompatibilityOnMacOs": false,

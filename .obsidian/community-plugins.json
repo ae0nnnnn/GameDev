@@ -4,9 +4,9 @@
   "obsidian-linter",
   "consistent-attachments-and-links",
   "obsidian-completr",
-  "backlink-cache",
   "file-theme",
   "silent-autocorrect",
   "advanced-rename-and-delete-handler",
-  "obsidian-custom-attachment-location"
+  "obsidian-custom-attachment-location",
+  "advanced-metadata-cache"
 ]

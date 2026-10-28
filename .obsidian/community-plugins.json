@@ -3,10 +3,10 @@
   "auto-replacer",
   "obsidian-linter",
   "consistent-attachments-and-links",
-  "advanced-rename-and-delete-handler",
   "obsidian-completr",
   "backlink-cache",
   "file-theme",
-  "obsidian-custom-attachment-location",
-  "silent-autocorrect"
+  "silent-autocorrect",
+  "advanced-rename-and-delete-handler",
+  "obsidian-custom-attachment-location"
 ]

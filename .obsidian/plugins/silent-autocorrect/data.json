@@ -11,6 +11,17 @@
   "freqDownloadPrompted": true,
   "correctionLog": [
     {
+      "id": "mvs60u7bo0w9",
+      "original": "Genral",
+      "corrected": "General",
+      "confidence": 0.8848969553055355,
+      "kind": "spelling",
+      "label": "ENGLISH",
+      "canAdd": true,
+      "note": "General Lore",
+      "time": 1793195032295
+    },
+    {
       "id": "mvnlmk0v3zn9",
       "original": "transperecy",
       "corrected": "transparency",

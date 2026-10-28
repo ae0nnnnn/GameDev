@@ -333,3 +333,19 @@
   margin-bottom: 8px;
   padding: 6px;
 }
+
+.sac-diag-textarea {
+  width: 100%;
+  font-family: var(--font-monospace);
+  font-size: 11px;
+  padding: 6px;
+}
+
+.status-bar-item.sac-hidden {
+  display: none;
+}
+
+/* Hide Obsidian's built-in word count while Silent Autocorrect shows its own */
+body.sac-hide-native-count .status-bar .plugin-word-count {
+  display: none;
+}

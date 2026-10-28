@@ -1,5 +1,17 @@
 /* Silent Autocorrect - Obsidian plugin */
-const { Plugin, PluginSettingTab, Setting, Notice, Modal, Menu, MarkdownView, Platform, ItemView, setIcon, requestUrl, normalizePath } = require("obsidian");
+const { Plugin, PluginSettingTab, Setting, Notice, Modal, Menu, MarkdownView, Platform, ItemView, setIcon, requestUrl, normalizePath, apiVersion } = require("obsidian");
+
+// Status bar indicators the user can show or hide individually.
+const STATUS_BAR_ITEMS = [
+  { key: "metrics", name: "Word and character count", desc: "Live word count, character count and estimated reading time. While shown, it replaces Obsidian's built-in count." },
+  { key: "addWord", name: "Add word button", desc: "One-click button to add a word to your dictionaries." },
+  { key: "autoCorrect", name: "Auto-correct on/off", desc: "Shows whether auto-correct is on. Click it to switch it on or off." },
+  { key: "sensitivity", name: "Sensitivity", desc: "Shows the current sensitivity tier. Click it to cycle through the tiers." },
+  { key: "dictionaries", name: "Sub-dictionaries", desc: "Shows how many sub-dictionaries are on. Click it to open the dictionary manager." },
+  { key: "fixed", name: "Fixed counter", desc: "Appears after the first correction of a session. Click it to undo the last correction." },
+];
+const STATUS_BAR_DEFAULTS = Object.fromEntries(STATUS_BAR_ITEMS.map((i) => [i.key, true]));
+const ISSUES_URL = "https://github.com/wud901/silent-autocorrect/issues";
 
 const DEFAULT_SETTINGS = {
   autoCorrectEnabled: true,
@@ -12,6 +24,7 @@ const DEFAULT_SETTINGS = {
   fixSplitMergeErrors: true,
   freqCandidateTopN: 50000,
   freqDownloadPrompted: false,
+  statusBarItems: Object.assign({}, STATUS_BAR_DEFAULTS),
   correctionLog: [],
   autocorrectSensitivity: "balanced",
   shorthandsEnabled: true,
@@ -76,6 +89,7 @@ function getDamerauDistance(a, b) {
 // ---------------------------------------------------------------------------
 
 const SENSITIVITY_TIERS = ["ultra", "proactive", "balanced", "strict", "minimal"];
+
 
 // threshold = minimum confidence (0-1). minMargin = lead the best candidate must have
 // over the runner-up. minLen = shortest word the spell-checker path may touch.
@@ -872,186 +886,297 @@ class CorrectionLogView extends ItemView {
 
 class SilentAutocorrectPlugin extends Plugin {
   async onload() {
+    this.errorLog = [];
+    this.stageResults = {};
+    this.keydownEventsSeen = 0;
+    this.keydownAttachCount = 0;
+    this.keydownDocs = new WeakSet();
     this.engine = new AutoCorrectEngine(() => this.settings, () => this.getSpellOracle());
-    await this.loadSettings();
-    // Optional frequency data: load in the background, then (once) offer to download it if missing.
-    this.loadFrequencyData().then(() => {
-      this.app.workspace.onLayoutReady(() => this.maybePromptFrequencyDownload());
+    try {
+      await this.loadSettings();
+    } catch (e) {
+      // e.g. a corrupted data.json: fall back to defaults so the plugin still starts.
+      this.logError("loading settings", e);
+      this.settings = Object.assign({}, DEFAULT_SETTINGS);
+      if (!this.settings.customSubWords) this.settings.customSubWords = {};
+      try { this.engine.rebuild(); } catch (e2) { this.logError("engine rebuild", e2); }
+    }
+
+    // Each stage is isolated: if one fails it is recorded and the rest still run.
+    // The typing listener goes first because nothing works without it.
+    this.stage("typing listener", () => {
+      // 4. Register Editor Keydown Listener for Auto-Correct.
+      // Capture phase on purpose: we must run BEFORE the editor's own Enter / list handling,
+      // otherwise the cursor has already moved to the next line when we look for the word.
+      // Registered once per document, and re-checked at several points (layout ready, every
+      // leaf change, new popout windows) so a missed registration at startup heals itself.
+      this.keydownDocs = new WeakSet();
+      this.attachKeydown(this.app.workspace.containerEl && this.app.workspace.containerEl.ownerDocument);
+      this.attachKeydown(activeDocument);
+      this.app.workspace.onLayoutReady(() => {
+        this.attachKeydown(this.app.workspace.containerEl && this.app.workspace.containerEl.ownerDocument);
+        this.attachKeydown(activeDocument);
+        if (!this.keydownAttachCount) this.logError("self-check", new Error("No keyboard listener could be attached"));
+      });
+      this.registerEvent(this.app.workspace.on("window-open", (_win, popout) => this.attachKeydown(popout.document)));
     });
-    this.registerView(VIEW_TYPE_CORRECTIONS, (leaf) => new CorrectionLogView(leaf, this));
 
     this.lastCorrection = null;
     this.sessionCorrectionCount = 0;
     this.currentWordCount = 0;
     this.currentCharCount = 0;
 
-    // 1. Build interactive Bottom Status Bar
-    this.statusBarItem = this.addStatusBarItem();
-    this.statusBarItem.addClass("plugin-silent-autocorrect-bar");
-    this.renderStatusBar();
-
-    // Update counts when active note changes or text changes
-    this.registerEvent(
-      this.app.workspace.on("editor-change", (editor) => {
-        this.updateCounts(editor);
-      })
-    );
-
-    this.registerEvent(
-      this.app.workspace.on("active-leaf-change", () => {
-        const view = this.app.workspace.getActiveViewOfType(MarkdownView);
-        if (view && view.containerEl) this.attachKeydown(view.containerEl.ownerDocument);
-        if (view && view.editor) {
-          this.updateCounts(view.editor);
-        }
-      })
-    );
-
-    // Initial word count fetch
-    const activeView = this.app.workspace.getActiveViewOfType(MarkdownView);
-    if (activeView && activeView.editor) {
-      this.updateCounts(activeView.editor);
-    }
-
-    // 2. Add Left Ribbon Icon
-    this.addRibbonIcon("book-plus", "Add word to dictionary", () => {
-      new QuickAddWordModal(this.app, this).open();
+    this.stage("frequency data", () => {
+      // Optional frequency data: load in the background, then (once) offer to download it if missing.
+      this.loadFrequencyData()
+        .then(() => {
+          this.app.workspace.onLayoutReady(() => this.maybePromptFrequencyDownload());
+        })
+        .catch((e) => this.logError("frequency data", e));
     });
 
-    this.addRibbonIcon("spell-check", "Show auto-corrections", () => this.activateCorrectionsView());
-
-    // 3. Register Commands in Command Palette
-    this.addCommand({
-      id: "open-corrections-panel",
-      name: "Show auto-corrections panel",
-      callback: () => this.activateCorrectionsView(),
-    });
-    this.addCommand({
-      id: "quick-add-word-to-dictionary",
-      name: "Add new word to dictionary",
-      callback: () => new QuickAddWordModal(this.app, this).open(),
+    this.stage("corrections view", () => {
+      this.registerView(VIEW_TYPE_CORRECTIONS, (leaf) => new CorrectionLogView(leaf, this));
     });
 
-    this.addCommand({
-      id: "add-selection-to-dictionary",
-      name: "Add word under cursor to dictionary",
-      editorCallback: (editor) => {
-        const cursor = editor.getCursor();
-        const wordRange = editor.wordAt(cursor);
-        const word = wordRange ? editor.getRange(wordRange.from, wordRange.to) : "";
-        new QuickAddWordModal(this.app, this, word).open();
-      },
+    this.stage("status bar and events", () => {
+      // 1. Build interactive Bottom Status Bar
+      this.statusBarItem = this.addStatusBarItem();
+      this.statusBarItem.addClass("plugin-silent-autocorrect-bar");
+      this.renderStatusBar();
+
+      // Update counts when active note changes or text changes
+      this.registerEvent(
+        this.app.workspace.on("editor-change", (editor) => {
+          this.updateCounts(editor);
+        })
+      );
+
+      this.registerEvent(
+        this.app.workspace.on("active-leaf-change", () => {
+          const view = this.app.workspace.getActiveViewOfType(MarkdownView);
+          if (view && view.containerEl) this.attachKeydown(view.containerEl.ownerDocument);
+          if (view && view.editor) {
+            this.updateCounts(view.editor);
+          }
+        })
+      );
+
+      // Initial word count fetch
+      const activeView = this.app.workspace.getActiveViewOfType(MarkdownView);
+      if (activeView && activeView.editor) {
+        this.updateCounts(activeView.editor);
+      }
     });
 
-    this.addCommand({
-      id: "open-dictionary-manager",
-      name: "Open dictionary and wordlists manager",
-      callback: () => new DictionaryManagerModal(this.app, this).open(),
+    this.stage("ribbon and commands", () => {
+      // 2. Add Left Ribbon Icon
+      this.addRibbonIcon("book-plus", "Add word to dictionary", () => {
+        new QuickAddWordModal(this.app, this).open();
+      });
+
+      this.addRibbonIcon("spell-check", "Show auto-corrections", () => this.activateCorrectionsView());
+
+      // 3. Register Commands in Command Palette
+      this.addCommand({
+        id: "open-corrections-panel",
+        name: "Show auto-corrections panel",
+        callback: () => this.activateCorrectionsView(),
+      });
+      this.addCommand({
+        id: "quick-add-word-to-dictionary",
+        name: "Add new word to dictionary",
+        callback: () => new QuickAddWordModal(this.app, this).open(),
+      });
+
+      this.addCommand({
+        id: "add-selection-to-dictionary",
+        name: "Add word under cursor to dictionary",
+        editorCallback: (editor) => {
+          const cursor = editor.getCursor();
+          const wordRange = editor.wordAt(cursor);
+          const word = wordRange ? editor.getRange(wordRange.from, wordRange.to) : "";
+          new QuickAddWordModal(this.app, this, word).open();
+        },
+      });
+
+      this.addCommand({
+        id: "open-dictionary-manager",
+        name: "Open dictionary and wordlists manager",
+        callback: () => new DictionaryManagerModal(this.app, this).open(),
+      });
+
+      this.addCommand({
+        id: "download-frequency-dictionaries",
+        name: "Download frequency dictionaries",
+        callback: () => this.downloadFrequencyData(),
+      });
+
+      this.addCommand({
+        id: "toggle-autocorrect",
+        name: "Toggle auto-correct on or off",
+        callback: async () => {
+          this.settings.autoCorrectEnabled = !this.settings.autoCorrectEnabled;
+          await this.saveSettings();
+          this.renderStatusBar();
+          new Notice("Auto-Correct: " + (this.settings.autoCorrectEnabled ? "ON" : "OFF"));
+        },
+      });
+
+      this.addCommand({
+        id: "cycle-sensitivity",
+        name: "Cycle auto-correct sensitivity",
+        callback: async () => {
+          const tiers = SENSITIVITY_TIERS;
+          const curIdx = tiers.indexOf(this.settings.autocorrectSensitivity);
+          const nextTier = tiers[(curIdx + 1) % tiers.length];
+          this.settings.autocorrectSensitivity = nextTier;
+          await this.saveSettings();
+          this.renderStatusBar();
+          new Notice("Sensitivity set to: " + nextTier.toUpperCase());
+        },
+      });
+
+      this.addCommand({
+        id: "revert-last-autocorrection",
+        name: "Revert last auto-correction",
+        editorCallback: (editor) => {
+          this.revertLastCorrection(editor);
+        },
+      });
+
+      this.addCommand({
+        id: "copy-diagnostics",
+        name: "Copy diagnostics to clipboard",
+        callback: () => this.copyDiagnostics(),
+      });
     });
 
-    this.addCommand({
-      id: "download-frequency-dictionaries",
-      name: "Download frequency dictionaries",
-      callback: () => this.downloadFrequencyData(),
-    });
+    this.stage("context menu", () => {
+      // 5. Register Context Menu Items on Right Click
+      this.registerEvent(
+        this.app.workspace.on("editor-menu", (menu, editor, view) => {
+          const cursor = editor.getCursor();
+          const wordRange = editor.wordAt(cursor);
+          if (!wordRange) return;
+          const word = editor.getRange(wordRange.from, wordRange.to);
 
-    this.addCommand({
-      id: "toggle-autocorrect",
-      name: "Toggle auto-correct on or off",
-      callback: async () => {
-        this.settings.autoCorrectEnabled = !this.settings.autoCorrectEnabled;
-        await this.saveSettings();
-        this.renderStatusBar();
-        new Notice("Auto-Correct: " + (this.settings.autoCorrectEnabled ? "ON" : "OFF"));
-      },
-    });
-
-    this.addCommand({
-      id: "cycle-sensitivity",
-      name: "Cycle auto-correct sensitivity",
-      callback: async () => {
-        const tiers = SENSITIVITY_TIERS;
-        const curIdx = tiers.indexOf(this.settings.autocorrectSensitivity);
-        const nextTier = tiers[(curIdx + 1) % tiers.length];
-        this.settings.autocorrectSensitivity = nextTier;
-        await this.saveSettings();
-        this.renderStatusBar();
-        new Notice("Sensitivity set to: " + nextTier.toUpperCase());
-      },
-    });
-
-    this.addCommand({
-      id: "revert-last-autocorrection",
-      name: "Revert last auto-correction",
-      editorCallback: (editor) => {
-        this.revertLastCorrection(editor);
-      },
-    });
-
-    // 4. Register Editor Keydown Listener for Auto-Correct.
-    // Capture phase on purpose: we must run BEFORE the editor's own Enter / list handling,
-    // otherwise the cursor has already moved to the next line when we look for the word.
-    // Registered once per document, and re-checked at several points (layout ready, every
-    // leaf change, new popout windows) so a missed registration at startup heals itself.
-    this.keydownDocs = new WeakSet();
-    this.attachKeydown(this.app.workspace.containerEl && this.app.workspace.containerEl.ownerDocument);
-    this.attachKeydown(activeDocument);
-    this.app.workspace.onLayoutReady(() => {
-      this.attachKeydown(this.app.workspace.containerEl && this.app.workspace.containerEl.ownerDocument);
-      this.attachKeydown(activeDocument);
-    });
-    this.registerEvent(this.app.workspace.on("window-open", (_win, popout) => this.attachKeydown(popout.document)));
-
-    // 5. Register Context Menu Items on Right Click
-    this.registerEvent(
-      this.app.workspace.on("editor-menu", (menu, editor, view) => {
-        const cursor = editor.getCursor();
-        const wordRange = editor.wordAt(cursor);
-        if (!wordRange) return;
-        const word = editor.getRange(wordRange.from, wordRange.to);
-
-        menu.addItem((item) => {
-          item
-            .setTitle(`➕ Add "${word}" to Dictionary`)
-            .setIcon("book-plus")
-            .onClick(() => {
-              new QuickAddWordModal(this.app, this, word).open();
-            });
-        });
-
-        // Quick add directly to sub-specialties
-        menu.addItem((item) => {
-          item
-            .setTitle(`Add "${word}" to Cardiology`)
-            .setIcon("heart")
-            .onClick(async () => {
-              await this.addWordToSubDict("cardiology", word);
-            });
-        });
-
-        menu.addItem((item) => {
-          item
-            .setTitle(`Add "${word}" to Pharmacology`)
-            .setIcon("pill")
-            .onClick(async () => {
-              await this.addWordToSubDict("pharmacology", word);
-            });
-        });
-
-        if (this.lastCorrection && this.lastCorrection.corrected === word) {
           menu.addItem((item) => {
             item
-              .setTitle(`↺ Revert to "${this.lastCorrection.original}"`)
-              .setIcon("undo")
-              .onClick(() => this.revertLastCorrection(editor, true));
+              .setTitle(`➕ Add "${word}" to Dictionary`)
+              .setIcon("book-plus")
+              .onClick(() => {
+                new QuickAddWordModal(this.app, this, word).open();
+              });
           });
-        }
-      })
-    );
 
-    // 6. Register Obsidian Settings Tab
-    this.settingTab = new SilentAutocorrectSettingTab(this.app, this);
-    this.addSettingTab(this.settingTab);
+          // Quick add directly to sub-specialties
+          menu.addItem((item) => {
+            item
+              .setTitle(`Add "${word}" to Cardiology`)
+              .setIcon("heart")
+              .onClick(async () => {
+                await this.addWordToSubDict("cardiology", word);
+              });
+          });
+
+          menu.addItem((item) => {
+            item
+              .setTitle(`Add "${word}" to Pharmacology`)
+              .setIcon("pill")
+              .onClick(async () => {
+                await this.addWordToSubDict("pharmacology", word);
+              });
+          });
+
+          if (this.lastCorrection && this.lastCorrection.corrected === word) {
+            menu.addItem((item) => {
+              item
+                .setTitle(`↺ Revert to "${this.lastCorrection.original}"`)
+                .setIcon("undo")
+                .onClick(() => this.revertLastCorrection(editor, true));
+            });
+          }
+        })
+      );
+    });
+
+    this.stage("settings tab", () => {
+      // 6. Register Obsidian Settings Tab
+      this.settingTab = new SilentAutocorrectSettingTab(this.app, this);
+      this.addSettingTab(this.settingTab);
+    });
+
+    const failed = Object.keys(this.stageResults).filter((k) => this.stageResults[k] !== "ok");
+    if (failed.length) {
+      new Notice("Silent Autocorrect had a startup problem (" + failed.join(", ") + "). Open its settings and choose Copy diagnostics for details.", 10000);
+    }
+  }
+
+  // Runs one startup stage; a failure is recorded instead of aborting the whole plugin.
+  stage(name, fn) {
+    try {
+      fn();
+      this.stageResults[name] = "ok";
+    } catch (e) {
+      this.stageResults[name] = "FAILED";
+      this.logError("startup: " + name, e);
+    }
+  }
+
+  // Local-only error recording (kept in memory, shown by Copy diagnostics). Nothing is sent anywhere.
+  logError(where, err) {
+    try {
+      if (!this.errorLog) this.errorLog = [];
+      const message = String((err && err.message) || err);
+      const last = this.errorLog[this.errorLog.length - 1];
+      if (last && last.where === where && last.message === message) {
+        last.count = (last.count || 1) + 1;
+        last.time = Date.now();
+        return;
+      }
+      const stack = String((err && err.stack) || "").split("\n").slice(0, 6).join("\n");
+      this.errorLog.push({ time: Date.now(), where, message, stack, count: 1 });
+      if (this.errorLog.length > 50) this.errorLog.shift();
+      console.error("[silent-autocorrect] " + where + ":", err);
+    } catch (e) {
+      /* never let logging break the plugin */
+    }
+  }
+
+  // A text report for bug reports. Contains no note text, note names or dictionary words.
+  buildDiagnostics() {
+    const s = this.settings || {};
+    const fs = this.freqStatus || {};
+    const lines = [];
+    lines.push("Silent Autocorrect diagnostics");
+    lines.push("Plugin version: " + (this.manifest && this.manifest.version));
+    lines.push("Obsidian API version: " + apiVersion);
+    lines.push("Platform: desktop=" + !!Platform.isDesktopApp + " mobile=" + !!Platform.isMobile + " mac=" + !!Platform.isMacOS + " windows=" + !!Platform.isWin + " linux=" + !!Platform.isLinux);
+    lines.push("Auto-correct on: " + s.autoCorrectEnabled + " | sensitivity: " + s.autocorrectSensitivity);
+    lines.push("Frequency dictionary setting: " + s.useFrequencyDictionary + " | split/merge fixes: " + s.fixSplitMergeErrors);
+    lines.push("Frequency data: " + fs.state + " (" + (fs.words || 0) + " words, " + (fs.bigrams || 0) + " bigrams)" + (fs.detail ? " " + fs.detail : ""));
+    lines.push("Typing listener: attached to " + (this.keydownAttachCount || 0) + " window(s); key presses seen: " + (this.keydownEventsSeen || 0));
+    lines.push("Corrections this session: " + (this.sessionCorrectionCount || 0));
+    lines.push("Startup stages:");
+    for (const [k, v] of Object.entries(this.stageResults || {})) lines.push("  " + k + ": " + v);
+    const errs = this.errorLog || [];
+    lines.push("Recent errors (" + errs.length + "):");
+    for (const e of errs) {
+      lines.push("  [" + new Date(e.time).toISOString() + "] " + e.where + (e.count > 1 ? " (x" + e.count + ")" : "") + ": " + e.message);
+      if (e.stack) lines.push(e.stack.split("\n").map((l) => "    " + l).join("\n"));
+    }
+    return lines.join("\n");
+  }
+
+  async copyDiagnostics() {
+    const text = this.buildDiagnostics();
+    try {
+      await navigator.clipboard.writeText(text);
+      new Notice("Diagnostics copied. Paste them into your bug report.");
+    } catch (e) {
+      new DiagnosticsModal(this.app, text).open();
+    }
   }
 
   updateCounts(editor) {
@@ -1101,59 +1226,70 @@ class SilentAutocorrectPlugin extends Plugin {
     const fixCount = this.sessionCorrectionCount || 0;
 
     // 1. Metrics Pill
-    const metricsEl = this.statusBarItem.createSpan({ cls: "status-bar-metrics" });
-    const estRead = Math.max(1, Math.ceil(this.currentWordCount / 200));
-    metricsEl.setText(`${this.currentWordCount}w · ${this.currentCharCount}c (~ ${estRead}m)`);
-    metricsEl.title = "Document word & character counts";
+    if (this.statusItemVisible("metrics")) {
+      const metricsEl = this.statusBarItem.createSpan({ cls: "status-bar-metrics" });
+      const estRead = Math.max(1, Math.ceil(this.currentWordCount / 200));
+      const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+      metricsEl.setText(`${plural(this.currentWordCount, "word", "words")} · ${plural(this.currentCharCount, "character", "characters")} · ~${plural(estRead, "min", "mins")}`);
+      metricsEl.title = "Word count, character count and estimated reading time";
+    }
 
     // 2. Add Word Button Pill
-    const addBtn = this.statusBarItem.createSpan({ cls: "status-bar-pill status-bar-add-btn" });
-    addBtn.setText("➕ Add Word");
-    addBtn.title = "Click to add a new medical term or custom word to dictionaries";
-    addBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      new QuickAddWordModal(this.app, this).open();
-    });
+    if (this.statusItemVisible("addWord")) {
+      const addBtn = this.statusBarItem.createSpan({ cls: "status-bar-pill status-bar-add-btn" });
+      addBtn.setText("➕ Add Word");
+      addBtn.title = "Click to add a new medical term or custom word to dictionaries";
+      addBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        new QuickAddWordModal(this.app, this).open();
+      });
+    }
 
     // 3. Auto-Correct Toggle Pill
-    const autoCorrectPill = this.statusBarItem.createSpan({ cls: "status-bar-pill" });
-    const dot = autoCorrectPill.createSpan({ cls: "status-dot " + (enabled ? "active" : "inactive") });
-    autoCorrectPill.createSpan({ text: "Auto-Correct: " + (enabled ? "ON" : "OFF") });
-    autoCorrectPill.title = "Click to toggle real-time auto-correct ON / OFF";
-    autoCorrectPill.addEventListener("click", async (e) => {
-      e.stopPropagation();
-      this.settings.autoCorrectEnabled = !this.settings.autoCorrectEnabled;
-      await this.saveSettings();
-      this.renderStatusBar();
-      new Notice("Auto-Correct is now " + (this.settings.autoCorrectEnabled ? "ON" : "OFF"));
-    });
+    if (this.statusItemVisible("autoCorrect")) {
+      const autoCorrectPill = this.statusBarItem.createSpan({ cls: "status-bar-pill" });
+      const dot = autoCorrectPill.createSpan({ cls: "status-dot " + (enabled ? "active" : "inactive") });
+      autoCorrectPill.createSpan({ text: "Auto-Correct: " + (enabled ? "ON" : "OFF") });
+      autoCorrectPill.title = "Click to toggle real-time auto-correct ON / OFF";
+      autoCorrectPill.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        this.settings.autoCorrectEnabled = !this.settings.autoCorrectEnabled;
+        await this.saveSettings();
+        this.renderStatusBar();
+        new Notice("Auto-Correct is now " + (this.settings.autoCorrectEnabled ? "ON" : "OFF"));
+      });
+    }
 
     // 4. Sensitivity Pill
-    const sensPill = this.statusBarItem.createSpan({ cls: "status-bar-pill pill-sens" });
-    sensPill.setText("⚡ " + sens);
-    sensPill.title = "Click to cycle sensitivity: Ultra → Proactive → Balanced → Strict → Minimal";
-    sensPill.addEventListener("click", async (e) => {
-      e.stopPropagation();
-      const tiers = SENSITIVITY_TIERS;
-      const curIdx = tiers.indexOf(this.settings.autocorrectSensitivity);
-      const nextTier = tiers[(curIdx + 1) % tiers.length];
-      this.settings.autocorrectSensitivity = nextTier;
-      await this.saveSettings();
-      this.renderStatusBar();
-      new Notice("Sensitivity changed to: " + nextTier.toUpperCase());
-    });
+    if (this.statusItemVisible("sensitivity")) {
+      const sensPill = this.statusBarItem.createSpan({ cls: "status-bar-pill pill-sens" });
+      sensPill.setText("⚡ " + sens);
+      sensPill.title = "Click to cycle sensitivity: Ultra → Proactive → Balanced → Strict → Minimal";
+      sensPill.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        const tiers = SENSITIVITY_TIERS;
+        const curIdx = tiers.indexOf(this.settings.autocorrectSensitivity);
+        const nextTier = tiers[(curIdx + 1) % tiers.length];
+        this.settings.autocorrectSensitivity = nextTier;
+        await this.saveSettings();
+        this.renderStatusBar();
+        new Notice("Sensitivity changed to: " + nextTier.toUpperCase());
+      });
+    }
 
     // 5. Sub-Dictionaries Pill
-    const dictPill = this.statusBarItem.createSpan({ cls: "status-bar-pill pill-dict" });
-    dictPill.setText("📚 " + subCount + " Sub-Dicts");
-    dictPill.title = "Click to open Dictionary & Wordlists Manager";
-    dictPill.addEventListener("click", (e) => {
-      e.stopPropagation();
-      new DictionaryManagerModal(this.app, this).open();
-    });
+    if (this.statusItemVisible("dictionaries")) {
+      const dictPill = this.statusBarItem.createSpan({ cls: "status-bar-pill pill-dict" });
+      dictPill.setText("📚 " + subCount + " Sub-Dicts");
+      dictPill.title = "Click to open Dictionary & Wordlists Manager";
+      dictPill.addEventListener("click", (e) => {
+        e.stopPropagation();
+        new DictionaryManagerModal(this.app, this).open();
+      });
+    }
 
     // 6. Fixes Counter Pill (if > 0)
-    if (fixCount > 0) {
+    if (fixCount > 0 && this.statusItemVisible("fixed")) {
       const fixedPill = this.statusBarItem.createSpan({ cls: "status-bar-pill pill-fixed" });
       fixedPill.setText("↺ " + fixCount + " fixed");
       fixedPill.title = "Click to revert last auto-correction";
@@ -1168,11 +1304,40 @@ class SilentAutocorrectPlugin extends Plugin {
       });
     }
 
+    // Our count replaces Obsidian's built-in one while it is shown.
+    this.setNativeCountHidden(this.statusItemVisible("metrics"));
+
+    // Hide the whole item (and its padding) when every indicator is switched off.
+    const anyVisible = STATUS_BAR_ITEMS.some((i) => i.key !== "fixed" ? this.statusItemVisible(i.key) : this.statusItemVisible("fixed") && fixCount > 0);
+    this.statusBarItem.toggleClass("sac-hidden", !anyVisible);
+
     // Right-click or general click on bar background opens Quick Menu
     this.statusBarItem.addEventListener("contextmenu", (evt) => {
       evt.preventDefault();
       this.showQuickMenu(evt);
     });
+  }
+
+  // Obsidian's core "Word count" plugin owns .plugin-word-count; we hide it with a body class
+  // (see styles.css) instead of touching its element, and restore it when we stop showing ours.
+  setNativeCountHidden(hide) {
+    try {
+      const doc = (this.app.workspace.containerEl && this.app.workspace.containerEl.ownerDocument) || activeDocument;
+      if (doc && doc.body) doc.body.classList.toggle("sac-hide-native-count", !!hide);
+    } catch (e) {
+      this.logError("hiding the built-in word count", e);
+    }
+  }
+
+  statusItemVisible(key) {
+    const items = this.settings && this.settings.statusBarItems;
+    return !items || items[key] !== false;
+  }
+
+  async setStatusItemVisible(key, visible) {
+    this.settings.statusBarItems = Object.assign({}, STATUS_BAR_DEFAULTS, this.settings.statusBarItems, { [key]: !!visible });
+    await this.saveSettings();
+    this.renderStatusBar();
   }
 
   showQuickMenu(evt) {
@@ -1236,6 +1401,16 @@ class SilentAutocorrectPlugin extends Plugin {
         })
     );
 
+    menu.addSeparator();
+    for (const entry of STATUS_BAR_ITEMS) {
+      menu.addItem((item) =>
+        item
+          .setTitle("Show in status bar: " + entry.name)
+          .setChecked(this.statusItemVisible(entry.key))
+          .onClick(() => this.setStatusItemVisible(entry.key, !this.statusItemVisible(entry.key)))
+      );
+    }
+
     menu.showAtMouseEvent(evt);
   }
 
@@ -1288,10 +1463,20 @@ class SilentAutocorrectPlugin extends Plugin {
   attachKeydown(doc) {
     if (!doc || !this.keydownDocs || this.keydownDocs.has(doc)) return;
     this.keydownDocs.add(doc);
+    this.keydownAttachCount = (this.keydownAttachCount || 0) + 1;
     this.registerDomEvent(doc, "keydown", (evt) => this.onKeyDown(evt), true);
   }
 
   onKeyDown(evt) {
+    this.keydownEventsSeen = (this.keydownEventsSeen || 0) + 1;
+    try {
+      this.handleKeyDown(evt);
+    } catch (e) {
+      this.logError("typing handler", e);
+    }
+  }
+
+  handleKeyDown(evt) {
     if (!this.settings.autoCorrectEnabled) return;
     if (evt.isComposing || evt.keyCode === 229 || evt.repeat) return;
     if (evt.ctrlKey || evt.metaKey || evt.altKey) return;
@@ -1439,7 +1624,7 @@ class SilentAutocorrectPlugin extends Plugin {
       this.scheduleLogSave();
       return id;
     } catch (e) {
-      console.error("Silent Autocorrect: could not log correction", e);
+      this.logError("logging a correction", e);
       return null;
     }
   }
@@ -1468,6 +1653,7 @@ class SilentAutocorrectPlugin extends Plugin {
   }
 
   onunload() {
+    this.setNativeCountHidden(false);
     if (this.logSaveTimer) {
       clearTimeout(this.logSaveTimer);
       this.logSaveTimer = null;
@@ -1529,7 +1715,7 @@ class SilentAutocorrectPlugin extends Plugin {
       return true;
     } catch (e) {
       notice.hide();
-      console.error("Silent Autocorrect: dictionary download failed", e);
+      this.logError("dictionary download", e);
       new Notice("Could not download the dictionaries. Check your connection and try again.");
       return false;
     } finally {
@@ -1577,7 +1763,7 @@ class SilentAutocorrectPlugin extends Plugin {
       }
       status.state = "loaded";
     } catch (e) {
-      console.error("Silent Autocorrect: could not load frequency data", e);
+      this.logError("loading frequency data", e);
       status.state = "error";
       status.detail = String((e && e.message) || e);
     }
@@ -1585,6 +1771,7 @@ class SilentAutocorrectPlugin extends Plugin {
 
   async loadSettings() {
     this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+    this.settings.statusBarItems = Object.assign({}, STATUS_BAR_DEFAULTS, this.settings.statusBarItems);
     if (!this.settings.customSubWords) {
       this.settings.customSubWords = {
         cardiology: [],
@@ -1855,6 +2042,10 @@ class FrequencyDownloadModal extends Modal {
     contentEl.createEl("p", {
       text: "Silent Autocorrect can use two English word-frequency files (about 6.5 MB) to tell real words from typos and to fix spacing slips such as \"inthe\". They are downloaded once from GitHub (raw.githubusercontent.com) and saved in this plugin's folder. Nothing you write is sent anywhere. You can also do this later from the plugin settings.",
     });
+    const feedback = contentEl.createEl("p");
+    feedback.appendText("Found a bug or have an idea for a new feature? Please report it on ");
+    feedback.createEl("a", { text: "GitHub issues", href: ISSUES_URL });
+    feedback.appendText(".");
     new Setting(contentEl)
       .addButton((btn) =>
         btn
@@ -1877,6 +2068,29 @@ class FrequencyDownloadModal extends Modal {
   async finish() {
     this.plugin.settings.freqDownloadPrompted = true;
     await this.plugin.saveData(this.plugin.settings);
+  }
+
+  onClose() {
+    this.contentEl.empty();
+  }
+}
+
+// Fallback when the clipboard is unavailable: show the report so it can be copied by hand
+class DiagnosticsModal extends Modal {
+  constructor(app, text) {
+    super(app);
+    this.text = text;
+  }
+
+  onOpen() {
+    const { contentEl } = this;
+    contentEl.empty();
+    contentEl.createEl("h2", { text: "Diagnostics" });
+    contentEl.createEl("p", { text: "Select all and copy this report into your bug report. It contains no note text, note names or dictionary words." });
+    const area = contentEl.createEl("textarea", { cls: "sac-diag-textarea", attr: { rows: "14", readonly: "true" } });
+    area.value = this.text;
+    area.focus();
+    area.select();
   }
 
   onClose() {
@@ -2007,6 +2221,19 @@ class SilentAutocorrectSettingTab extends PluginSettingTab {
           })
       );
 
+    // Status bar indicators
+    new Setting(containerEl).setName("Status bar").setHeading();
+    for (const entry of STATUS_BAR_ITEMS) {
+      new Setting(containerEl)
+        .setName(entry.name)
+        .setDesc(entry.desc)
+        .addToggle((toggle) =>
+          toggle.setValue(this.plugin.statusItemVisible(entry.key)).onChange(async (val) => {
+            await this.plugin.setStatusItemVisible(entry.key, val);
+          })
+        );
+    }
+
     // Section 3: Clinical Shorthands
     new Setting(containerEl).setName("Clinical shorthands").setHeading();
 
@@ -2069,6 +2296,17 @@ class SilentAutocorrectSettingTab extends PluginSettingTab {
             })
         );
     }
+
+    // Section 5: Diagnostics
+    new Setting(containerEl).setName("Diagnostics").setHeading();
+    const errCount = (this.plugin.errorLog || []).length;
+    new Setting(containerEl)
+      .setName("Copy diagnostics")
+      .setDesc(
+        "Copies a report (version, platform, startup status and recent errors: " + errCount +
+          " recorded) to attach to a bug report. It contains no note text, note names or dictionary words, and nothing is sent anywhere."
+      )
+      .addButton((btn) => btn.setButtonText("Copy").onClick(() => this.plugin.copyDiagnostics()));
   }
 }
 
